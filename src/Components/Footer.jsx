@@ -1,163 +1,176 @@
 import React from "react";
-import { FaFacebookSquare} from "react-icons/fa";
+import { FaFacebookSquare, FaLocationArrow } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import {  FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
-import { FaSquarePinterest } from "react-icons/fa6";
+// import { FaSquarePinterest } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { SiGooglemaps } from "react-icons/si";
 // import { FaPinterestSquare } from "react-icons/si";
 import { Link } from "react-router-dom";
-
+import { FaMapMarkerAlt } from 'react-icons/fa';
 function Footer() {
   return (
     <>
       <div className="bg-black text-white py-12">
-      <div className="max-w-7xl mx-auto px-6 lg:px-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-       
-        <div>
-          <img
-            src="JIITECH.png"
-            alt="Company Logo"
-            className="w-32 mb-4"
-          />
-          <p className="text-sm leading-relaxed text-gray-400">
-            <strong className="text-white">Address:</strong>
-            <br />
-            JIITECH Headquarters, Tokyo, Japan / Ahmedabad, India
-          </p>
-          <p className="mt-4 text-sm leading-relaxed text-gray-400">
-            <strong className="text-white">Phone:</strong> +91-9327123451
-            (India) | +81-8064262379 (Japan)
-            <br />
-            <strong className="text-white">Email:</strong> info@jiitech.com
-          </p>
-        </div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-16 grid sm:grid-cols-4 lg:grid-cols-5 gap-8">
 
-       
-        <div>
-          <h3 className="text-xl font-semibold mb-4 text-red-500">
-            Useful Links
-          </h3>
-          <ul className="space-y-3">
-            {[
-              { name: "Home", link: "/" },
-              { name: "About Us", link: "/about" },
-              { name: "We Offer", link: "/weoffer" },
-              { name: "How to Apply", link: "/apply" },
-              { name: "Gallery", link: "/gallery" },
-              { name: "Contact Us", link: "/contactus" },
-              { name: "Privacy Policy", link: "/privacy" },
-            ].map((item, index) => (
-              <li key={index}>
+          <div>
+            <img
+              src="JIITECH.png"
+              alt="Company Logo"
+              className="w-56 mb-4"
+            />
+
+          </div>
+
+
+          <div>
+            <h3 className="text-xl font-semibold mb-4 text-red-500">
+              Useful Links
+            </h3>
+            <ul className="space-y-3">
+              {[
+                { name: "Home", link: "/" },
+                { name: "About Us", link: "/about" },
+                { name: "We Offer", link: "/weoffer" },
+                { name: "How to Apply", link: "/apply" },
+                { name: "Gallery", link: "/gallery" },
+                { name: "Contact Us", link: "/contactus" },
+                { name: "Privacy Policy", link: "/privacy" },
+              ].map((item, index) => (
+                <li key={index}>
+                  <a
+                    href={item.link}
+                    className="text-gray-400 hover:text-red-500 transition duration-300"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+
+          <div>
+            <h3 className="text-xl font-semibold mb-4 text-red-500">
+              Our Services
+            </h3>
+            <ul className="space-y-3">
+              {[
+                "Modernize Software",
+                "Cloud Consulting Services",
+                "AI/ML Development",
+                "Cyber Security Solutions",
+                "Digital Marketing",
+                "Political Campaign",
+              ].map((service, index) => (
+                <li key={index}>
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-red-500 transition duration-300"
+                  >
+                    {service}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-4 text-red-500">
+              Contact
+            </h3>
+            <p className="text-sm leading-relaxed text-gray-400 flex items-center">
+              <FaMapMarkerAlt className="text-white mr-1" />
+              <strong className="text-white">Address:</strong>
+            </p>
+            <p className="text-sm leading-relaxed text-gray-400">JIITECH Headquarters, Tokyo, Japan</p>
+            <p className="text-sm leading-relaxed text-gray-400">
+
+
+              JIITECH Headquarters, Ahmedabad, India
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-gray-400">
+              <strong className="text-white">Phone:</strong><br /> +91-9327123451(India) <br />+91-9033211100(India)
+
+              <br />+81-8064262379 (Japan)
+              <br />
+              
+              <strong className="text-white">Email:</strong> info@jiitech.jp
+            </p>
+          </div>
+
+
+          <div>
+            <h3 className="text-xl font-semibold mb-4 text-red-500">Support</h3>
+            <ul className="space-y-3">
+              <li>
                 <a
-                  href={item.link}
+                  href="/contactus"
                   className="text-gray-400 hover:text-red-500 transition duration-300"
                 >
-                  {item.name}
+                  Contact Us
                 </a>
               </li>
-            ))}
-          </ul>
-        </div>
-
-         
-        <div>
-          <h3 className="text-xl font-semibold mb-4 text-red-500">
-            Our Services
-          </h3>
-          <ul className="space-y-3">
-            {[
-              "Modernize Software",
-              "Cloud Consulting Services",
-              "AI/ML Development",
-              "Cyber Security Solutions",
-              "Digital Marketing",
-              "Political Campaign",
-            ].map((service, index) => (
-              <li key={index}>
+              <li>
                 <a
                   href="#"
                   className="text-gray-400 hover:text-red-500 transition duration-300"
                 >
-                  {service}
+                  Item Support
                 </a>
               </li>
-            ))}
-          </ul>
-        </div>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-red-500 transition duration-300"
+                >
+                  Get in Touch
+                </a>
+              </li>
+            </ul>
 
-         
-        <div>
-          <h3 className="text-xl font-semibold mb-4 text-red-500">Support</h3>
-          <ul className="space-y-3">
-            <li>
-              <a
-                href="/contactus"
-                className="text-gray-400 hover:text-red-500 transition duration-300"
-              >
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-red-500 transition duration-300"
-              >
-                Item Support
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-red-500 transition duration-300"
-              >
-                Get in Touch
-              </a>
-            </li>
-          </ul>
-          
-          <div className="mt-6 flex space-x-4">
-            {[
-              { Icon: FaFacebookSquare, link: "http://fb.com/61561338693343" },
-              {
-                Icon: FaInstagram,
-                link: "#",
-              },
-              { Icon: FaYoutube, link: "#" },
-              { Icon: SiGooglemaps, link: "#" },
-             
-              { Icon: FaXTwitter, link: "#" },
-              {
-                Icon: IoLogoLinkedin,
-                link: "#",
-              },
-            ].map(({ Icon, link }, index) => (
-              <a
-                key={index}
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-red-500 transition duration-300"
-              >
-                <Icon size={25} />
-              </a>
-            ))}
+            <div className="mt-6 flex space-x-4">
+              {[
+                { Icon: FaFacebookSquare, link: "http://fb.com/61561338693343" },
+                {
+                  Icon: FaInstagram,
+                  link: "#",
+                },
+                { Icon: FaYoutube, link: "#" },
+                { Icon: SiGooglemaps, link: "#" },
+
+                { Icon: FaXTwitter, link: "#" },
+                {
+                  Icon: IoLogoLinkedin,
+                  link: "#",
+                },
+              ].map(({ Icon, link }, index) => (
+                <a
+                  key={index}
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-red-500 transition duration-300"
+                >
+                  <Icon size={25} />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-       
-      <div className="border-t border-gray-700 my-8"></div>
 
-       
-      <div className="text-center">
-        <p className="text-gray-400 text-sm">
-          © 2024 Tech Creature Solution (A Nawal Sustainability Group Product).
-          All Rights Reserved.
-        </p>
+        <div className="border-t border-gray-700 my-8"></div>
+
+
+        <div className="text-center">
+          <p className="text-gray-400 text-sm">
+            © 2024 Tech Creature Solution (A Nawal Sustainability Group Product).
+            All Rights Reserved.
+          </p>
+        </div>
       </div>
-    </div>
 
 
       {/* <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white py-12">

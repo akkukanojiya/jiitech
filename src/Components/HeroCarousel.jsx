@@ -15,11 +15,11 @@ function HeroCarousel() {
           <div className="carousel-item active" data-bs-interval="4500">
             <div className="relative">
               <img
-                src="/HeroCarousel-pics/slider1.jpg"
-                className="d-block w-full h-[50vh] pt-0 sm:h-[60vh] md:h-[70vh] lg:h-[100vh] object-cover rounded-xl opacity-50"
+                src="/HeroCarousel-pics/slider 1.jpg"
+                className="d-block w-full h-[50vh] pt-0 sm:h-[60vh] md:h-[70vh] lg:h-[100vh] object-cover rounded-xl opacity-20"
                 alt="Slider 1"
               />
-              <div className="absolute top-1/2 left-10 sm:left-24 lg:left-40 transform -translate-y-1/2 px-8 sm:px-16 lg:px-24 text-customBlue">
+              <div className="absolute top-1/2 left-10 sm:left-24 lg:left-38 transform -translate-y-1/2 px-8 sm:px-16 lg:px-20 text-customBlue">
                 <div className="text-shadow-xl animate__animated animate__fadeIn animate__delay-1s">
                   <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight tracking-wide">
                     Welcome to JIITECH.
@@ -41,7 +41,7 @@ function HeroCarousel() {
           </div>
 
           {/* Slide 2 */}
-          <div className="carousel-item" data-bs-interval="4500">
+          {/* <div className="carousel-item" data-bs-interval="4500">
             <div className="relative">
               <img
                 src="/HeroCarousel-pics/slider2.jpg"
@@ -49,24 +49,24 @@ function HeroCarousel() {
                 alt="Slider 2"
               />
             </div>
-          </div>
+          </div> */}
 
           {/* Slide 3 */}
           <div className="carousel-item" data-bs-interval="4500">
             <div className="relative">
               <img
                 src="/HeroCarousel-pics/slider3.jpg"
-                className="d-block w-full h-[50vh] pt-0 sm:h-[60vh] md:h-[70vh] lg:h-[100vh] object-cover rounded-xl opacity-50"
+                className="d-block w-full h-[50vh] pt-0 sm:h-[60vh] md:h-[70vh] lg:h-[100vh] object-cover rounded-xl opacity-20"
                 alt="Slider 3"
               />
-              <div className="absolute top-1/2 left-10 sm:left-24 lg:left-40 transform -translate-y-1/2 px-8 sm:px-16 lg:px-24 text-customBlue">
+              <div className="absolute top-1/2 left-10 sm:left-20 lg:left-38 transform -translate-y-1/2 px-8 sm:px-16 lg:px-20 text-customBlue">
                 <div className="text-shadow-xl opacity-90 animate__animated animate__fadeIn animate__delay-1s">
-                  {/* <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-6 leading-tight tracking-wide">
-                    An Integral Part of Corporate India’s&Japan’s Journey
-                  </h2> */}
-                  {/* <p className="text-sm sm:text-base lg:text-lg opacity-90 max-w-xl">
+                  <h2 className="text-2xl sm:text-3xl lg:text-3xl font-extrabold mb-6 leading-tight tracking-wide">
+                    An Integral Part of Corporate India’s & Japan’s Journey
+                  </h2>
+                  <p className="text-sm sm:text-base lg:text-lg opacity-90 max-w-xl">
                     Trusted advisors to multinationals, leading Indian & Japanese businesses, and leadership professionals.
-                  </p> */}
+                  </p>
                 </div>
               </div>
             </div>

@@ -26,8 +26,8 @@ const ContactUs = () => {
 
       <div className=" h-80 flex relative">
         <img
-          src="/About-pics/About-Main.webp"
-          className=" w-full object-cover"
+          src="/contact us.jpg"
+          className=" w-full object-cover opacity-20"
         />
         <div className="absolute  text-2xl sm:text-5xl font-bold flex flex-col h-full justify-center text-center items-center w-full  bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text">
           <p>Contact us</p>
@@ -39,9 +39,9 @@ const ContactUs = () => {
           <p>
           We’d love to hear from you! If you have any questions, feel free to reach out
           </p>
-          <marquee behavior="alternate" direction="">
+          <p>
           Please sStay connected with us on Social Media to get the latest updates on upcoming programs and events!
-          </marquee>
+          </p>
         </div>
 
         <div className="bg-white sm:p-14 p-8  rounded-3xl flex flex-col sm:flex-row  ">
@@ -53,18 +53,22 @@ const ContactUs = () => {
             <div className="flex gap-3 items-center justify-start">
               <IoLocationSharp size={40} className="text-white-700" />
               <p>
-              JIITECH Headquarters, Tokyo, Japan / Ahmedabad, India
+              JIITECH Headquarters, Tokyo, Japan 
+              </p>
+              <p>
+              JIITECH Headquarters, Ahmedabad, India
               </p>
             </div>
 
             <div className="flex gap-3 items-center justify-start">
               <MdCall size={27} className="text-white-700" />
-              <p>+91-9327123451 (India) | +81-8064262379 (Japan)</p>
+              <p>+81-8064262379 (Japan)</p>
+              <p>+91-9327123451 (India)  +91-9033211100 (India)</p>
             </div>
 
             <div className="flex gap-3 items-center justify-start">
               <HiOutlineMailOpen size={28} className="text-white-700" />
-              <p> info@jiitech.com</p>
+              <p> info@jiitech.jp</p>
             </div>  
 
             <div className="flex gap-3 py-6 text-white-700 ">
@@ -142,15 +146,18 @@ const ContactUs = () => {
                 rows="10"
                 className="rounded-xl px-4 outline-none py-2 w-full h-full"
               />
+              <button className="bg-customBlue sm:px-6 hover:bg-customLiteBlue transition-all duration-500 rounded-xl text-white font-bold py-2 sm:w-56 w-1/2 ">
+            Submit Message
+          </button>
             </div>
           </div>
         </div>
 
-        <div className="flex sm:justify-end py-3 gap-4 justify-center sm:text-lg text-sm">
-          <button className="bg-customBlue sm:px-12 hover:bg-customLiteBlue transition-all duration-500 rounded-xl text-white font-bold py-4 sm:w-60 w-1/2 ">
+        {/* <div className="flex sm:justify-end py-3 gap-2 justify-center sm:text-lg text-sm">
+          <button className="bg-customBlue sm:px-6 hover:bg-customLiteBlue transition-all duration-500 rounded-xl text-white font-bold py-2 sm:w-56 w-1/2 ">
             Submit Message
           </button>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>

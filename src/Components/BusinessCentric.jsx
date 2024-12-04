@@ -83,28 +83,44 @@ function BusinessCentric() {
       </div> */}
 
       <div className="flex flex-col sm:flex-row px-6 sm:px-12 items-center justify-evenly rounded-lg py-16 mx-4 my-6 bg-white shadow-2xl space-y-8 sm:space-y-0 sm:space-x-8 transform transition-all hover:scale-105">
-  <div className="sm:w-1/2 text-center sm:text-left">
-    <p className="text-5xl font-extrabold pb-4 bg-gradient-to-r from-red-600 to-pink-500 text-transparent bg-clip-text">
-      Our Mission
-    </p>
-    <p className="text-lg black-red-600 leading-relaxed opacity-90 hover:opacity-100 transition-opacity duration-300">
-      Our goal is to foster creativity, innovation, and intercultural understanding through immersive exchange programs, educational initiatives, and technological collaboration. We aim to nurture a global perspective in students and professionals by creating opportunities to experience the best of Japanese and Indian cultures.
-    </p>
-  </div>
-  <div className="sm:w-1/3 flex justify-center sm:justify-end">
-    <img src="/ourmission.png" alt="Our Mission" className="w-full max-w-xs rounded-lg shadow-lg transition-all transform hover:scale-110 hover:rotate-3" />
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
+        <div className="sm:w-1/2  sm:text-left">
+          <p className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-red-600 to-pink-500 text-transparent bg-clip-text">
+            Our Mission
+          </p>
+          <p className="text-lg black-red-600 leading-relaxed opacity-90 hover:opacity-100 transition-opacity duration-300">
+            Our goal is to foster creativity, innovation, and intercultural understanding through immersive exchange programs, educational initiatives, and technological collaboration. We aim to nurture a global perspective in students and professionals by creating opportunities to experience the best of Japanese and Indian cultures.
+          </p>
+        </div>
+        <div className="sm:w-1/3 flex justify-center sm:justify-end">
+          <img src="/ourmission.png" alt="Our Mission" className="w-full max-w-xs rounded-lg shadow-lg transition-all transform hover:scale-110 hover:rotate-4" />
+        </div>
+      </div>
+      <div className="flex flex-col sm:flex-row-reverse px-6 sm:px-12 items-center justify-center sm:justify-evenly rounded-xl py-16 mx-6 my-10 bg-white shadow-2xl">
+        <div className="sm:w-1/2 py-10  sm:text-left text-black">
+          <p className="text-4xl font-extrabold pb-6 bg-gradient-to-r from-red-400 to-customBlue text-transparent bg-clip-text">
+            Why Choose JIITECH?
+          </p>
+          <p className="text-xl sm:text-xl leading-relaxed mb-6 text-black">
+            <span className="font-semibold text-lg text-black-500">Cultural Fusion:</span> We bring together two of the most culturally rich nations to create a truly unique educational experience.
+          </p>
+          <p className="text-xl sm:text-xl leading-relaxed mb-6 text-black">
+            <span className="font-semibold text-lg text-black-500">Holistic Learning:</span> Our programs aren’t just academic – they’re designed to foster creativity, problem-solving, and intercultural understanding.
+          </p>
+          <p className="text-xl sm:text-xl leading-relaxed mb-6 text-black">
+            <span className="font-semibold text-lg text-black-500">Network Building:</span> Participants will have the chance to connect with peers, educators, and industry professionals, building a network that spans two continents.
+          </p>
+          <button className="mt-6 bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-2 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gradient-to-l hover:from-red-400 hover:to-red-400 shadow-lg hover:scale-105">
+            Join Us Now
+          </button>
+        </div>
+        <div className="sm:w-1/3 sm:mt-0 mt-8 flex justify-center relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-red-300 to-orange-500 opacity-20 rounded-lg blur-sm"></div>
+          <img className="rounded-xl shadow-2xl transform transition duration-500 hover:scale-110 hover:rotate-3" src="/why choose us.jpg" alt="Why Choose JIITECH" />
+        </div>
+      </div>
     </div>
+
+    
   );
 }
 

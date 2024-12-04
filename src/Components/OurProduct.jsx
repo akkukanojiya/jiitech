@@ -83,35 +83,82 @@ function OurProduct() {
 
       <div className="flex flex-wrap gap-8 p-8 justify-center items-center">
         {/* Card 1 */}
-        <div className="group w-full sm:w-96 md:w-[28rem] h-80 sm:h-[20rem] md:h-[24rem] bg-gradient-to-br from-orange-200 to-orange-400 rounded-xl p-8 shadow-xl relative overflow-hidden hover:scale-105 transition-transform duration-300">
-          <h3 className="text-xl md:text-2xl font-bold mt-4 group-hover:text-orange-700 transition-colors duration-300">
-            Student Exchange Program
+        <div className="group w-full bg-gradient-to-br from-red-100 to-red-300 rounded-2xl p-10 shadow-2xl relative overflow-hidden hover:scale-105 transition-transform duration-300">
+          {/* Decorative Background Circles */}
+          <div className="absolute -top-10 -left-10 w-40 h-40 bg-orange-400/30 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute -bottom-16 -right-16 w-60 h-60 bg-orange-300/50 rounded-full blur-3xl animate-pulse delay-200"></div>
+
+          {/* Title Section */}
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 group-hover:text-customBlue transition-colors duration-300">
+            🌟 Student Exchange Program
           </h3>
-          <p className="text-sm md:text-base text-gray-700 mt-3">
-            Our Student Exchange Program is designed to provide students with life-changing opportunities to live and learn in another culture. Participants can explore different academic environments, experience cultural activities, and forge lifelong friendships.
+
+          {/* Description */}
+          <p className="text-md md:text-lg text-gray-700 leading-relaxed animate-fadeIn">
+          Our Student Exchange Program is designed to provide students with life-changing opportunities to live and learn in another culture. Participants  can explore different academic environments, experience cultural activities, and forge lifelong friendships.
           </p>
-          <button className="text-orange-600 font-semibold mt-6 group-hover:underline transition-all duration-300">
-            Learn more →
-          </button>
-          <div className="absolute top-8 right-8 w-32 h-32 bg-orange-300/50 rounded-full group-hover:scale-125 transition-transform duration-300"></div>
+
+          {/* Highlights Section */}
+          <h4 className="text-lg md:text-xl font-semibold mt-8 text-gray-800 group-hover:text-customBlue transition-colors duration-300">
+          Highlights of the Student Exchange Program:
+          </h4>
+          <div className="flex flex-wrap gap-6 mt-6">
+            {/* Highlight Cards */}
+            {[
+              {
+                icon: "🌍",
+                title: "Cultural Immersion:",
+                description:
+                  "Explore local traditions, food, festivals, and customs for an authentic cultural experience.",
+              },
+              {
+                icon: "🎓",
+                title: "Academic Exposure:",
+                description:
+                  "Attend lectures, seminars, and workshops to understand the educational approaches of Japan or India. Visit schools, universities,  and research institutes. Group and One-to-one interactions to answer curiosities and questions about living and work cultures.",
+              },
+              {
+                icon: "💡",
+                title: "Innovation & Technology Workshops:",
+                description:
+                  "Participate in hands-on sessions to learn about cutting-edge technologies and innovations shaping the future. Opportunity to intern at prestigious companies.",
+              },
+              {
+                icon: "🏢",
+                title: "Industry Visits",
+                description:
+                  "Experience the environment of leading industries through company visits and talks by professionals.",
+              },
+            ].map((highlight, index) => (
+              <div
+                key={index}
+                className="flex-1 p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 group-hover:translate-y-2 hover:bg-indigo-50 animate-slideIn"
+              >
+                <p className="text-3xl transition-transform duration-300 transform group-hover:scale-110">
+                  {highlight.icon}
+                </p>
+                <h5 className="text-md font-semibold mt-2">{highlight.title}</h5>
+                <p className="text-sm text-gray-600 mt-1">{highlight.description}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Learn More Button */}
+          <div className="mt-8">
+            <button className="px-6 py-3 bg-customBlue text-white rounded-lg font-semibold hover:bg-customBlue-700 shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition-all duration-300">
+              Learn More →
+            </button>
+          </div>
         </div>
 
+
+
+ 
         {/* Card 2 */}
-        <div className="group w-full sm:w-96 md:w-[28rem] h-80 sm:h-[20rem] md:h-[24rem] bg-gradient-to-br from-purple-200 to-purple-400 rounded-xl p-8 shadow-xl relative overflow-hidden hover:scale-105 transition-transform duration-300">
-          <h3 className="text-xl md:text-2xl font-bold mt-4 group-hover:text-purple-700 transition-colors duration-300">
-            Highlights of the Program
-          </h3>
-          <p className="text-sm md:text-base text-gray-700 mt-3">
-            Cultural Immersion: Explore local traditions, food, festivals, and customs for an authentic cultural experience.
-          </p>
-          <button className="text-purple-600 font-semibold mt-6 group-hover:underline transition-all duration-300">
-            Learn more →
-          </button>
-          <div className="absolute top-12 right-8 w-32 h-14 bg-white/50 rounded-t-full group-hover:translate-y-[-10px] transition-transform duration-300"></div>
-        </div>
+
 
         {/* Card 3 */}
-        <div className="group w-full sm:w-96 md:w-[28rem] h-80 sm:h-[20rem] md:h-[24rem] bg-gradient-to-br from-green-200 to-green-400 rounded-xl p-8 shadow-xl relative overflow-hidden hover:scale-105 transition-transform duration-300">
+        {/* <div className="group w-full sm:w-96 md:w-[28rem] h-80 sm:h-[20rem] md:h-[24rem] bg-gradient-to-br from-green-200 to-green-400 rounded-xl p-8 shadow-xl relative overflow-hidden hover:scale-105 transition-transform duration-300">
           <h3 className="text-xl md:text-2xl font-bold mt-4 group-hover:text-green-700 transition-colors duration-300">
             Academic Exposure
           </h3>
@@ -122,10 +169,10 @@ function OurProduct() {
             Learn more →
           </button>
           <div className="absolute top-8 right-8 w-16 h-20 bg-white/50 rounded-lg group-hover:rotate-12 transition-transform duration-300"></div>
-        </div>
+        </div> */}
 
         {/* Card 4 */}
-        <div className="group w-full sm:w-96 md:w-[28rem] h-80 sm:h-[20rem] md:h-[24rem] bg-gradient-to-br from-pink-200 to-pink-400 rounded-xl p-8 shadow-xl relative overflow-hidden hover:scale-105 transition-transform duration-300">
+        {/* <div className="group w-full sm:w-96 md:w-[28rem] h-80 sm:h-[20rem] md:h-[24rem] bg-gradient-to-br from-pink-200 to-pink-400 rounded-xl p-8 shadow-xl relative overflow-hidden hover:scale-105 transition-transform duration-300">
           <h3 className="text-xl md:text-2xl font-bold mt-4 group-hover:text-pink-700 transition-colors duration-300">
             Innovation & Technology Workshops
           </h3>
@@ -136,7 +183,7 @@ function OurProduct() {
             Learn more →
           </button>
           <div className="absolute top-8 right-8 w-0 h-0 border-l-[60px] border-l-transparent border-r-[60px] border-r-transparent border-b-[90px] border-b-white/50 group-hover:rotate-45 transition-transform duration-300"></div>
-        </div>
+        </div> */}
       </div>
 
 
@@ -409,8 +456,8 @@ function OurProduct() {
 
   return (
     <>
-      <div className="my-10">
-        <div className="flex text-center flex-col px-4 py-8">
+      <div className="mx-6">
+        <div className="flex text-center flex-col px-4 py-2">
           <p className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text  ">Programs We Offer
 
           </p>

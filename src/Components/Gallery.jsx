@@ -75,16 +75,21 @@ const Gallery = () => {
       </div>
 
       <div>
-        <div className=" h-80  flex relative ">
+        <div className="h-80 flex relative">
           <img
-            src="/Blog-jpg/Our-Blog (2).jpg"
-            className=" w-full object-cover"
+            src="/gallery.jpg"
+            className="w-full object-cover opacity-20" // Adjust the opacity here
           />
-          <div className="absolute text-white text-2xl sm:text-5xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
+          <div className="absolute text-customBlue text-2xl sm:text-4xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
             <p>Our Gallery</p>
-            <p className="text-base font-normal">Experience JIITECH’s  vibrant activities through our gallery of past events, exchange programs, and cultural activities. Witness the bonds that our students have formed and the incredible experiences they have had.</p>
+            <p className="text-base font-normal text-center mt-2 px-20">
+              Experience JIITECH’s vibrant activities through our gallery of past events,
+              exchange programs, and cultural activities. Witness the bonds that our
+              students have formed and the incredible experiences they have had.
+            </p>
           </div>
         </div>
+
 
         <div className="flex px-14 gap-4 flex-wrap justify-center py-20 ">
           {card.map((d, i) => (

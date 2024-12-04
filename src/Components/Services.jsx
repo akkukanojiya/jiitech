@@ -15,19 +15,19 @@ const data = [
 
 function Testimonials() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center px-4">
+    <div className="min-h-screen flex flex-col justify-center items-center px-5">
       {/* Header */}
-      <div className="text-center mb-8">
+      <div className="text-center mb-10">
         <p className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text">
           Testimonials
         </p>
       </div>
       {/* Cards Section */}
-      <div className="flex flex-wrap justify-center gap-8 max-w-7xl w-full">
+      <div className="flex flex-wrap justify-center gap-10 max-w-7xl w-full">
         {data.map((d, i) => (
           <div
             key={i}
-            className="group flex flex-col items-center text-center justify-center shadow-lg h-auto w-full max-w-sm p-6 rounded-lg bg-customBlue hover:shadow-xl transition-shadow duration-300"
+            className="group flex flex-col items-center text-center justify-center shadow-lg h-auto w-full max-w-sm p-10 rounded-lg bg-customBlue hover:shadow-xl transition-shadow duration-300"
           >
             <img
               src={d.img}
@@ -35,7 +35,7 @@ function Testimonials() {
               className="w-24 h-24 rounded-full mb-4 object-cover group-hover:scale-110 transform transition-transform duration-500"
             />
             <p className="text-sm text-gray-200 mb-3">{d.text}</p>
-            <p className="text-md font-semibold text-gray-100">{d.name}</p>
+            <p className="text-md font-semibold  text-gray-100">{d.name}</p>
           </div>
         ))}
       </div>

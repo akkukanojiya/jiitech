@@ -6,32 +6,37 @@ import Nabbar from "./Nabbar";
 import Footer from "./Footer";
 
 const About = () => {
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  
+
   return (
     <div>
       <div>
         <Nabbar />
       </div>
 
-      <div className=" h-80  flex relative  ">
-        <img src="/About-pics/About.JPG" className=" w-full object-cover" />
-        <div className="absolute text-white text-2xl sm:text-5xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
+      <div className="h-80 flex relative">
+        <img
+          src="/about us.jpg"
+          className="w-full object-cover opacity-20"
+          alt="About Us"
+        />
+        <div className="absolute text-customBlue text-2xl sm:text-5xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
           <p>About Us</p>
         </div>
       </div>
 
+
       <div className="py-12 sm:px-24 ">
         <div className="px-4 py-8 flex gap-3 flex-col">
           <p className="text-3xl font-normal sm:py-10 border-b-2 border-orange-400 ">
-          Who We Are
+            Who We Are
           </p>
           <p className="text-3xl font-semibold">
-          JIITECH is a team of professional experts in the fields of education, science, technologies, and culture from Japan and India aiming at promoting mutual understanding, bringing new partnerships in these sectors aiming to contribute to creating job opportunities, growth in the economy, and building friendly environment for old age society. We specialize in organizing student exchange programs, workshops, cultural experiences, and educational opportunities that empower the youth of both countries. By bringing together students, educators, and innovators from both countries, we aim to build a brighter future defined by collaboration and cultural exchange. We help industries find new business (R&D and marketing) opportunities at both ends.
+            JIITECH is a team of professional experts in the fields of education, science, technologies, and culture from Japan and India aiming at promoting mutual understanding, bringing new partnerships in these sectors aiming to contribute to creating job opportunities, growth in the economy, and building friendly environment for old age society. We specialize in organizing student exchange programs, workshops, cultural experiences, and educational opportunities that empower the youth of both countries. By bringing together students, educators, and innovators from both countries, we aim to build a brighter future defined by collaboration and cultural exchange. We help industries find new business (R&D and marketing) opportunities at both ends.
           </p>
           {/* <p className="text-3xl font-sans sm:pt-4">
             Build Software Right, First Time.
@@ -203,7 +208,7 @@ const About = () => {
           <p className="text-gray-500 text-base">
             Arisezen is headquartered in Gurugram,
             Haryana, with global team
-            members from 14+ countries. Our global back-office located in 
+            members from 14+ countries. Our global back-office located in
             Delhi  (Gurugram) India supporting our organization worldwide.
           </p>
 

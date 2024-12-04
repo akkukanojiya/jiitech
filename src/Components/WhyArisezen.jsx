@@ -82,29 +82,7 @@ function WhyArisezen() {
  
 
 
-      <div className="flex flex-col sm:flex-row-reverse px-6 sm:px-12 items-center justify-center sm:justify-evenly rounded-xl py-16 mx-6 my-10 bg-white shadow-2xl">
-        <div className="sm:w-1/2 py-10 text-center sm:text-left text-black">
-          <p className="text-6xl font-extrabold pb-6 bg-gradient-to-r from-red-400 to-customBlue text-transparent bg-clip-text">
-            Why Choose JIITECH?
-          </p>
-          <p className="text-xl sm:text-xl leading-relaxed mb-6 text-black">
-            <span className="font-semibold text-lg text-black-500">Cultural Fusion:</span> We bring together two of the most culturally rich nations to create a truly unique educational experience.
-          </p>
-          <p className="text-xl sm:text-xl leading-relaxed mb-6 text-black">
-            <span className="font-semibold text-lg text-black-500">Holistic Learning:</span> Our programs aren’t just academic – they’re designed to foster creativity, problem-solving, and intercultural understanding.
-          </p>
-          <p className="text-xl sm:text-xl leading-relaxed mb-6 text-black">
-            <span className="font-semibold text-lg text-black-500">Network Building:</span> Participants will have the chance to connect with peers, educators, and industry professionals, building a network that spans two continents.
-          </p>
-          <button className="mt-6 bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-2 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gradient-to-l hover:from-red-400 hover:to-red-400 shadow-lg hover:scale-105">
-            Join Us Now
-          </button>
-        </div>
-        <div className="sm:w-1/3 sm:mt-0 mt-8 flex justify-center relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-red-300 to-orange-500 opacity-20 rounded-lg blur-sm"></div>
-          <img className="rounded-xl shadow-2xl transform transition duration-500 hover:scale-110 hover:rotate-3" src="/whychoose2.jpg" alt="Why Choose JIITECH" />
-        </div>
-      </div>
+    
 
 
     </div>
