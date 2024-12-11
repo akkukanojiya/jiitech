@@ -4,7 +4,10 @@ export default {
 
   theme: {
     
+    
     extend: {
+
+      
       animation: {
         fadeIn: 'fadeIn 1s ease-in-out',
         slideIn: 'slideIn 1s ease-in-out',
@@ -17,6 +20,7 @@ export default {
       colors: {
         customBlue: '#b6002c',
         customLiteBlue: '#D01343',
+        customRed:'#fedede'
       },
       keyframes: {
         fadeIn: {

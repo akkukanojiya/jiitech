@@ -41,7 +41,7 @@ const Nabbar = () => {
   return (
     <div>
       {isOpenMenu && (
-        <div className="sm:hidden fixed z-20 inset-0 bg-slate-800">
+        <div className="sm:hidden fixed z-20 inset-0 bg-red-800">
           <div className="relative text-end mr-4 mt-4 ">
             <button className="" onClick={() => setIsOpenMenu(false)}>
               <ImCross color="white" size={45} />
@@ -127,7 +127,7 @@ const Nabbar = () => {
               </div>
             </div> */}
 
-            <div>
+            {/* <div>
               <span onClick={HandleisPRODUCTS}>PRODUCTS</span>
               <div
                 className={`transition-all duration-500 bg-white text-xs px-2 text-black gap-2.5 flex flex-col w-full overflow-hidden  ${
@@ -139,7 +139,7 @@ const Nabbar = () => {
                 <span className="">Testimonials</span>
                 <span className="">More Case Studies</span>
               </div>
-            </div>
+            </div> */}
            
             
            
@@ -155,11 +155,14 @@ const Nabbar = () => {
         }
       >
         <div className="flex items-center sm:pl-12">
+        <a href="/">
+
           <img
             src="/JIITECH.png"
             alt="Logo"
             className="w-60 sm:w-auto max-h-24"
           />
+        </a>
         </div>
 
         <div className="sm:hidden mr-4 flex justify-end w-full">
@@ -168,19 +171,22 @@ const Nabbar = () => {
           </button>
         </div>
 
-        <div className="hidden sm:flex text-black text-sm gap-3 pr-8 w-full justify-end">
+        <div className="hidden sm:flex text-black font-bold  text-sm gap-3 pr-8 w-full justify-end">
           <p className="hover:text-red-700">
             <Link to={"/"}>HOME</Link>
           </p>
           <p className="hover:text-red-700">
             <Link to={"/about"}>ABOUT US</Link>
           </p>
+          <p className="hover:text-red-700">
+            <Link to={"/weoffer"}>WE OFFER</Link>
+          </p>
 
 
-          <p className="hover:text-red-700 cursor-pointer group-hover:text-red-700 transition-all duration-200 px-2">
+          {/* <p className="hover:text-red-700  group-hover:text-red-700 transition-all duration-200 px-2">
           <Link to={"/weoffer"}></Link>
               WE OFFER
-            </p>
+            </p> */}
 
             <p className="hover:text-red-700">
             <Link to={"/howtoapply"}>HOW TO APPLY</Link>

@@ -6,13 +6,13 @@ import Services from "./Services";
 import Contact from "./Contact";
 import BusinessCentric from "./BusinessCentric";
 import Footer from "./Footer";
-// import Blog from "./Gallery";
 import ContactUs from "./ContactUs";
 import Faq from "./Faq";
 import SoftwareDevelopment from "./SoftwareDevelopment";
 import FaqAccordion from "./FaqAccordion";
 import HowToApply from "./HowToApply";
 import Gallery from "./Gallery";
+import Weoffer from "./WeOffer";
 const Home = () => {
   
   useEffect(() => {

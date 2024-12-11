@@ -81,7 +81,9 @@ const Gallery = () => {
             className="w-full object-cover opacity-20" // Adjust the opacity here
           />
           <div className="absolute text-customBlue text-2xl sm:text-4xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
-            <p>Our Gallery</p>
+            <p>Our Gallery
+            <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div>
+            </p>
             <p className="text-base font-normal text-center mt-2 px-20">
               Experience JIITECH’s vibrant activities through our gallery of past events,
               exchange programs, and cultural activities. Witness the bonds that our

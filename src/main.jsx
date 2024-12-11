@@ -17,6 +17,7 @@ import BackendDevlopment from "./NavPages/BackendDevlopment.jsx";
 import Qa from "./NavPages/Qa.jsx";
 import HowToApply from "./Components/HowToApply.jsx"
 import Gallery from "./Components/Gallery.jsx";
+import Weoffer from "./Components/WeOffer.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path:"/weoffer",
+        element: <Weoffer/>
       },
       {
         path: "/gallery",

@@ -17,11 +17,13 @@ import { LiaIndustrySolid } from "react-icons/lia";
 
 function WhyArisezen() {
   return (
-    <div className="py-12">
+    <div className="py-10">
       <div className="text-black flex flex-col justify-center items-center md:px-48 mx-3 ">
-        <p className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text">
-          Itinerary Highlights
+      <p className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group">
+      Itinerary Highlights
+      <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div>
         </p>
+        
         <p className="text-center text-xl font-light">
           Our exchange program features an itinerary designed to maximize learning and cultural exchange. Here is a sample itinerary highlighting the experiences included
 
@@ -81,7 +83,129 @@ function WhyArisezen() {
 
  
 
+      <div className="overflow-hidden w-full bg-gray-100 py-4">
+        <div className="flex flex-col items-center">
+          <p className="text-4xl font-extrabold pb-1 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
+            Our Alliance
+          </p>
+          <div className="opacity-30">
+            <img width={300} src="/underline.png" alt="Underline" />
+          </div>
+        </div>
 
+        <div className="flex animate-marquee space-x-8">
+          <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
+            <img
+              src="/About-pics/Blue-Prism-Delivery-Partner.png.webp"
+              alt="Blue Prism Delivery Partner"
+              className="h-28 w-auto object-contain"
+            />
+          </div>
+          <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
+            <img
+              src="/About-pics/cloud-migarator-logo.jpg.webp"
+              alt="Cloud Migrator Logo"
+              className="h-28 w-auto object-contain"
+            />
+          </div>
+          <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
+            <img
+              src="/About-pics/Google-Partner.png.webp"
+              alt="Google Partner"
+              className="h-28 w-auto object-contain"
+            />
+          </div>
+          <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
+            <img
+              src="/About-pics/Group-19-1.png.webp"
+              alt="Group 19 Logo"
+              className="h-28 w-auto object-contain"
+            />
+          </div>
+          <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
+            <img
+              src="/About-pics/UI-Path-Partner.png.webp"
+              alt="Group 19 Logo"
+              className="h-28 w-auto object-contain"
+            />
+          </div>
+          <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
+            <img
+              src="/About-pics/microsoft-goldlogo-small.jpg.webp"
+              alt="Group 19 Logo"
+              className="h-28 w-auto object-contain"
+            />
+          </div>
+          <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
+            <img
+              src="/About-pics/vm-wave-logo.jpg.webp"
+              alt="Group 19 Logo"
+              className="h-28 w-auto object-contain"
+            />
+          </div>
+        </div>
+        <style jsx>{`
+        @keyframes marquee {
+          0% {
+            transform: translateX(100%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+        .animate-marquee {
+          animation: marquee 30s linear infinite;
+        }
+      `}</style>
+      </div>
+
+
+      <div className="overflow-hidden w-full bg-gray-100 py-4">
+        <div className="flex animate-scroll-left-to-right space-x-8">
+          <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
+            <img
+              src="/About-pics/Group-19-1.png.webp"
+              alt="Group 19 Logo"
+              className="h-28 w-auto object-contain"
+            />
+          </div>
+          <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
+            <img
+              src="/About-pics/Apple-1.png.webp"
+              alt="Group 19 Logo"
+              className="h-28 w-auto object-contain"
+            />
+          </div>
+          <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
+            <img
+              src="/About-pics/Automation-Anywhere.png.webp"
+              alt="Group 19 Logo"
+              className="h-28 w-auto object-contain"
+            />
+          </div>
+          <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
+            <img
+              src="/About-pics/Bing-Partner.png.webp"
+              alt="Group 19 Logo"
+              className="h-28 w-auto object-contain"
+            />
+          </div>
+
+        </div>
+        <style jsx>{`
+        @keyframes scrollLeftToRight {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(100%);
+          }
+        }
+        .animate-scroll-left-to-right {
+          animation: scrollLeftToRight 30s linear infinite;
+        }
+      `}</style>
+      </div>
     
 
 

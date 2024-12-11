@@ -1,10 +1,10 @@
 import React from "react";
-import { FaFacebookSquare, FaLocationArrow } from "react-icons/fa";
+import { FaFacebookSquare, FaLocationArrow, FaMailBulk, FaMailchimp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import {  FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 // import { FaSquarePinterest } from "react-icons/fa6";
-import { IoLogoLinkedin } from "react-icons/io5";
+import { IoCallOutline, IoCallSharp, IoLogoLinkedin, IoMailOpenSharp } from "react-icons/io5";
 import { SiGooglemaps } from "react-icons/si";
 // import { FaPinterestSquare } from "react-icons/si";
 import { Link } from "react-router-dom";
@@ -12,29 +12,32 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 function Footer() {
   return (
     <>
-      <div className="bg-black text-white py-12">
-        <div className="max-w-7xl mx-auto px-6 lg:px-16 grid sm:grid-cols-4 lg:grid-cols-5 gap-8">
+      <div className="bg-gray-200 text-black py-12">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid sm:grid-cols-4 lg:grid-cols-5 gap-8">
 
           <div>
             <img
               src="JIITECH.png"
               alt="Company Logo"
-              className="w-56 mb-4"
+              className="w-56 mb-2 "
             />
-
+            {/* <div className="shadow-md h-56 w-36  bg-white rounded">
+               <p className="text-black px-4 py-2 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, molestiae qui exercitationem, odio atque nemo,  </p>
+             </div> */}
           </div>
 
 
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-red-500">
+            <h3 className="text-xl w-40 font-semibold mb-4  bg-customBlue text-white py-1 px-3 rounded-lg cursor-pointer hover:bg-red-600">
               Useful Links
             </h3>
-            <ul className="space-y-3">
+
+            <ul className="space-y-3 text-black text-sm">
               {[
                 { name: "Home", link: "/" },
                 { name: "About Us", link: "/about" },
                 { name: "We Offer", link: "/weoffer" },
-                { name: "How to Apply", link: "/apply" },
+                { name: "How to Apply", link: "/howtoapply" },
                 { name: "Gallery", link: "/gallery" },
                 { name: "Contact Us", link: "/contactus" },
                 { name: "Privacy Policy", link: "/privacy" },
@@ -42,7 +45,7 @@ function Footer() {
                 <li key={index}>
                   <a
                     href={item.link}
-                    className="text-gray-400 hover:text-red-500 transition duration-300"
+                    className="text-black-700 hover:text-red-500 transition duration-300"
                   >
                     {item.name}
                   </a>
@@ -53,10 +56,10 @@ function Footer() {
 
 
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-red-500">
+            <h3 className="text-xl w-40 font-semibold mb-4   bg-customBlue text-white py-1 px-3 rounded-lg cursor-pointer hover:bg-red-600">
               Our Services
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-sm">
               {[
                 "Modernize Software",
                 "Cloud Consulting Services",
@@ -68,7 +71,7 @@ function Footer() {
                 <li key={index}>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-red-500 transition duration-300"
+                    className="text-black-700 hover:text-red-500 transition duration-300"
                   >
                     {service}
                   </a>
@@ -77,37 +80,48 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-red-500">
+            <h3 className="text-xl w-40 font-semibold mb-4   bg-customBlue text-white py-1 px-3 rounded-lg cursor-pointer hover:bg-red-600">
               Contact
             </h3>
-            <p className="text-sm leading-relaxed text-gray-400 flex items-center">
-              <FaMapMarkerAlt className="text-white mr-1" />
-              <strong className="text-white">Address:</strong>
+            <p className="text-sm leading-relaxed text-black-700  flex items-center">
+              <FaMapMarkerAlt className="text-black mr-1" />
+              <strong className="text-black">Address Japan :</strong>
             </p>
-            <p className="text-sm leading-relaxed text-gray-400">JIITECH Headquarters, Tokyo, Japan</p>
-            <p className="text-sm leading-relaxed text-gray-400">
+            <p className="text-sm leading-relaxed text-black-700 ">JIITECH Headquarters, Tokyo, Japan</p>
 
-
+            <p className="text-sm leading-relaxed text-black-700  flex items-center">
+              <FaMapMarkerAlt className="text-black mr-1" />
+              <strong className="text-black">Address India :</strong>
+            </p>
+            <p className="text-sm leading-relaxed text-black-700 ">
               JIITECH Headquarters, Ahmedabad, India
             </p>
-            <p className="mt-2 text-sm leading-relaxed text-gray-400">
-              <strong className="text-white">Phone:</strong><br /> +91-9327123451(India) <br />+91-9033211100(India)
+
+            <p className="text-sm leading-relaxed text-black-700  flex items-center">
+              <IoCallSharp className="text-black mr-1" />
+              <strong className="text-black">Phone:</strong>
+            </p>
+            <p className="mt-1 text-sm leading-relaxed text-black-700 ">
+              +91-9327123451(India) <br />+91-9033211100(India)
 
               <br />+81-8064262379 (Japan)
               <br />
-              
-              <strong className="text-white">Email:</strong> info@jiitech.jp
+              <p className="text-sm leading-relaxed text-black-700  flex items-center">
+                <IoMailOpenSharp className="text-black mr-1" />
+
+                <strong className="text-black">Email:</strong> info@jiitech.jp
+              </p>
             </p>
           </div>
 
 
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-red-500">Support</h3>
-            <ul className="space-y-3">
+            <h3 className="text-xl w-40 font-semibold mb-4   bg-customBlue text-white py-1 px-3 rounded-lg cursor-pointer hover:bg-red-600">Support</h3>
+            <ul className="space-y-3 text-sm">
               <li>
                 <a
                   href="/contactus"
-                  className="text-gray-400 hover:text-red-500 transition duration-300"
+                  className="text-black-700  hover:text-red-500 transition duration-300"
                 >
                   Contact Us
                 </a>
@@ -115,7 +129,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-red-500 transition duration-300"
+                  className="text-black-700 hover:text-red-500 transition duration-300"
                 >
                   Item Support
                 </a>
@@ -123,7 +137,7 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-red-500 transition duration-300"
+                  className="text-black-700 hover:text-red-500 transition duration-300"
                 >
                   Get in Touch
                 </a>
@@ -151,7 +165,7 @@ function Footer() {
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-red-500 transition duration-300"
+                  className="text-text-black-700 hover:text-red-500 transition duration-300"
                 >
                   <Icon size={25} />
                 </a>
@@ -161,12 +175,10 @@ function Footer() {
         </div>
 
 
-        <div className="border-t border-gray-700 my-8"></div>
-
-
+        <div className="border-t border-gray-700 my-3"></div>
         <div className="text-center">
-          <p className="text-gray-400 text-sm">
-            © 2024 Tech Creature Solution (A Nawal Sustainability Group Product).
+          <p className="text-black-700 text-sm  ">
+            © 2024 Tech Creature Solution 
             All Rights Reserved.
           </p>
         </div>
