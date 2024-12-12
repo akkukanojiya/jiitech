@@ -104,7 +104,7 @@ function Footer() {
             <p className="mt-1 text-sm leading-relaxed text-black-700 ">
               +91-9327123451(India) <br />+91-9033211100(India)
 
-              <br />+81-8064262379 (Japan)
+              <br />+81-8064262379(Japan)
               <br />
               <p className="text-sm leading-relaxed text-black-700  flex items-center">
                 <IoMailOpenSharp className="text-black mr-1" />

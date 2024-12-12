@@ -92,8 +92,8 @@ function BusinessCentric() {
             Our goal is to foster creativity, innovation, and intercultural understanding through immersive exchange programs, educational initiatives, and technological collaboration. We aim to nurture a global perspective in students and professionals by creating opportunities to experience the best of Japanese and Indian cultures.
           </p>
         </div>
-        <div className="sm:w-2/4 flex justify-center sm:justify-center">
-          <img src="/ourmission.png" alt="Our Mission" className="w-full max-w-xs rounded-lg shadow-lg transition-all transform hover:scale-110 hover:rotate-4" />
+        <div className="sm:w-2/5 flex justify-center sm:justify-center">
+          <img src="/ourmission.png" alt="Our Mission" className="w-full max-w-sm rounded-lg   transition-all transform hover:scale-110 hover:rotate-4" />
         </div>
       </div>
 
@@ -133,9 +133,9 @@ function BusinessCentric() {
             Join Us Now
           </button>
         </div>
-        <div className="sm:w-1/3 sm:mt-0 mt-8 flex justify-center relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-red-300 to-orange-500 opacity-20 rounded-lg blur-sm"></div>
-          <img className="rounded-xl shadow-2xl transform transition duration-500 hover:scale-110 hover:rotate-3" src="/why choose us.jpg" alt="Why Choose JIITECH" />
+        <div className="sm:w-2/5 sm:mt-0 mt-8 flex justify-center relative">
+          <div className="absolute inset-0  opacity-20 rounded-lg blur-sm"></div>
+          <img className="rounded-xl   transform transition duration-500 hover:scale-110 hover:rotate-3" src="/why choose us.png" alt="Why Choose JIITECH" />
         </div>
       </div>
     </div>

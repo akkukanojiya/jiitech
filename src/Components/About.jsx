@@ -50,12 +50,12 @@ const About = () => {
 
 
   return (
-    <div>
+    <div className="">
       <div>
         <Nabbar />
       </div>
 
-      <div className="h-80 flex relative">
+      <div className="h-80 flex relative ">
         <img
           src="/about us.jpg"
           className="w-full object-cover opacity-20"
