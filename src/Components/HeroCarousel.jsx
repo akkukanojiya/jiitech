@@ -90,7 +90,7 @@ function HeroCarousel() {
       </div> */}
 
       <div className="flex flex-col md:flex-row items-center justify-between bg-white py-28 px-5">
-        {/* Left Content */}
+        
         <div className="md:w-1/2 space-y-5">
           <h1 className="text-4xl md:text-5xl text-customBlue font-bold leading-snug">
             Welcome to JIITECH<br />
@@ -103,14 +103,14 @@ function HeroCarousel() {
             <button className="bg-red-500 text-white px-3 py-2 rounded-full font-semibold hover:bg-red-600">
               <a href="">Learn More</a>
             </button>
+          </div>
+        </div>
             {/* <button className="bg-green-500 text-white px-3 py-2  rounded-full font-semibold hover:bg-green-600">
               Find your skills gaps
             </button> */}
-          </div>
           {/* <p className="text-sm text-gray-500 mt-4">
             Tailor your team training to meet your business goals
           </p> */}
-        </div>
 
 
         <div className="relative md:w-3/2 flex justify-center items-center">
@@ -151,15 +151,8 @@ function HeroCarousel() {
             <p className="text-sm text-gray-500">Start Course</p>
           </div>
         </div> */}
-
-
-
-
         </div>
-
       </div>
-
-     
     </div>
   );
 }

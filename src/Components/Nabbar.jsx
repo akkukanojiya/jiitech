@@ -42,7 +42,7 @@ const Nabbar = () => {
     <div>
       {isOpenMenu && (
         <div className="sm:hidden fixed z-20 inset-0 bg-red-800">
-          <div className="relative text-end mr-4 mt-4 ">
+          <div className="relative text-end mr-4 mt-6">
             <button className="" onClick={() => setIsOpenMenu(false)}>
               <ImCross color="white" size={45} />
             </button>

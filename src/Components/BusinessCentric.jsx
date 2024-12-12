@@ -82,7 +82,7 @@ function BusinessCentric() {
 
       </div> */}
 
-      <div className="flex flex-col sm:flex-row px-6 sm:px-12 items-center justify-evenly rounded-lg py-16 mx-4 my-6 bg-white shadow-2xl space-y-8 sm:space-y-0 sm:space-x-8 transform transition-all hover:scale-105">
+      <div className="flex flex-col sm:flex-row px-6 sm:px-12 items-center justify-evenly rounded-lg py-16 mx-4 my-6 bg-white shadow-2xl space-y-12 sm:space-y-0 sm:space-x-8 transform transition-all hover:scale-105">
         <div className="sm:w-1/2 sm:text-left">
           <p className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-red-600 to-pink-500 text-transparent bg-clip-text">
             Our Mission
@@ -92,7 +92,7 @@ function BusinessCentric() {
             Our goal is to foster creativity, innovation, and intercultural understanding through immersive exchange programs, educational initiatives, and technological collaboration. We aim to nurture a global perspective in students and professionals by creating opportunities to experience the best of Japanese and Indian cultures.
           </p>
         </div>
-        <div className="sm:w-1/3 flex justify-center sm:justify-end">
+        <div className="sm:w-2/4 flex justify-center sm:justify-center">
           <img src="/ourmission.png" alt="Our Mission" className="w-full max-w-xs rounded-lg shadow-lg transition-all transform hover:scale-110 hover:rotate-4" />
         </div>
       </div>
@@ -110,17 +110,26 @@ function BusinessCentric() {
             <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div>
           </p>
           <p className="text-xl sm:text-xl leading-relaxed mb-6 text-black text-justify text-justify">
-            <span className="font-semibold text-lg text-black-500">Cultural Fusion:</span>
-            We bring together two of the most culturally rich nations to create a truly unique educational experience.
+            
+            JIITECH was conceived and born as a passion and love for both countries
+            by our peers who have experience learning and performing in both
+            countries for over three decades. We aim to merge Japanese patience,
+            punctuality, perfection, perseverance, and professionalism with the energy,
+            elegance, and excellence of exciting young Indian minds.
+            Our programs aren’t just academic – they’re designed to foster creativity,
+            problem-solving, and intercultural understanding from Indian and Japanese
+            perspectives to promote exchange in education, recruitment, and business
+            opportunities at both ends.
+
           </p>
 
-          <p className="text-xl sm:text-xl leading-relaxed mb-6 text-black text-justify">
+          {/* <p className="text-xl sm:text-xl leading-relaxed mb-6 text-black text-justify">
             <span className="font-semibold text-lg text-black-500">Holistic Learning:</span> Our programs aren’t just academic – they’re designed to foster creativity, problem-solving, and intercultural understanding.
-          </p>
-          <p className="text-xl sm:text-xl leading-relaxed mb-6 text-black text-justify">
+          </p> */}
+          {/* <p className="text-xl sm:text-xl leading-relaxed mb-6 text-black text-justify">
             <span className="font-semibold text-lg text-black-500">Network Building:</span> Participants will have the chance to connect with peers, educators, and industry professionals, building a network that spans two continents.
-          </p>
-          <button className="mt-6 bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-2 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gradient-to-l hover:from-red-400 hover:to-red-400 shadow-lg hover:scale-105">
+          </p> */}
+          <button className="mt-6 bg-gradient-to-r from-red-400 to-red-600 text-white px-6 py-2 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gradient-to-l hover:from-red-400 hover:to-red-500 shadow-lg hover:scale-105">
             Join Us Now
           </button>
         </div>
