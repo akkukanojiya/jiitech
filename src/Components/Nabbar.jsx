@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { CiFacebook } from "react-icons/ci";
-import { RiInstagramLine } from "react-icons/ri";
+import { RiGlobeFill, RiInstagramLine } from "react-icons/ri";
 import { CiTwitter } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { Link } from "react-router-dom";
+import { Global } from "@emotion/react";
 
 const Nabbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -38,6 +39,15 @@ const Nabbar = () => {
     setIsPRODUCTS((perv) => !perv);
   }
 
+
+  useEffect(() => {
+    // Ensure the Google Translate script initializes
+    if (window.google && window.google.translate) {
+      window.googleTranslateElementInit();
+    }
+  }, []);
+
+
   return (
     <div>
       {isOpenMenu && (
@@ -62,7 +72,7 @@ const Nabbar = () => {
             {/* <span onClick={HandleHamTrue} className="px-2 ">
                 WE OFFER
               </span> */}
-              <p>
+            <p>
               <Link to={"/howtoapply"}> HOW TO APPLY </Link>
             </p>
 
@@ -73,7 +83,7 @@ const Nabbar = () => {
               <Link to={"/contactus"}> CONTACT US </Link>
             </p>
             <div className="">
-             
+
               <div
                 className={`transition-all duration-500 bg-white text-xs px-2 text-black gap-2.5 flex flex-col w-full overflow-hidden   ${isService ? "max-h-60 py-3 " : "max-h-0 py-0"
                   }`}
@@ -91,7 +101,7 @@ const Nabbar = () => {
               </div>
             </div>
 
-           
+
 
             {/* <div className="">
               <span onClick={HandleisTECHNOLOGIES}>TECHNOLOGIES</span>
@@ -140,9 +150,9 @@ const Nabbar = () => {
                 <span className="">More Case Studies</span>
               </div>
             </div> */}
-           
-            
-           
+
+
+
           </div>
         </div>
       )}
@@ -155,14 +165,15 @@ const Nabbar = () => {
         }
       >
         <div className="flex items-center sm:pl-12">
-        <a href="/">
+          <a href="/">
 
-          <img
-            src="/JIITECH.png"
-            alt="Logo"
-            className="w-60 sm:w-auto max-h-24"
-          />
-        </a>
+            <img
+              src="/JIITECH.png"
+              alt="Logo"
+              className="w-60 sm:w-auto max-h-24"
+            />
+          </a>
+
         </div>
 
         <div className="sm:hidden mr-4 flex justify-end w-full">
@@ -188,20 +199,25 @@ const Nabbar = () => {
               WE OFFER
             </p> */}
 
-            <p className="hover:text-red-700">
+          <p className="hover:text-red-700">
             <Link to={"/howtoapply"}>HOW TO APPLY</Link>
           </p>
 
           <p className="hover:text-red-700">
             <Link to={"/gallery"}>GALLERY</Link>
           </p>
-           
+
 
           <p className="hover:text-red-700">
             <Link to={"/contactus"}>CONTACT US</Link>
           </p>
 
-          
+
+
+
+
+
+
           {/* <div className="relative group">
            
             <div className="absolute hidden group-hover:block bg-white text-black text-xs w-44 py-2 mt-1 rounded shadow-lg">
@@ -244,9 +260,13 @@ const Nabbar = () => {
             </div>
           </div> */}
 
-         
-         
-          
+
+
+
+        </div>
+        <div className="language-switcher-container">
+
+          <div id="google_translate_element"></div>
         </div>
       </div>
 

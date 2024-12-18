@@ -82,7 +82,7 @@ function BusinessCentric() {
 
       </div> */}
 
-      <div className="flex flex-col sm:flex-row px-6 sm:px-12 items-center justify-evenly rounded-lg py-16 mx-4 my-6 bg-white shadow-2xl space-y-12 sm:space-y-0 sm:space-x-8 transform transition-all hover:scale-105">
+      <div className="flex flex-col sm:flex-row px-6 pt-0 mt-1 sm:px-12 items-center justify-evenly rounded-lg py-16 mx-4 my-6 bg-white shadow-2xl space-y-12 sm:space-y-0 sm:space-x-8 transform transition-all hover:scale-105">
         <div className="sm:w-1/2 sm:text-left">
           <p className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-red-600 to-pink-500 text-transparent bg-clip-text">
             Our Mission
@@ -116,9 +116,9 @@ function BusinessCentric() {
             countries for over three decades. We aim to merge Japanese patience,
             punctuality, perfection, perseverance, and professionalism with the energy,
             elegance, and excellence of exciting young Indian minds.
-            Our programs aren’t just academic – they’re designed to foster creativity,
+            Our programs aren’t just academic–they’re designed to foster creativity,
             problem-solving, and intercultural understanding from Indian and Japanese
-            perspectives to promote exchange in education, recruitment, and business
+            perspectives to promote exchange in education,recruitment,and business
             opportunities at both ends.
 
           </p>
@@ -129,7 +129,7 @@ function BusinessCentric() {
           {/* <p className="text-xl sm:text-xl leading-relaxed mb-6 text-black text-justify">
             <span className="font-semibold text-lg text-black-500">Network Building:</span> Participants will have the chance to connect with peers, educators, and industry professionals, building a network that spans two continents.
           </p> */}
-          <button className="mt-6 bg-gradient-to-r from-red-400 to-red-600 text-white px-6 py-2 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gradient-to-l hover:from-red-400 hover:to-red-500 shadow-lg hover:scale-105">
+          <button className="mt-6 bg-gradient-to-r from-red-400 to-customBlue text-white px-6 py-2 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gradient-to-l hover:from-customBlue  hover:to-red-500 shadow-lg hover:scale-105">
             Join Us Now
           </button>
         </div>

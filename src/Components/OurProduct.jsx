@@ -4,77 +4,8 @@ function OurProduct() {
   const [objects, setObjects] = useState([]);
 
   const tab = [
-    <div className="pt-14 p-2 flex items-center justify-center flex-row flex-wrap gap-2 ">
-      {/* <div className="flex flex-col md:flex-row gap-4 justify-center">
-
-        <div className="h-auto md:h-80 w-full md:w-2/5 rounded-lg border shadow-md shadow-red-400 p-4 transition-all duration-300 ease-in-out hover:-translate-y-2 relative">
-          <div className="flex flex-row z-10">
-            <div className="flex flex-col justify-center">
-              <p className="font-bold p-4">Student Exchange Program</p>
-              <p className="p-4">
-                Our Student Exchange Program is designed to provide students with life-changing opportunities to live and learn in another culture. Participants can explore different academic environments, experience cultural activities, and forge lifelong friendships.
-              </p>
-            </div>
-          </div>
-          
-        </div>
-
-
-
-
-        <div className="h-auto md:h-80 w-full md:w-2/5 rounded-lg border shadow-md shadow-red-400 p-4 transition-all duration-300 ease-in-out hover:-translate-y-2">
-          <div className="flex flex-row">
-            <div className="flex flex-col justify-center">
-              <p className="font-bold p-4">Highlights of the Student Exchange Program:</p>
-              <p className="p-4">
-                Cultural Immersion: Explore local traditions, food, festivals, and customs for an authentic cultural experience.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <div className="flex flex-col md:flex-row gap-4 justify-center">
-        <div className="h-auto md:h-80 w-full md:w-2/5 rounded-lg border shadow-md shadow-red-400 p-4 transition-all duration-300 ease-in-out hover:-translate-y-2">
-          <div className="flex flex-row">
-
-            <div className="flex flex-col justify-center">
-              <p className="font-bold p-4">Academic Exposure</p>
-              <p className="p-4">Attend lectures, seminars, and workshops to understand the educational approaches of Japan or India. Visit schools, universities,  and research institutes. Group and One-to-one interactions to answer curiosities and questions about living and work cultures</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="h-auto md:h-80 w-full md:w-2/5 rounded-lg border shadow-md shadow-red-400 p-4 transition-all duration-300 ease-in-out hover:-translate-y-2">
-          <div className="flex flex-row">
-
-            <div className="flex flex-col justify-center">
-              <p className="font-bold p-4"> Innovation & Technology Workshops</p>
-              <p className="p-4"> Participate in hands-on sessions to learn about cutting-edge technologies and innovations shaping the future. Opportunity to intern at prestigious companies.</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <div className="flex flex-col md:flex-row gap-4 justify-center">
-        <div className="h-auto md:h-80 w-full md:w-2/5 rounded-lg border shadow-md shadow-red-400 p-4 transition-all duration-300 ease-in-out hover:-translate-y-2">
-          <div className="flex flex-row">
-
-            <div className="flex flex-col justify-center">
-              <p className="font-bold p-4">Industry Visits</p>
-              <p className="p-4">Experience the environment of leading industries through company visits and talks by professionals</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="h-auto md:h-80 w-full md:w-2/5 rounded-lg border shadow-md shadow-red-400 p-4 transition-all duration-300 ease-in-out hover:-translate-y-2">
-          <div className="flex flex-row">
-
-            <div className="flex flex-col justify-center">
-              <p className="font-bold p-4"> Homestays</p>
-              <p className="p-4">Experience local hospitality through homestay options, allowing students to understand family life in a different culture.</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
+    <div className="pt-16 p-4 flex items-center justify-center flex-row flex-wrap gap-2 ">
+       
 
 
 
@@ -174,7 +105,7 @@ function OurProduct() {
           </div>
 
           <div className="relative">
-            <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-6 tracking-wide text-center group-hover:text-red-700 transition-colors duration-500">
+            <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8 tracking-wide text-center group-hover:text-red-700 transition-colors duration-500">
               🌟 Student Exchange Program
             </h3>
 
@@ -294,66 +225,13 @@ function OurProduct() {
 
 
       {/* new card design end */}
-      {/* <div class="h-80 w-96 rounded-lg border">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  py-3">
-            <img src="/OurProducts/Business/flight.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold p-4">Industry Visits</p>
-            <p className="p-4">Experience the environment of leading industries through company visits and talks by professionals.</p>
-          </div>
-        </div>
-      </div> */}
-      {/* <div class="h-80 w-96 rounded-lg border">
-        <div className="flex flex-row">
-           
-          <div className="flex flex-col justify-center">
-            <p className="font-bold p-4"> Homestays</p>
-            <p className="p-4">Experience local hospitality through homestay options, allowing students to understand family life in a different culture.</p>
-          </div>
-        </div>
-      </div> */}
-      {/* <div class="h-28 w-96 rounded-lg border  bg-gradient-to-r from-teal-400 to-indigo-600">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  py-3">
-            <img src="/OurProducts/Business/hr4.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">HR Manager</p>
-            <p>Human Resource Management System HR Software (HRMS)</p>
-          </div>
-        </div>
-      </div> */}
-      {/* <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Business/inventory.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold"> Wholesale</p>
-            <p> Inventory Control and Inventory Management System</p>
-          </div>
-        </div>
-      </div> */}
-
-      {/* <div class="h-28 w-96 rounded-lg border  bg-gradient-to-r from-teal-400 to-indigo-600">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Business/vms.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold"> VSG </p>
-            <p> Vehicle Management System</p>
-          </div>
-        </div>
-      </div> */}
+       
     </div>,
 
 
 
     <div className="pt-14 flex px-2 items-center justify-center flex-row flex-wrap gap-2">
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
         <div className="flex flex-row">
           <div className="h-28 w-24  flex justify-center items-center  p-3">
             <img src="/OurProducts/Healthcare/clinic.png" alt="" />
@@ -364,7 +242,7 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
         <div className="flex flex-row">
           <div className="h-28 w-24  flex justify-center items-center  p-3">
             <img src="/OurProducts/Healthcare/doctor.png" alt="" />
@@ -375,7 +253,7 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
         <div className="flex flex-row">
           <div className="h-28 w-24  flex justify-center items-center  p-3">
             <img
@@ -389,7 +267,7 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
         <div className="flex flex-row">
           <div className="h-28 w-24  flex justify-center items-center  p-3">
             <img
@@ -403,7 +281,7 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
         <div className="flex flex-row">
           <div className="h-28 w-24  flex justify-center items-center  p-3">
             <img
@@ -417,7 +295,7 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
         <div className="flex flex-row">
           <div className="h-28 w-24  flex justify-center items-center  p-3">
             <img src="/OurProducts/Healthcare/payment.png" alt="" />
@@ -428,7 +306,7 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
         <div className="flex flex-row">
           <div className="h-28 w-24  flex justify-center items-center  p-3">
             <img src="/OurProducts/Healthcare/pharmacy.png" alt="" />
@@ -469,41 +347,41 @@ function OurProduct() {
 
         <div className="flex justify-center items-center flex-wrap text-white font-semibold gap-14 ">
           <button
-            class="bg-customBlue hover:bg-customLiteBlue px-8 py-1.5 rounded-xl"
+            className="bg-customBlue hover:bg-customLiteBlue px-8 py-1.5 rounded-xl"
           // onClick={() => setObjects(tab[0])}
           >
             Student Exchange Program
           </button>
 
           <button
-            class="bg-customBlue hover:bg-customLiteBlue  px-8 py-1.5 rounded-xl"
+            className="bg-customBlue hover:bg-customLiteBlue  px-8 py-1.5 rounded-xl"
           // onClick={() => setObjects(tab[1])}
           >
             Highlights of the Student Exchange Program
           </button>
 
           <button
-            class="bg-customBlue hover:bg-customLiteBlue  px-8 py-1.5 rounded-xl"
+            className="bg-customBlue hover:bg-customLiteBlue  px-8 py-1.5 rounded-xl"
           // onClick={() => setObjects(tab[2])}
           >
             Academic Exposure
           </button>
 
           <button
-            class="bg-customBlue hover:bg-customLiteBlue  px-8 py-1.5 rounded-xl"
+            className="bg-customBlue hover:bg-customLiteBlue  px-8 py-1.5 rounded-xl"
           // onClick={() => setObjects(tab[3])}
           >
             Innovation & Technology Workshops
           </button>
 
           <button
-            class="bg-customBlue hover:bg-customLiteBlue  px-8 py-1.5 rounded-xl "
+            className="bg-customBlue hover:bg-customLiteBlue  px-8 py-1.5 rounded-xl "
           // onClick={() => setObjects(tab[4])}
           >
             Industry Visits
           </button>
           <button
-            class="bg-customBlue hover:bg-customLiteBlue  px-8 py-1.5 rounded-xl "
+            className="bg-customBlue hover:bg-customLiteBlue  px-8 py-1.5 rounded-xl "
           // onClick={() => setObjects(tab[4])}
           >
             Homestays

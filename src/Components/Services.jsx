@@ -7,7 +7,7 @@ const data = [
     name: "Ananya Sharma, Student, India",
   },
   {
-    img: "/japanese.jpg",
+    img: "/hiroshi.jpg",
     text: "Living in Japan was an unforgettable experience. JIITECH gave us the perfect blend of education and cultural immersion. I’d highly recommend this program to anyone looking for an eye-opening experience.",
     name: "Hiroshi Nakamura, Student, Japan",
   },
