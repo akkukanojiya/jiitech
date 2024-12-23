@@ -82,7 +82,7 @@ const Gallery = () => {
           />
           <div className="absolute text-customBlue text-2xl sm:text-4xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
             <p>Our Gallery
-            <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div>
+              <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div>
             </p>
             <p className="text-base font-normal text-center mt-2 px-20">
               Experience JIITECH’s vibrant activities through our gallery of past events,
@@ -93,28 +93,25 @@ const Gallery = () => {
         </div>
 
 
-        <div className="flex px-14 gap-4 flex-wrap justify-center py-20 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-14 py-20">
           {card.map((d, i) => (
             <div
               key={i}
-              className="w-96 p-3 rounded-lg hover:border-red-500 border-1 hover:-translate-y-2 transition-all duration-300 hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]"
+              className="w-full p-3 rounded-lg hover:border-red-500 border hover:-translate-y-2 transition-all duration-300 hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]"
             >
-              <div className="">
+              <div>
                 <img
-                  className="rounded-lg h-52 w-full object-cover "
+                  className="rounded-lg h-52 w-full object-cover"
                   src={d.img}
                   alt=""
                 />
               </div>
-
               <p className="text-center text-lg py-3">{d.topText}</p>
-              <div className="flex flex-row justify-start items-center gap-2 text-gray-400 text-sm  ">
+              <div className="flex flex-row justify-start items-center gap-2 text-gray-400 text-sm">
                 <SlCalender />
                 <p>December 5, 2022</p>
               </div>
-              <p className="py-4 text-center text-sm text-gray-500">
-                {d.bottomText}
-              </p>
+              <p className="py-4 text-center text-sm text-gray-500">{d.bottomText}</p>
               <hr />
               <div className="flex justify-center text-red-500 text-center">
                 <p>Read More</p>
@@ -124,7 +121,8 @@ const Gallery = () => {
           ))}
         </div>
 
-        <div className="flex items-center text-center py-8 px-3 flex-col bg-indigo-900 text-white hover:bg-red-600 transition-all duration-700">
+
+        <div className="flex items-center text-center py-8 px-3 flex-col bg-customBlue text-white hover:bg-red-600 transition-all duration-700">
           <p className="text-2xl font-semibold ">Got A Question?</p>
           <p>We're here to help. Send us an email or call us at 9024833455</p>
         </div>

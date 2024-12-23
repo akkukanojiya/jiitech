@@ -83,7 +83,7 @@ function WhyArisezen() {
 
  
 
-      <div className="overflow-hidden w-full bg-gray-100 py-4">
+      <div className="overflow-hidden w-full bg-transparent py-4">
         <div className="flex flex-col items-center">
           <p className="text-4xl font-extrabold pb-1 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
             Our Alliance
@@ -154,13 +154,13 @@ function WhyArisezen() {
           }
         }
         .animate-marquee {
-          animation: marquee 30s linear infinite;
+          animation: marquee 50s linear infinite;
         }
       `}</style>
       </div>
 
 
-      <div className="overflow-hidden w-full bg-gray-100 py-4">
+      <div className="overflow-hidden w-full bg-transparent py-4">
         <div className="flex animate-scroll-left-to-right space-x-8">
           <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
             <img
@@ -202,7 +202,7 @@ function WhyArisezen() {
           }
         }
         .animate-scroll-left-to-right {
-          animation: scrollLeftToRight 30s linear infinite;
+          animation: scrollLeftToRight 50s linear infinite;
         }
       `}</style>
       </div>
