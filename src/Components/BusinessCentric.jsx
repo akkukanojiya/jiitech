@@ -130,7 +130,8 @@ function BusinessCentric() {
             <span className="font-semibold text-lg text-black-500">Network Building:</span> Participants will have the chance to connect with peers, educators, and industry professionals, building a network that spans two continents.
           </p> */}
           <button className="mt-6 bg-gradient-to-r from-red-400 to-customBlue text-white px-6 py-2 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gradient-to-l hover:from-customBlue  hover:to-red-500 shadow-lg hover:scale-105">
-            Join Us Now
+          <a href="/howtoapply"> Join Us Now</a>
+           
           </button>
         </div>
         <div className="sm:w-2/5 sm:mt-0 mt-8 flex justify-center relative">

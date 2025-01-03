@@ -28,6 +28,7 @@ const About = () => {
       imgSrc: "https://via.placeholder.com/150", // Replace with actual image URL
       social: ["facebook", "instagram", "twitter"],
     },
+
     {
       name: "Dan Wilson",
       role: "Senior Community Manager",
@@ -85,43 +86,12 @@ const About = () => {
         </div>
 
 
-        {/* <p className="text-3xl font-sans sm:pt-4">
-            Build Software Right, First Time.
-          </p> */}
-
-        {/* <p className="text-lg text-gray-500">
-            Arisezen  is Delhi-based digital innovation & enterprise AI studio that
-            empowers ambitious early-stage startups, growth businesses &
-            enterprises to design and develop innovative, impactful digital
-            products using talented Agile product team PODs.
-          </p> */}
-
-        {/* <p className="text-lg text-gray-500">
-            Our clients realize real business returns from new technology
-            initiatives because we arm them with our proprietary innovation &
-            data/AI acceleration process and a best-in-class, experienced
-            digital-first teams.
-          </p> */}
-
-        {/* <p className="text-gray-500 text-lg">
-            Working with us, our clients move faster, align their stakeholders
-            early, reduce their project risk, with fewer costly rework, improve
-            time-to-market and increase the impact of bringing new digital
-            products to life.
-          </p> */}
-
-        {/* <p className="text-gray-500 text-lg">
-            For over two decades (since 1999), we have helped companies to
-            harness the power of Scaled Agile, build innovative & scalable
-            digital products, eliminate rework, leverage emerging technologies
-            (Cloud, AI/ML, Automation), and build Hybrid agile PODs
-            (offshore/nearshore/local) high-preforming digital product teams.
-          </p> */}
 
 
 
 
-        <div className="py-8">
+
+        {/* <div className="py-8">
           <h2 className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
             Our Advisor
             <div className="flex justify-center opacity-30 mb-6">
@@ -200,66 +170,106 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
+        <section className="relative bg-gradient-to-r from-gray-50 to-gray-100 py-20 px-6 lg:px-10 xl:px-20 overflow-hidden">
+          {/* Decorative Background */}
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute top-10 left-10 w-36 h-36 sm:w-72 sm:h-72 bg-pink-400 opacity-20 rounded-full filter blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-10 right-10 w-48 h-48 sm:w-96 sm:h-96 bg-red-400 opacity-20 rounded-full filter blur-3xl animate-pulse"></div>
+          </div>
 
-        {/* <section className="bg-gradient-to-t from-red-200 py-16 rounded-xl shadow-lg">
-          <div className="max-w-7xl mx-auto text-center px-6">
-            
-            <h2 className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group">
-              Our Team
-              <div className="flex justify-center opacity-30">
-                <img width={300} src="/underline.png" alt="underline" />
-              </div>
-            </h2>
-
-            <p className="text-gray-600 text-lg mb-12">
-              Meet the amazing team that makes everything happen. We are dedicated
-              to helping you achieve your goals with passion and expertise.
-            </p>
-
-            
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-              {teamMembers.map((member, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 transform hover:-translate-y-2"
-                >
-                  <div className="flex flex-col items-center">
-                    
-                    <div className="relative">
-                      <img
-                        src={member.imgSrc}
-                        alt={member.name}
-                        className="rounded-full w-28 h-28 object-cover mb-4 shadow-lg border-4 border-red-600"
-                      />
-                      <span className="absolute bottom-0 right-0 w-6 h-6 bg-green-500 rounded-full border-2 border-white"></span>
-                    </div>
-
-                   
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                      {member.name}
-                    </h3>
-                    <p className="text-gray-500 italic mb-4">{member.role}</p>
-
-                    
-                    <div className="flex space-x-4">
-                      {member.social.map((type, i) => (
-                        <a
-                          key={i}
-                          href="#"
-                          className="text-red-500 hover:text-red-700 transition-transform transform hover:scale-110"
-                        >
-                          <SocialIcon type={type} />
-                        </a>
-                      ))}
-                    </div>
-                  </div>
+          <div className="relative max-w-7xl mx-auto">
+            {/* Content Section */}
+            <div className="flex flex-col lg:flex-row items-center gap-10">
+              {/* Image Section */}
+              <div className="w-full lg:w-1/2 relative group">
+                <div className="relative overflow-hidden rounded-xl shadow-lg">
+                  <img
+                    src="./highfi.jpeg" // Replace with your image URL
+                    alt="Cultural Exchange"
+                    className="object-cover w-full h-64 sm:h-80 md:h-96 lg:h-full transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
                 </div>
-              ))}
+              </div>
+
+              {/* Text Section */}
+              <div className="w-full lg:w-1/2 space-y-8">
+                <p className="text-base sm:text-lg md:text-xl text-black-700 leading-relaxed">
+                  At <span className="font-bold text-customBlue">JIITECH</span>, our passion lies in fostering global education to build bridges between cultures, nurture future-ready leaders, and unlock young minds' limitless potential.
+                </p>
+                <ul className="space-y-4">
+                  {[
+                    "Expand worldview and global awareness",
+                    "Develop essential problem-solving and innovation skills",
+                    "Discover powerful career and higher-education pathways",
+                    "Foster international friendships for life",
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start gap-4">
+                      <div className="flex-shrink-0">
+                        <div className="h-8 w-8 md:h-10 md:w-10 flex items-center justify-center bg-customBlue text-white rounded-full shadow-md transform transition-transform duration-300 hover:scale-110">
+                          ✓
+                        </div>
+                      </div>
+                      <p className="text-sm sm:text-base md:text-lg text-gray-700">{item}</p>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-base sm:text-lg md:text-xl text-black-700 leading-relaxed">
+                  We don’t just teach about the world; we bring the world into the classroom—enabling every student to explore their interests, gain fresh insights, and dream beyond borders.
+                </p>
+                {/* Call-to-Action */}
+                <div className="pt-4">
+                  <button className="bg-red-500 text-sm sm:text-base md:text-lg text-white py-2 px-4 md:py-3 md:px-6 rounded-lg shadow-lg hover:bg-customBlue transition-all duration-300">
+                    Learn More
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </section> */}
+        </section>
+
+
+
+        <div className="bg-white min-h-screen flex items-center justify-center p-6">
+          <div className="bg-customBlue text-white shadow-xl rounded-lg max-w-4xl mx-auto p-8 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+            <div className="text-center">
+
+              <div className="flex justify-center mb-6">
+                <img
+                  src="./joinjurny.jpg"
+                  alt="India and Japan Flags"
+                  className="w-1/2 h-36 rounded-lg shadow-lg transform transition duration-300 hover:scale-110"
+                />
+              </div>
+
+              <h1 className="text-4xl font-bold uppercase tracking-wide mb-4">
+                Join the JIITECH Journey
+              </h1>
+
+              <p className="text-lg leading-relaxed mb-6 text-justify">
+                We invite you to be part of this transformative experience, where
+                knowledge meets exploration, and education meets adventure. Whether
+                you’re a student looking to broaden horizons, an educator searching
+                for enriching exchange opportunities, or a school administrator ready
+                to take your institution global—JIITECH has a place for you.
+              </p>
+
+              <p className="text-white/90 italic mb-4">
+                Embark on your next chapter of learning, innovation, and cultural
+                discovery today.
+              </p>
+              {/* <a
+                href="https://www.jiitech.jp"
+                className="bg-white text-red-500 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-red-100 transition duration-300 transform hover:scale-110"
+              >
+                Visit www.jiitech.jp
+              </a> */}
+            </div>
+          </div>
+        </div>
+
 
 
         {/* new team  */}

@@ -63,17 +63,17 @@ const Nabbar = () => {
 
 
             <p>
-              <Link to={"#"}> ABOUT US </Link>
+              <Link to={"/about"}> ABOUT US </Link>
             </p>
             <p>
-              <Link to={"#"}>  WE OFFER </Link>
+              <Link to={"/weoffer"}>  WE OFFER </Link>
             </p>
 
             {/* <span onClick={HandleHamTrue} className="px-2 ">
                 WE OFFER
               </span> */}
             <p>
-              <Link to={"#"}> HOW TO APPLY </Link>
+              <Link to={"/howtoapply"}> HOW TO APPLY </Link>
             </p>
 
             <p>
@@ -187,10 +187,10 @@ const Nabbar = () => {
             <Link to={"/"}>HOME</Link>
           </p>
           <p className="hover:text-red-700">
-            <Link to={"#"}>ABOUT US</Link>
+            <Link to={"/about"}>ABOUT US</Link>
           </p>
           <p className="hover:text-red-700">
-            <Link to={"#"}>WE OFFER</Link>
+            <Link to={"/weoffer"}>WE OFFER</Link>
           </p>
 
 
@@ -200,7 +200,7 @@ const Nabbar = () => {
             </p> */}
 
           <p className="hover:text-red-700">
-            <Link to={"#"}>HOW TO APPLY</Link>
+            <Link to={"/howtoapply"}>HOW TO APPLY</Link>
           </p>
 
           <p className="hover:text-red-700">

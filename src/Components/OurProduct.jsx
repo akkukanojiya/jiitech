@@ -106,11 +106,11 @@ function OurProduct() {
 
           <div className="relative">
             <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8 tracking-wide text-center group-hover:text-red-700 transition-colors duration-500">
-              🌟 Student Exchange Program
+              🌟 Student Immersion Program
             </h3>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed text-center max-w-xl lg:max-w-2xl mx-auto mb-8 text-justify">
-              Our Student Exchange Program is designed to provide students with
+              Our Student Immersion Program is designed to provide students with
               motivating, life-changing opportunities to learn and live in another
               culture. Participants can experience the world’s best infrastructure,
             
@@ -121,7 +121,7 @@ function OurProduct() {
 
             <div className="mt-12">
               <h4 className="text-xl sm:text-2xl font-bold text-gray-900 text-center mb-6 group-hover:text-red-700 transition-colors duration-500">
-                Highlights of the Student Exchange Program
+                Highlights of the Student Immersion Program
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                 {[
@@ -181,9 +181,10 @@ function OurProduct() {
             </div>
 
             <div className="mt-12 sm:mt-16 text-center">
-              <button className="px-4 sm:px-6 py-2 sm:py-3 bg-red-600 text-white text-sm sm:text-lg font-semibold rounded-full shadow-lg hover:bg-red-700 hover:shadow-xl transition-all duration-500 hover:scale-105">
-                Learn More →
-              </button>
+              <button className="px-4 sm:px-6 py-2 mb-3 sm:py-3 bg-red-600 text-white text-sm sm:text-lg font-semibold rounded-full shadow-lg hover:bg-red-700 hover:shadow-xl transition-all duration-500 hover:scale-105">
+              <a href="/weoffer">Learn More →</a>
+                
+              </button>          
             </div>
           </div>
         </div>
@@ -350,14 +351,14 @@ function OurProduct() {
             className="bg-customBlue hover:bg-customLiteBlue px-8 py-1.5 rounded-xl"
           // onClick={() => setObjects(tab[0])}
           >
-            Student Exchange Program
+            Student Immersion Program
           </button>
 
           <button
             className="bg-customBlue hover:bg-customLiteBlue  px-8 py-1.5 rounded-xl"
           // onClick={() => setObjects(tab[1])}
           >
-            Highlights of the Student Exchange Program
+            Highlights of the Student Immersion Program
           </button>
 
           <button

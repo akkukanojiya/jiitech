@@ -101,7 +101,7 @@ function HeroCarousel() {
           </p>
           <div className="flex gap-4">
             <button className="bg-red-500 text-white px-3 py-2 rounded-full font-semibold hover:bg-red-600">
-              <a href="">Learn More</a>
+              <a href="/about">Learn More</a>
             </button>
           </div>
         </div>
