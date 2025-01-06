@@ -283,153 +283,121 @@ const About = () => {
                 </div>
               </h2>
             </div>
-            <div className="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-6 lg:grid-cols-5 gap-8 max-w-xl mx-auto md:max-w-3xl lg:max-w-full">
-              {/* Team Member Block 1 */}
-
-
-              {/* Team Member Block 2 */}
+            <div className="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-6 lg:grid-cols-4 gap-8 max-w-xl mx-auto md:max-w-3xl lg:max-w-full">
+              
               <div className="block group md:col-span-2 lg:col-span-1">
                 <div className="relative mb-6">
                   <img
-                    src="https://pagedone.io/asset/uploads/1696238396.png"
-                    alt="Patricia image"
+                    src="./jinalpatel.webp"
+                    alt="jinalpatel"
                     className="w-40 h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
                   />
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-2 capitalize text-center transition-all duration-500 group-hover:text-red-600">
-                  Patricia Angely
+                  Jinal Patel
                 </h4>
                 <span className="text-gray-500 text-center block transition-all duration-500 group-hover:text-gray-900">
-                  Co-Founder
+                   Founder
                 </span>
                 <div className="flex justify-center space-x-4 mt-4">
-                  <a href="#" className="text-gray-500 hover:text-red-500">
+                  <a href="#" className="text-gray-500 hover:text-pink-700">
+                    <FaInstagram size={20} />
+                  </a>
+                  <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaFacebookF size={20} />
                   </a>
-                  <a href="#" className="text-gray-500 hover:text-red-400">
-                    <FaXTwitter size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-red-600">
+                  <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaLinkedin size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-pink-600">
-                    <FaInstagram size={20} />
+                  </a>                 
+                  <a href="#" className="text-gray-500 hover:text-black">
+                    <FaXTwitter size={20} />
                   </a>
                 </div>
               </div>
               <div className="block group md:col-span-2 lg:col-span-1">
                 <div className="relative mb-6">
                   <img
-                    src="https://pagedone.io/asset/uploads/1696238396.png"
-                    alt="Patricia image"
+                    src="./nitinpatel.jpg"
+                    alt="akash"
                     className="w-40 h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
                   />
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-2 capitalize text-center transition-all duration-500 group-hover:text-red-600">
-                  Patricia Angely
-                </h4>
-                <span className="text-gray-500 text-center block transition-all duration-500 group-hover:text-gray-900">
-                  Co-Founder
-                </span>
-                <div className="flex justify-center space-x-4 mt-4">
-                  <a href="#" className="text-gray-500 hover:text-red-500">
-                    <FaFacebookF size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-red-400">
-                    <FaXTwitter size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-red-600">
-                    <FaLinkedin size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-pink-600">
-                    <FaInstagram size={20} />
-                  </a>
-                </div>
-              </div>
-              <div className="block group md:col-span-2 lg:col-span-1">
-                <div className="relative mb-6">
-                  <img
-                    src="public/sky.JPG"
-                    alt="Antonio image"
-                    className="w-40 h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
-                  />
-                </div>
-                <h4 className="text-xl font-semibold text-gray-900 mb-2 capitalize text-center transition-all duration-500 group-hover:text-red-600">
-                  Akash Kanojiya
+                  Nitin Jain
                 </h4>
                 <span className="text-gray-500 text-center block transition-all duration-500 group-hover:text-gray-900">
                   Founder
                 </span>
                 <div className="flex justify-center space-x-4 mt-4">
-                  <a href="#" className="text-gray-500 hover:text-red-500">
+                  <a href="#" className="text-gray-500 hover:text-pink-700">
+                    <FaInstagram size={20} />
+                  </a>
+                  <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaFacebookF size={20} />
                   </a>
-                  <a href="#" className="text-gray-500 hover:text-red-400">
-                    <FaXTwitter size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-red-600">
+                  <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaLinkedin size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-pink-600">
-                    <FaInstagram size={20} />
+                  </a>                 
+                  <a href="#" className="text-gray-500 hover:text-black">
+                    <FaXTwitter size={20} />
                   </a>
                 </div>
               </div>
               <div className="block group md:col-span-2 lg:col-span-1">
                 <div className="relative mb-6">
                   <img
-                    src="https://pagedone.io/asset/uploads/1696238396.png"
-                    alt="Patricia image"
+                    src="taichiikeda.webp"
+                    alt="taichiikeda"
                     className="w-40 h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
                   />
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-2 capitalize text-center transition-all duration-500 group-hover:text-red-600">
-                  Patricia Angely
+                  Taichi Ikeda
                 </h4>
                 <span className="text-gray-500 text-center block transition-all duration-500 group-hover:text-gray-900">
-                  Co-Founder
+                 Founder
                 </span>
                 <div className="flex justify-center space-x-4 mt-4">
-                  <a href="#" className="text-gray-500 hover:text-red-500">
+                  <a href="#" className="text-gray-500 hover:text-pink-700">
+                    <FaInstagram size={20} />
+                  </a>
+                  <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaFacebookF size={20} />
                   </a>
-                  <a href="#" className="text-gray-500 hover:text-red-400">
-                    <FaXTwitter size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-red-600">
+                  <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaLinkedin size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-pink-600">
-                    <FaInstagram size={20} />
+                  </a>                 
+                  <a href="#" className="text-gray-500 hover:text-black">
+                    <FaXTwitter size={20} />
                   </a>
                 </div>
               </div>
               <div className="block group md:col-span-2 lg:col-span-1">
                 <div className="relative mb-6">
                   <img
-                    src="https://pagedone.io/asset/uploads/1696238396.png"
+                    src="sunilkaul.jpg"
                     alt="Patricia image"
                     className="w-40 h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
                   />
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-2 capitalize text-center transition-all duration-500 group-hover:text-red-600">
-                  Patricia Angely
+                   Sunil Kaul
                 </h4>
                 <span className="text-gray-500 text-center block transition-all duration-500 group-hover:text-gray-900">
-                  Co-Founder
+                   Founder
                 </span>
                 <div className="flex justify-center space-x-4 mt-4">
-                  <a href="#" className="text-gray-500 hover:text-red-500">
+                  <a href="#" className="text-gray-500 hover:text-pink-700">
+                    <FaInstagram size={20} />
+                  </a>
+                  <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaFacebookF size={20} />
                   </a>
-                  <a href="#" className="text-gray-500 hover:text-red-400">
-                    <FaXTwitter size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-red-600">
+                  <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaLinkedin size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-pink-600">
-                    <FaInstagram size={20} />
+                  </a>                 
+                  <a href="#" className="text-gray-500 hover:text-black">
+                    <FaXTwitter size={20} />
                   </a>
                 </div>
               </div>

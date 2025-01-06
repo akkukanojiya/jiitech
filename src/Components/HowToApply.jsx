@@ -37,7 +37,7 @@ function HowToApply() {
             </div>
             <p className="mt-4 text-gray-600">
               <a
-                href="http://www.jiitech.jp"
+                href="https://jiitech.jp/"
                 target="_blank"
                 className="text-blue-500 underline"
                 rel="noopener noreferrer"
@@ -81,9 +81,6 @@ function HowToApply() {
             </p>
           </div>
         </div>
-
-
-
       </div>
 
       {/* <div className="relative min-h-screen flex items-center justify-center pt-40 pb-40 bg-gray-100">
@@ -137,13 +134,6 @@ function HowToApply() {
           </div>
         </div>
       </div> */}
-
-
-
-
-
-
-
       <div className="flex items-center justify-center mt-3 mb-3 bg-white">
         <button
           className="bg-customBlue text-white px-6 py-3 rounded-md font-semibold transition-all hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-blue-500 animate-glow-bounce"
@@ -194,7 +184,7 @@ function HowToApply() {
               <div className="flex justify-between items-center mb-4">
 
                 <button
-                  className="text-gray-500 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 rounded-full"
+                  className="text-gray-500 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-800 rounded-full"
                   onClick={toggleModal}
                 >
                   ✕
@@ -207,12 +197,12 @@ function HowToApply() {
                   <input
                     className="h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700 transition-colors duration-200"
                     type="text"
-                    placeholder="Full Name *"
+                    placeholder="Full Name*"
                   />
                   <input
                     className="h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700 transition-colors duration-200"
                     type="email"
-                    placeholder="Email Address *"
+                    placeholder="Email Address*"
                   />
                 </div>
 
@@ -220,7 +210,7 @@ function HowToApply() {
                   <input
                     className="h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700 transition-colors duration-200"
                     type="text"
-                    placeholder="Phone Number *"
+                    placeholder="Phone Number*"
                   />
                   {/* <input
                     className="h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700 transition-colors duration-200"
@@ -229,11 +219,11 @@ function HowToApply() {
                   /> */}
                 </div>
 
-                <input
+                {/* <input
                   className="block w-full h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700 transition-colors duration-200"
                   type="file"
                   accept=".pdf,.doc,.docx"
-                />
+                /> */}
 
                 <textarea
                   className="block w-full h-28 border-b border-gray-300 focus:border-blue-500 outline-none px-3 py-2 text-gray-700 resize-none transition-colors duration-200"

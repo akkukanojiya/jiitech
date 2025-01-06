@@ -40,7 +40,7 @@ function Footer() {
                 { name: "How to Apply", link: "/howtoapply" },
                 { name: "Gallery", link: "/gallery" },
                 { name: "Contact Us", link: "/contactus" },
-                { name: "Privacy Policy", link: "/privacy" },
+                {/* { name: "Privacy Policy", link: "/privacy" }, */}
               ].map((item, index) => (
                 <li key={index}>
                   <a
@@ -61,16 +61,12 @@ function Footer() {
             </h3>
             <ul className="space-y-3 text-sm">
               {[
-                "Modernize Software",
-                "Cloud Consulting Services",
-                "AI/ML Development",
-                "Cyber Security Solutions",
-                "Digital Marketing",
-                "Political Campaign",
+                "Student Immersion Program",
+                
               ].map((service, index) => (
                 <li key={index}>
                   <a
-                    href="#"
+                    href="/weoffer"
                     className="text-black-700 hover:text-red-500 transition duration-300"
                   >
                     {service}
@@ -165,7 +161,7 @@ function Footer() {
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-text-black-700 hover:text-red-500 transition duration-300"
+                  className="text-text-black-700 hover:text-red-800 transition duration-300"
                 >
                   <Icon size={25} />
                 </a>
@@ -175,9 +171,9 @@ function Footer() {
         </div>
 
 
-        <div className="border-t border-gray-700 my-3"></div>
+        <div className="border-t border-black my-3"></div>
         <div className="text-center">
-          <p className="text-black-700 text-sm  ">
+          <p className="text-black-700 text-sm">
             © 2024 Tech Creature Solution 
             All Rights Reserved.
           </p>
