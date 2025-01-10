@@ -288,7 +288,7 @@ const About = () => {
               <div className="block group md:col-span-2 lg:col-span-1">
                 <div className="relative mb-6">
                   <img
-                    src="./jinalpatel.webp"
+                    src="./jinalpatel.jpg"
                     alt="jinalpatel"
                     className="w-40 h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
                   />
@@ -317,7 +317,7 @@ const About = () => {
               <div className="block group md:col-span-2 lg:col-span-1">
                 <div className="relative mb-6">
                   <img
-                    src="./nitinpatel.jpg"
+                    src="./nitinjain.webp"
                     alt="akash"
                     className="w-40 h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
                   />
@@ -346,7 +346,7 @@ const About = () => {
               <div className="block group md:col-span-2 lg:col-span-1">
                 <div className="relative mb-6">
                   <img
-                    src="taichiikeda.webp"
+                    src="taichiikeda.jpg"
                     alt="taichiikeda"
                     className="w-40 h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
                   />
@@ -375,7 +375,7 @@ const About = () => {
               <div className="block group md:col-span-2 lg:col-span-1">
                 <div className="relative mb-6">
                   <img
-                    src="sunilkaul.jpg"
+                    src="sunilkaul.webp"
                     alt="Patricia image"
                     className="w-40 h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
                   />
