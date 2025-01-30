@@ -7,11 +7,16 @@ export default {
     
     extend: {
 
-      
       animation: {
-        fadeIn: 'fadeIn 1s ease-in-out',
-        slideIn: 'slideIn 1s ease-in-out',
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
       },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      }  ,
+      
       
 
      clipPath: {

@@ -76,9 +76,9 @@ const Nabbar = () => {
               <Link to={"/howtoapply"}> HOW TO APPLY </Link>
             </p>
 
-            <p>
+            {/* <p>
               <Link to={"#"}> GALLERY </Link>
-            </p>
+            </p> */}
             <p>
               <Link to={"/contactus"}> CONTACT US </Link>
             </p>
@@ -203,9 +203,9 @@ const Nabbar = () => {
             <Link to={"/howtoapply"}>HOW TO APPLY</Link>
           </p>
 
-          <p className="hover:text-red-700">
+          {/* <p className="hover:text-red-700">
             <Link to={"#"}>GALLERY</Link>
-          </p>
+          </p> */}
 
 
           <p className="hover:text-red-700">

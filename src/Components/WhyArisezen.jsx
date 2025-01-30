@@ -16,6 +16,12 @@ import { LiaIndustrySolid } from "react-icons/lia";
 
 
 function WhyArisezen() {
+
+
+
+
+
+
   return (
     <div className="py-10">
       <div className="text-black flex flex-col justify-center items-center md:px-48 mx-3 ">
@@ -136,7 +142,7 @@ function WhyArisezen() {
 
       {/* new cards style end  */}
 
-      <div className="overflow-hidden w-full bg-transparent py-4">
+      {/* <div className="overflow-hidden w-full bg-transparent py-4">
         <div className="flex flex-col items-center">
           <p className="text-4xl font-extrabold pb-1 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
             Our Alliance
@@ -146,7 +152,7 @@ function WhyArisezen() {
           </div>
         </div>
 
-        <div className="flex animate-marquee space-x-8">
+        <div className="flex animate-marquee space-x-8 animate-infinite-scroll">
           <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
             <img
               src="/About-pics/Blue-Prism-Delivery-Partner.png.webp"
@@ -198,22 +204,24 @@ function WhyArisezen() {
           </div>
         </div>
         <style jsx>{`
-        @keyframes marquee {
-          0% {
-            transform: translateX(100%);
-          }
-          100% {
-            transform: translateX(-100%);
-          }
-        }
-        .animate-marquee {
-          animation: marquee 50s linear infinite;
-        }
-      `}</style>
-      </div>
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .animate-marquee {
+    display: flex;
+    animation: marquee 50s linear infinite;
+  }
+`}</style>
+
+      </div> */}
 
 
-      <div className="overflow-hidden w-full bg-transparent py-4">
+      {/* <div className="overflow-hidden w-full bg-transparent py-4">
         <div className="flex animate-scroll-left-to-right space-x-8">
           <div className="border-gray-300 transition-all duration-300 p-3 flex-shrink-0">
             <img
@@ -258,10 +266,113 @@ function WhyArisezen() {
           animation: scrollLeftToRight 50s linear infinite;
         }
       `}</style>
-      </div>
+      </div> */}
 
 
 
+      {/* <div className="overflow-hidden w-full bg-transparent py-8">
+        
+        <div className="flex flex-col items-center">
+          <p className="text-4xl font-extrabold pb-2 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text text-center">
+            Our Alliance
+          </p>
+          <img width={300} src="/underline.png" alt="Underline" className="opacity-30" />
+        </div>
+ 
+        <div className="relative overflow-hidden">
+          
+          <div className="flex space-x-8 animate-marquee">
+            {[
+              "/About-pics/Blue-Prism-Delivery-Partner.png.webp",
+              "/About-pics/cloud-migarator-logo.jpg.webp",
+              "/About-pics/Google-Partner.png.webp",
+              "/About-pics/Group-19-1.png.webp",
+              "/About-pics/UI-Path-Partner.png.webp",
+              "/About-pics/microsoft-goldlogo-small.jpg.webp",
+              "/About-pics/vm-wave-logo.jpg.webp",
+            ].map((src, index) => (
+              <div key={index} className="flex-shrink-0 p-3">
+                <img src={src} alt={`Partner ${index + 1}`} className="h-28 w-auto object-contain" />
+              </div>
+            ))}
+          
+            {[
+              "/About-pics/Blue-Prism-Delivery-Partner.png.webp",
+              "/About-pics/cloud-migarator-logo.jpg.webp",
+              "/About-pics/Google-Partner.png.webp",
+              "/About-pics/Group-19-1.png.webp",
+              "/About-pics/UI-Path-Partner.png.webp",
+              "/About-pics/microsoft-goldlogo-small.jpg.webp",
+              "/About-pics/vm-wave-logo.jpg.webp",
+            ].map((src, index) => (
+              <div key={`dup-${index}`} className="flex-shrink-0 p-3">
+                <img src={src} alt={`Duplicate Partner ${index + 1}`} className="h-28 w-auto object-contain" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="relative overflow-hidden mt-8">
+       
+          <div className="flex space-x-8 animate-marquee-reverse">
+            {[
+              "/About-pics/Group-19-1.png.webp",
+              "/About-pics/Apple-1.png.webp",
+              "/About-pics/Automation-Anywhere.png.webp",
+              "/About-pics/Bing-Partner.png.webp",
+              "/About-pics/Apple-1.png.webp",
+              "/About-pics/Automation-Anywhere.png.webp",
+              "/About-pics/Bing-Partner.png.webp",
+            ].map((src, index) => (
+              <div key={index} className="flex-shrink-0 p-3">
+                <img src={src} alt={`Partner ${index + 1}`} className="h-28 w-auto object-contain" />
+              </div>
+            ))}
+          
+            {[
+              "/About-pics/Group-19-1.png.webp",
+              "/About-pics/Apple-1.png.webp",
+              "/About-pics/Automation-Anywhere.png.webp",
+              "/About-pics/Bing-Partner.png.webp",
+              "/About-pics/Apple-1.png.webp",
+              "/About-pics/Automation-Anywhere.png.webp",
+              "/About-pics/Bing-Partner.png.webp",
+            ].map((src, index) => (
+              <div key={`dup-reverse-${index}`} className="flex-shrink-0 p-3">
+                <img src={src} alt={`Duplicate Partner ${index + 1}`} className="h-28 w-auto object-contain" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        
+        <style jsx>{`
+    @keyframes marquee {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    @keyframes marquee-reverse {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+    .animate-marquee {
+      display: flex;
+      animation: marquee 30s linear infinite;
+    }
+    .animate-marquee-reverse {
+      display: flex;
+      animation: marquee-reverse 30s linear infinite;
+    }
+  `}</style>
+      </div> */}
     </div>
   );
 }

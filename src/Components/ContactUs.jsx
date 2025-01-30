@@ -165,7 +165,9 @@ const ContactUs = () => {
             <div className="flex gap-3 items-center">
               <IoLocationSharp size={28} />
               <div>
-                <p>JIITECH Headquarters, Tokyo, Japan</p>
+                <p>JIITECH Headquarters, 
+                  3-37-7-210
+                  Yoyogi, Shibuya, Tokyo, Japan</p>
                 <p>JIITECH Headquarters, Ahmedabad, India</p>
               </div>
             </div>

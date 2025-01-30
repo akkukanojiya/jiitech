@@ -283,7 +283,7 @@ const About = () => {
                 </div>
               </h2>
             </div>
-            <div className="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-6 lg:grid-cols-4 gap-8 max-w-xl mx-auto md:max-w-3xl lg:max-w-full">
+            <div className="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-6 lg:grid-cols-3 gap-8 max-w-xl mx-auto md:max-w-3xl lg:max-w-full">
               
               <div className="block group md:col-span-2 lg:col-span-1">
                 <div className="relative mb-6">
@@ -318,7 +318,7 @@ const About = () => {
                 <div className="relative mb-6">
                   <img
                     src="./nitinjain.webp"
-                    alt="akash"
+                    alt="nitinjain"
                     className="w-40 h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
                   />
                 </div>
@@ -372,11 +372,11 @@ const About = () => {
                   </a>
                 </div>
               </div>
-              <div className="block group md:col-span-2 lg:col-span-1">
+              {/* <div className="block group md:col-span-2 lg:col-span-1">
                 <div className="relative mb-6">
                   <img
                     src="sunilkaul.webp"
-                    alt="Patricia image"
+                    alt="sunilkaul"
                     className="w-40 h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
                   />
                 </div>
@@ -400,7 +400,7 @@ const About = () => {
                     <FaXTwitter size={20} />
                   </a>
                 </div>
-              </div>
+              </div> */}
 
               {/* Repeat this block for other team members */}
             </div>

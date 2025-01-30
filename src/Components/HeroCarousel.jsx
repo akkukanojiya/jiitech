@@ -5,7 +5,7 @@ function HeroCarousel() {
     <div className="relative w-full">
       <Nabbar />
 
-      <div className="flex flex-col md:flex-row items-center justify-between bg-white py-28 px-5">
+      <div className="flex flex-col md:flex-row items-center justify-between bg-white py-32 px-5">
         
         <div className="md:w-1/2 space-y-5">
           <h1 className="text-4xl md:text-5xl text-customBlue font-bold leading-snug">
