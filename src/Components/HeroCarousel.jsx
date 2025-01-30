@@ -5,38 +5,47 @@ function HeroCarousel() {
     <div className="relative w-full">
       <Nabbar />
 
-      <div className="flex flex-col md:flex-row items-center justify-between bg-white py-44 px-24">
-        
-        <div className="md:w-1/2 space-y-25">
-          <h1 className="text-4xl md:text-5xl text-customBlue font-bold leading-snug">
-            Welcome to JIITECH<br />
-            <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div>
+      <div className="mt-20 flex flex-col-reverse lg:flex-row items-center justify-between bg-white py-16 px-4 sm:px-8 md:px-12 lg:py-24 lg:px-16 xl:py-28 xl:px-32 max-w-[1400px] mx-auto">
+        {/* Left Content */}
+        <div className="lg:w-1/2 space-y-6 md:space-y-8 text-center lg:text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-customBlue font-bold leading-snug">
+            Welcome to JIITECH
+            <div className="opacity-30 mt-3">
+              <img
+                className="mx-auto lg:mx-0 w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[350px]"
+                src="/underline.png"
+                alt="Underline"
+              />
+            </div>
           </h1>
-          <p className="text-customBlue text-lg font-bold ">
-            Japan India Innovation Technology Education Cultural Hub (JIITECH) is a pioneering initiative bridging the cultures of Japan and India through education, technology, and cultural exchange.
+          <p className="text-customBlue text-sm sm:text-base md:text-lg xl:text-xl font-medium md:font-semibold">
+            Japan India Innovation Technology Education Cultural Hub (JIITECH) is a
+            pioneering initiative bridging the cultures of Japan and India through
+            education, technology, and cultural exchange.
           </p>
-          <div className="flex gap-4">
-            <button className="bg-red-500 text-white px-3 py-2 rounded-full font-semibold hover:bg-red-600 mt-2">
-              <a href="#">Learn More</a>
-            </button>
+          <div className="flex justify-center lg:justify-start gap-4">
+            <a
+              href="#"
+              className="bg-red-500 text-white px-4 py-2 md:px-6 md:py-3 xl:px-8 xl:py-4 rounded-full font-medium hover:bg-red-600 transition duration-300 ease-in-out"
+            >
+              Learn More
+            </a>
           </div>
         </div>
-             
 
-        <div className="relative md:w-3/2 flex justify-center items-center">
-
-          <div className="absolute inset-0 bg-red-500   w-[90%] h-[90%] -z-10"></div>
-
-         
+        {/* Right Content */}
+        <div className="relative lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0">
+          <div className="absolute inset-0 bg-red-500 w-[80%] h-[80%] sm:w-[85%] sm:h-[85%] lg:w-[90%] lg:h-[90%] xl:w-[85%] xl:h-[85%] 2xl:w-[80%] 2xl:h-[80%] -z-10 rounded-2xl shadow-xl"></div>
           <img
             src="/In.png"
             alt="Person with file"
-            className="relative  w-[500px] md:w-[600px] rounded-lg "
+            className="relative w-[250px] sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px] 2xl:w-[700px] rounded-lg"
           />
-
-           
         </div>
       </div>
+
+
+
     </div>
   );
 }
