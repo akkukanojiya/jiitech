@@ -6,6 +6,10 @@ export default {
     
     
     extend: {
+      fontFamily: {
+        monoton: ["Monoton", "cursive"],
+        // zenTokyoZoo: ["Zen Tokyo Zoo", "cursive"]
+      },
 
       animation: {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',

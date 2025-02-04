@@ -162,31 +162,58 @@ const ContactUs = () => {
           <div className="bg-customLiteBlue lg:h-auto text-white lg:w-1/3 rounded-3xl p-6 flex flex-col gap-6">
             <p className="font-bold text-xl md:text-2xl">Get in Touch</p>
 
-            <div className="flex gap-3 items-center">
+            <div className=" flex gap-2 items-center">
               <IoLocationSharp size={28} />
               <div>
-                <p>JIITECH Headquarters, 
+                <p>JIITECH Headquarters,
                   3-37-7-210
                   Yoyogi, Shibuya, Tokyo, Japan</p>
-                <p>JIITECH Headquarters, Ahmedabad, India</p>
+                 
+              </div>
+             
+            </div>
+            <div className="flex gap-2 items-center">
+              <MdCall size={20} />
+              <div>
+                <p>+81-8064262379 (Japan)</p>
+                 
+              </div>
+             
+            </div>
+            <div className="flex gap-2 items-center">
+              <HiOutlineMailOpen size={20} />
+              <p>info@jiitech.jp</p>
+            </div>
+            <div className=" flex gap-2 items-center">
+              <IoLocationSharp size={28} />
+              <div>
+                 
+                <p>JIITECH Headquarters,
+                  Cherish Eduskills
+                  615 - 617 Sanskrit Galleria
+                  Near subhas Chowk
+                  Gurukul
+                  Ahmedabad - 380015
+                  India
+                </p>
               </div>
             </div>
 
-            <div className="flex gap-3 items-center">
-              <MdCall size={28} />
+            <div className="flex gap-2 items-center">
+              <MdCall size={20} />
               <div>
-                <p>+81-8064262379 (Japan)</p>
+               
                 <p>+91-9327123451 (India)</p>
                 <p>+91-9033211100 (India)</p>
               </div>
             </div>
 
-            <div className="flex gap-3 items-center">
-              <HiOutlineMailOpen size={28} />
+            <div className="flex gap-2 items-center">
+              <HiOutlineMailOpen size={20} />
               <p>info@jiitech.jp</p>
             </div>
 
-            <div className="flex gap-4 text-white-700 ">
+            {/* <div className="flex gap-4 text-white-700 ">
               <a
                 href="#"
                 target="_blank"
@@ -219,7 +246,7 @@ const ContactUs = () => {
               >
                 <IoLogoLinkedin size={36} />
               </a>
-            </div>
+            </div> */}
 
           </div>
 

@@ -9,7 +9,26 @@ import { SiGooglemaps } from "react-icons/si";
 // import { FaPinterestSquare } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { FaMapMarkerAlt } from 'react-icons/fa';
+
+import { useNavigate } from "react-router-dom";
+
+
 function Footer() {
+
+  // link redirect 
+  const services = ["Student Immersion Program"];
+  const navigate = useNavigate(); // React Router's navigation hook
+
+  const handleClick = (service) => {
+    if (service === "Student Immersion Program") {
+      navigate("/ourproducts"); // Redirect to OurProduct.jsx
+    }
+  };
+  // link redirect end
+
+
+
+
   return (
     <>
       <div className="bg-gray-200 text-black py-12">
@@ -60,17 +79,15 @@ function Footer() {
               Our Services
             </h3>
             <ul className="space-y-3 text-sm">
-              {[
-                "Student Immersion Program",
-
-              ].map((service, index) => (
+              {services.map((service, index) => (
                 <li key={index}>
-                  <a
-                    href="/weoffer"
+                  <button
+
+                    onClick={() => handleClick(service)} // Attach the click handler
                     className="text-black-700 hover:text-red-500 transition duration-300"
                   >
                     {service}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -83,17 +100,37 @@ function Footer() {
               <FaMapMarkerAlt className="text-black mr-1" />
               <strong className="text-black">Address Japan :</strong>
             </p>
-            <p className="text-sm leading-relaxed text-black-700 ">JIITECH Headquarters, 
-              3-37-7-210
-              Yoyogi, Shibuya, Tokyo, Japan</p>
+            <p className="text-sm leading-relaxed text-black-700 ">JIITECH Headquarters
+              3-37-7-210 Yoyogi
+              Shibuya, Tokyo
+              Japan
+            </p>
+            
+              <p className="text-sm leading-relaxed text-black-700  flex items-center">
+              <IoCallSharp className="text-black mr-1" />
+              <strong className="text-black">Phone:</strong>
+            </p>
+            <p className="mt-1 text-sm leading-relaxed text-black-700">+81-8064262379(Japan)</p>
+            <p className="text-sm leading-relaxed text-black-700  flex items-center">
+                <IoMailOpenSharp className="text-black mr-1" />
 
+                <strong className="text-black">Email:</strong> info@jiitech.jp
+              </p>
             <p className="text-sm leading-relaxed text-black-700  flex items-center">
               <FaMapMarkerAlt className="text-black mr-1" />
               <strong className="text-black">Address India :</strong>
             </p>
             <p className="text-sm leading-relaxed text-black-700 ">
-              JIITECH Headquarters, Ahmedabad, India
+              JIITECH Headquarters
+              Cherish Eduskills
+              615 - 617 Sanskrit Galleria
+              Near subhas Chowk
+              Gurukul
+              Ahmedabad - 380015
+              India
+
             </p>
+            
 
             <p className="text-sm leading-relaxed text-black-700  flex items-center">
               <IoCallSharp className="text-black mr-1" />
@@ -102,7 +139,7 @@ function Footer() {
             <p className="mt-1 text-sm leading-relaxed text-black-700 ">
               +91-9327123451(India) <br />+91-9033211100(India)
 
-              <br />+81-8064262379(Japan)
+               
               <br />
               <p className="text-sm leading-relaxed text-black-700  flex items-center">
                 <IoMailOpenSharp className="text-black mr-1" />
@@ -114,8 +151,8 @@ function Footer() {
 
 
           <div>
-            <h3 className="text-xl w-40 font-semibold mb-4   bg-customBlue text-white py-1 px-3 rounded-lg cursor-pointer hover:bg-red-600">Support</h3>
-            <ul className="space-y-3 text-sm">
+            {/* <h3 className="text-xl w-40 font-semibold mb-4   bg-customBlue text-white py-1 px-3 rounded-lg cursor-pointer hover:bg-red-600">Support</h3> */}
+            {/* <ul className="space-y-3 text-sm">
               <li>
                 <a
                   href="/contactus"
@@ -140,9 +177,9 @@ function Footer() {
                   Get in Touch
                 </a>
               </li>
-            </ul>
+            </ul> */}
 
-            <div className="mt-6 flex space-x-4">
+            {/* <div className="mt-6 flex space-x-4">
               {[
                 { Icon: FaFacebookSquare, link: "http://fb.com/61561338693343" },
                 {
@@ -168,7 +205,7 @@ function Footer() {
                   <Icon size={25} />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
 

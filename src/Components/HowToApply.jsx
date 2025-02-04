@@ -2,21 +2,75 @@ import React, { useState } from "react";
 import Nabbar from "./Nabbar"; // Adjust path if required
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import { toast } from 'react-toastify';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 function HowToApply() {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phoneNumber: '',
+    enquiry: '',
+  });
 
-
+  const [errors, setErrors] = useState({});
   const [isOpen, setIsOpen] = useState(false);
+
+  const validatePhone = (phone) => {
+    const phoneRegex = /^\+?[1-9]\d{1,14}$/; // Simple regex for country code and number
+    return phoneRegex.test(phone);
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
   const toggleModal = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const newErrors = {};
+
+    if (!formData.fullName) newErrors.fullName = 'Full Name is required';
+    if (!formData.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = 'Valid Email is required';
+    }
+    if (!formData.phoneNumber || !validatePhone(formData.phoneNumber)) {
+      newErrors.phoneNumber = 'Valid Phone Number is required (with country code)';
+    }
+    if (!formData.enquiry) newErrors.enquiry = 'Enquiry is required';
+
+    setErrors(newErrors);
+
+    if (Object.keys(newErrors).length === 0) {
+      emailjs.send(
+        "your_service_id",
+        "your_template_id",
+        {
+          fullName: formData.fullName,
+          email: formData.email,
+          phoneNumber: formData.phoneNumber,
+          enquiry: formData.enquiry,
+        },
+        "your_user_id"
+      )
+        .then(() => {
+          toast.success("Email sent successfully!");
+          setFormData({ fullName: '', email: '', phoneNumber: '', enquiry: '' });
+          toggleModal();
+        })
+        .catch((error) => {
+          toast.error("Failed to send email. Please try again later.");
+          console.error(error);
+        });
+    }
+  };
 
 
-
-
-  // steps 
-  // steps end
+   
   return (
     <>
       {/* Navbar */}
@@ -31,66 +85,7 @@ function HowToApply() {
           <p>How To Apply</p>
         </div>
       </div>
-      {/* <div className="bg-gray-50 py-10 px-5 lg:px-20 mb-8 mt-16">
-        
-        <div className="flex flex-col lg:flex-row gap-8">
-        
-          <div className="flex-1 bg-white shadow-lg rounded-lg p-6">
-            <div className="flex items-center gap-4">
-              <div className="bg-blue-100 p-4 rounded-full">
-                <span className="text-blue-500 text-3xl">📋</span>
-              </div>
-              <h3 className="text-xl font-semibold">Fill Out the Interest Form</h3>
-            </div>
-            <p className="mt-4 text-gray-600">
-              <Link
-              to="https://jiitech.jp/"
-              
-                target="_blank"
-                className="text-blue-500 underline"
-                rel="noopener noreferrer"
-              >
-                Visit our website
-              </Link>{" "}
-              and navigate to the “Apply Now” section. Provide basic details about
-              your school, students, and the program(s) you’re interested in (JUKU
-              or JOIIN).
-            </p>
-          </div>
-
-          
-          <div className="flex-1 bg-white shadow-lg rounded-lg p-6">
-            <div className="flex items-center gap-4">
-              <div className="bg-green-100 p-4 rounded-full">
-                <span className="text-green-500 text-3xl">📹</span>
-              </div>
-              <h3 className="text-xl font-semibold">Orientation & Consultation</h3>
-            </div>
-            <p className="mt-4 text-gray-600">
-              Our team will connect with you for an orientation session—virtual or
-              in-person. We’ll discuss program schedules, customization options,
-              fees, and answer any queries you may have.
-            </p>
-          </div>
-
-          
-          <div className="flex-1 bg-white shadow-lg rounded-lg p-6">
-            <div className="flex items-center gap-4">
-              <div className="bg-yellow-100 p-4 rounded-full">
-                <span className="text-yellow-500 text-3xl">🤝</span>
-              </div>
-              <h3 className="text-xl font-semibold">Confirm Your Enrolment</h3>
-            </div>
-            <p className="mt-4 text-gray-600">
-              Once you’re ready, complete the registration by submitting necessary
-              documents and payment details. You’ll receive a welcome kit outlining
-              your selected program’s itinerary and pre-departure guidelines to
-              ensure a smooth, exciting journey ahead!
-            </p>
-          </div>
-        </div>
-      </div> */}
-
+ 
 
       {/* new steps  */}
       <div className="bg-white">
@@ -110,24 +105,22 @@ function HowToApply() {
               <div className="flex items-center justify-center h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-customBlue text-white border-4 border-white text-xl font-semibold transform hover:scale-110 transition-transform duration-300">
                 <span className="text-blue-500 text-2xl sm:text-3xl">📋</span>
               </div>
-              <span className="text-gray-500 mt-2">STEP</span>
+              <span className="text-gray-500 mt-2">STEP 1</span>
             </div>
             <div className="bg-gray-100 p-5 pb-10 rounded-lg shadow-md w-full transform hover:scale-105 transition-transform duration-300">
               <h4 className="text-lg sm:text-xl leading-6 font-semibold text-gray-900 uppercase">
                 Fill Out the Interest Form
               </h4>
               <p className="mt-2 text-base leading-6 text-black">
-                <Link
+                {/* <Link
                   to="https://jiitech.jp/"
                   target="_blank"
                   className="text-blue-500 underline"
                   rel="noopener noreferrer"
                 >
                   Visit our website
-                </Link>{" "}
-                and navigate to the “Apply Now” section. Provide basic details
-                about your school, students, and the program(s) you’re
-                interested in (JUKU or JOIIN).
+                </Link>{" "} */}
+                If you are interested, please fill out the form using ‘Apply Now’ at the end of instructions
               </p>
             </div>
           </div>
@@ -140,17 +133,14 @@ function HowToApply() {
               <div className="flex items-center justify-center h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-customBlue text-white border-4 border-white text-xl font-semibold transform hover:scale-110 transition-transform duration-300">
                 <span className="text-green-500 text-2xl sm:text-3xl">📹</span>
               </div>
-              <span className="text-gray-500 mt-2">STEP</span>
+              <span className="text-gray-500 mt-2">STEP 2</span>
             </div>
             <div className="bg-gray-100 p-5 pb-10 rounded-lg shadow-md w-full transform hover:scale-105 transition-transform duration-300">
               <h4 className="text-lg sm:text-xl leading-6 font-semibold text-gray-900 uppercase">
                 Orientation & Consultation
               </h4>
               <p className="mt-2 text-base leading-6 text-black">
-                Our team will connect with you for an orientation session—
-                virtual or in-person. We’ll discuss program schedules,
-                customization options, fees, and answer any queries you may
-                have.
+              Our team will reach out to schedule an orientation session—either virtual or in-person. We’ll cover program details, customization options, fees, and address any questions you may have.
               </p>
             </div>
           </div>
@@ -163,18 +153,14 @@ function HowToApply() {
               <div className="flex items-center justify-center h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-customBlue text-white border-4 border-white text-xl font-semibold transform hover:scale-110 transition-transform duration-300">
                 <span className="text-yellow-500 text-2xl sm:text-3xl">🤝</span>
               </div>
-              <span className="text-gray-500 mt-2">STEP</span>
+              <span className="text-gray-500 mt-2">STEP 3</span>
             </div>
             <div className="bg-gray-100 p-5 pb-10 rounded-lg shadow-md w-full transform hover:scale-105 transition-transform duration-300">
               <h4 className="text-lg sm:text-xl leading-6 font-semibold text-gray-900 uppercase">
                 Confirm Your Enrolment
               </h4>
               <p className="mt-2 text-base leading-6 text-black">
-                Once you’re ready, complete the registration by submitting
-                necessary documents and payment details. You’ll receive a
-                welcome kit outlining your selected program’s itinerary and
-                pre-departure guidelines to ensure a smooth, exciting journey
-                ahead!
+              Once you're ready, complete your registration by submitting the required documents and payment details. You'll then receive a welcome kit with your program's itinerary and pre-departure guidelines to ensure a smooth and exciting journey ahead!
               </p>
             </div>
           </div>
@@ -185,60 +171,7 @@ function HowToApply() {
 </div>
 
 
-      {/* new steps end */}
-
-
-      {/* <div className="relative min-h-screen flex items-center justify-center pt-40 pb-40 bg-gray-100">
-         
-      
-
-        
-        <div className="relative  lg:w-[500px] md:w-[70%] sm:w-[90%] w-[95%] bg-white rounded-lg shadow-lg p-6">
-          <div className="flex flex-col gap-4">
-             
-            <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4">
-              <input
-                className="h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700"
-                type="text"
-                placeholder="Full Name *"
-              />
-              <input
-                className="h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700"
-                type="email"
-                placeholder="Email Address *"
-              />
-            </div>
-
-            <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4">
-              <input
-                className="h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700"
-                type="text"
-                placeholder="Phone Number *"
-              />
-              <input
-                className="h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700"
-                type="text"
-                placeholder="Job Position *"
-              />
-            </div>
-
-            <input
-              className="block w-full h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700"
-              type="file"
-              accept=".pdf,.doc,.docx"
-            />
-
-            <textarea
-              className="block w-full h-28 border-b border-gray-300 focus:border-blue-500 outline-none px-3 py-2 text-gray-700 resize-none"
-              placeholder="Additional Message or Cover Letter"
-            ></textarea>
-
-            <button className="w-full bg-red-600 text-white py-3 rounded-md hover:bg-customBlue transition font-semibold">
-              Submit Application
-            </button>
-          </div>
-        </div>
-      </div> */}
+    
       <div className="flex items-center justify-center mt-3 mb-3 bg-white">
         <button
           className="bg-customBlue text-white px-6 py-3 rounded-md font-semibold transition-all hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-blue-500 animate-glow-bounce"
@@ -273,96 +206,98 @@ function HowToApply() {
   `}</style>
       </div>
 
-      <div className="relative   flex items-center justify-center bg-gray-100">
-
-        {/* Modal */}
-        {isOpen && (
+      <div className="relative flex items-center justify-center bg-gray-100">
+      {/* Modal */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out"
+        >
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out"
-            style={{ animation: "fadeIn 0.3s" }}
+            className="relative w-full max-w-lg bg-white rounded-lg shadow-lg p-6 transform transition-transform duration-300 ease-in-out mx-4 sm:mx-6 lg:mx-0"
           >
-            {/* Modal Content */}
-            <div
-              className="relative w-full max-w-lg bg-white rounded-lg shadow-lg p-6 transform transition-transform duration-300 ease-in-out mx-4 sm:mx-6 lg:mx-0"
-              style={{ animation: "scaleIn 0.3s" }}
-            >
-              <div className="flex justify-between items-center mb-4">
-
-                <button
-                  className="text-gray-500 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-800 rounded-full"
-                  onClick={toggleModal}
-                >
-                  ✕
-                </button>
-              </div>
-
-              <div className="flex flex-col gap-4">
-                {/* Form Fields */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <input
-                    className="h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700 transition-colors duration-200"
-                    type="text"
-                    placeholder="Full Name*"
-                  />
-                  <input
-                    className="h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700 transition-colors duration-200"
-                    type="email"
-                    placeholder="Email Address*"
-                  />
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <input
-                    className="h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700 transition-colors duration-200"
-                    type="text"
-                    placeholder="Phone Number*"
-                  />
-                  {/* <input
-                    className="h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700 transition-colors duration-200"
-                    type="text"
-                    placeholder="Job Position *"
-                  /> */}
-                </div>
-
-                {/* <input
-                  className="block w-full h-12 border-b border-gray-300 focus:border-blue-500 outline-none px-3 text-gray-700 transition-colors duration-200"
-                  type="file"
-                  accept=".pdf,.doc,.docx"
-                /> */}
-
-                <textarea
-                  className="block w-full h-28 border-b border-gray-300 focus:border-blue-500 outline-none px-3 py-2 text-gray-700 resize-none transition-colors duration-200"
-                  placeholder="Additional Message "
-                ></textarea>
-
-                <button className="w-full bg-red-600 text-white py-3 rounded-md hover:bg-red-700 transition-all duration-300 font-semibold focus:outline-none focus:ring-2 focus:ring-red-500">
-                  Apply
-                </button>
-              </div>
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-bold text-gray-800">Apply Now</h2>
+              <button
+                className="text-gray-500 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-800 rounded-full"
+                onClick={toggleModal}
+              >
+                ✕
+              </button>
             </div>
-          </div>
-        )}
 
-        {/* CSS for Animations */}
-        <style jsx>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-        @keyframes scaleIn {
-          from {
-            transform: scale(0.9);
-          }
-          to {
-            transform: scale(1);
-          }
-        }
-      `}</style>
-      </div>
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+              {/* Full Name */}
+              <input
+                className={`h-12 border-b ${
+                  errors.fullName ? "border-red-500" : "border-gray-300"
+                } focus:border-blue-500 outline-none px-3 text-gray-700 transition-colors duration-200`}
+                type="text"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                placeholder="Full Name*"
+              />
+              {errors.fullName && (
+                <p className="text-red-500 text-sm">{errors.fullName}</p>
+              )}
+
+              {/* Email Address */}
+              <input
+                className={`h-12 border-b ${
+                  errors.email ? "border-red-500" : "border-gray-300"
+                } focus:border-blue-500 outline-none px-3 text-gray-700 transition-colors duration-200`}
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Email Address*"
+              />
+              {errors.email && (
+                <p className="text-red-500 text-sm">{errors.email}</p>
+              )}
+
+              {/* Phone Number */}
+              <input
+                className={`h-12 border-b ${
+                  errors.phoneNumber ? "border-red-500" : "border-gray-300"
+                } focus:border-blue-500 outline-none px-3 text-gray-700 transition-colors duration-200`}
+                type="text"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+                placeholder="Phone Number (+Country Code)*"
+              />
+              {errors.phoneNumber && (
+                <p className="text-red-500 text-sm">{errors.phoneNumber}</p>
+              )}
+
+              {/* Enquiry */}
+              <textarea
+                className={`block w-full h-28 border-b ${
+                  errors.enquiry ? "border-red-500" : "border-gray-300"
+                } focus:border-blue-500 outline-none px-3 py-2 text-gray-700 resize-none transition-colors duration-200`}
+                name="enquiry"
+                value={formData.enquiry}
+                onChange={handleChange}
+                placeholder="Enquiry*"
+              ></textarea>
+              {errors.enquiry && (
+                <p className="text-red-500 text-sm">{errors.enquiry}</p>
+              )}
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                className="w-full bg-customBlue text-white py-3 rounded-md hover:bg-red-700 transition-all duration-300 font-semibold focus:outline-none focus:ring-2 focus:ring-red-500"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+      
+    </div>
 
       <Footer />
     </>

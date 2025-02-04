@@ -13,6 +13,7 @@ import FaqAccordion from "./FaqAccordion";
 import HowToApply from "./HowToApply";
 import Gallery from "./Gallery";
 import Weoffer from "./WeOffer";
+import OurMission from "./OurMission";
 const Home = () => {
   
   useEffect(() => {
@@ -23,6 +24,7 @@ const Home = () => {
   return (
     <>
       <HeroCarousel />
+      <OurMission/>
       <BusinessCentric />
       <OurProduct />
       <Contact />

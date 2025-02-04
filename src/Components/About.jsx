@@ -64,7 +64,7 @@ const About = () => {
         />
         <div className="absolute text-customBlue text-2xl sm:text-5xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
           <p>About Us</p>
-          <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div>
+          {/* <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div> */}
         </div>
       </div>
 
@@ -76,7 +76,7 @@ const About = () => {
               Who We Are
             </p>
             <p className="text-sm font-semibold leading-relaxed text-gray-800 tracking-wide pt-3 text-justify">
-              JIITECH is a team of professional experts in the fields of education, science, technologies, and culture from Japan and India aiming at promoting mutual understanding, bringing new partnerships in these sectors aiming to contribute to creating job opportunities, growth in the economy, and building a friendly environment for an aging society. We specialize in organizing student exchange programs, workshops, cultural experiences, and educational opportunities that empower the youth of both countries. By bringing together students, educators, and innovators from both countries, we aim to build a brighter future defined by collaboration and cultural exchange. We help industries find new business (R&D and marketing) opportunities at both ends.
+              JIITECH is a team of professionals specializing in education, science, technology, and culture from Japan and India. Our mission is to promote mutual understanding and foster new partnerships across these sectors, contributing to job creation, economic growth, and the development of a supportive environment for an aging society. We specialize in organizing student immersion programs, workshops, cultural experiences, and educational opportunities that empower the youth of both countries. By connecting students, educators, and innovators, we aim to shape a brighter future through collaboration and cultural exchange. Additionally, we assist industries in discovering new business opportunities, including R&D and marketing, on both sides.
             </p>
           </div>
 
@@ -197,14 +197,14 @@ const About = () => {
               {/* Text Section */}
               <div className="w-full lg:w-1/2 space-y-8">
                 <p className="text-base sm:text-lg md:text-xl text-black-700 leading-relaxed">
-                  At <span className="font-bold text-customBlue">JIITECH</span>, our passion lies in fostering global education to build bridges between cultures, nurture future-ready leaders, and unlock young minds' limitless potential.
+                  At <span className="font-bold text-customBlue">JIITECH</span>, our passion lies in fostering global education to build bridges between cultures, nurture future-ready leaders, and unlock the limitless potential of young minds.
                 </p>
                 <ul className="space-y-4">
                   {[
-                    "Expand worldview and global awareness",
+                    "Expand your worldview and global awareness",
                     "Develop essential problem-solving and innovation skills",
                     "Discover powerful career and higher-education pathways",
-                    "Foster international friendships for life",
+                    "Forge lifelong international friendships",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-4">
                       <div className="flex-shrink-0">
@@ -217,14 +217,14 @@ const About = () => {
                   ))}
                 </ul>
                 <p className="text-base sm:text-lg md:text-xl text-black-700 leading-relaxed">
-                  We don’t just teach about the world; we bring the world into the classroom—enabling every student to explore their interests, gain fresh insights, and dream beyond borders.
+                  We don’t just teach about the world; we bring the world into the classroom—empowering every student to explore their interests, gain fresh insights, and dream beyond borders.
                 </p>
                 {/* Call-to-Action */}
-                <div className="pt-4">
+                {/* <div className="pt-4">
                   <button className="bg-red-500 text-sm sm:text-base md:text-lg text-white py-2 px-4 md:py-3 md:px-6 rounded-lg shadow-lg hover:bg-customBlue transition-all duration-300">
                     Learn More
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -249,11 +249,10 @@ const About = () => {
               </h1>
 
               <p className="text-lg leading-relaxed mb-6 text-justify">
-                We invite you to be part of this transformative experience, where
-                knowledge meets exploration, and education meets adventure. Whether
-                you’re a student looking to broaden horizons, an educator searching
-                for enriching exchange opportunities, or a school administrator ready
-                to take your institution global—JIITECH has a place for you.
+                We invite you to be part of this transformative experience, where knowledge meets exploration and education meets adventure. Whether you’re a student looking to broaden your horizons, an educator seeking enriching exchange opportunities, or a school administrator ready to take your institution global—JIITECH has a place for you.
+
+                Embark on the next chapter of learning, innovation, and cultural discovery today.
+                .
               </p>
 
               <p className="text-white/90 italic mb-4">
@@ -278,13 +277,13 @@ const About = () => {
             <div className="mb-12">
               <h2 className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
                 Our Crew
-                <div className="flex justify-center opacity-30">
+                {/* <div className="flex justify-center opacity-30">
                   <img width={300} src="/underline.png" alt="underline" />
-                </div>
+                </div> */}
               </h2>
             </div>
             <div className="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-6 lg:grid-cols-3 gap-8 max-w-xl mx-auto md:max-w-3xl lg:max-w-full">
-              
+
               <div className="block group md:col-span-2 lg:col-span-1">
                 <div className="relative mb-6">
                   <img
@@ -297,21 +296,21 @@ const About = () => {
                   Jinal Patel
                 </h4>
                 <span className="text-gray-500 text-center block transition-all duration-500 group-hover:text-gray-900">
-                   Founder
+                  Founder
                 </span>
                 <div className="flex justify-center space-x-4 mt-4">
-                  <a href="#" className="text-gray-500 hover:text-pink-700">
+                  {/* <a href="#" className="text-gray-500 hover:text-pink-700">
                     <FaInstagram size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-blue-700">
+                  </a> */}
+                  {/* <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaFacebookF size={20} />
-                  </a>
+                  </a> */}
                   <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaLinkedin size={20} />
-                  </a>                 
-                  <a href="#" className="text-gray-500 hover:text-black">
-                    <FaXTwitter size={20} />
                   </a>
+                  {/* <a href="#" className="text-gray-500 hover:text-black">
+                    <FaXTwitter size={20} />
+                  </a> */}
                 </div>
               </div>
               <div className="block group md:col-span-2 lg:col-span-1">
@@ -329,24 +328,24 @@ const About = () => {
                   Founder
                 </span>
                 <div className="flex justify-center space-x-4 mt-4">
-                  <a href="#" className="text-gray-500 hover:text-pink-700">
+                  {/* <a href="#" className="text-gray-500 hover:text-pink-700">
                     <FaInstagram size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-blue-700">
+                  </a> */}
+                  {/* <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaFacebookF size={20} />
-                  </a>
+                  </a> */}
                   <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaLinkedin size={20} />
-                  </a>                 
-                  <a href="#" className="text-gray-500 hover:text-black">
-                    <FaXTwitter size={20} />
                   </a>
+                  {/* <a href="#" className="text-gray-500 hover:text-black">
+                    <FaXTwitter size={20} />
+                  </a> */}
                 </div>
               </div>
               <div className="block group md:col-span-2 lg:col-span-1">
                 <div className="relative mb-6">
                   <img
-                    src="taichiikeda.jpg"
+                    src="taichiikeda.jpeg"
                     alt="taichiikeda"
                     className="w-40 h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
                   />
@@ -355,21 +354,21 @@ const About = () => {
                   Taichi Ikeda
                 </h4>
                 <span className="text-gray-500 text-center block transition-all duration-500 group-hover:text-gray-900">
-                 Founder
+                  Founder
                 </span>
                 <div className="flex justify-center space-x-4 mt-4">
-                  <a href="#" className="text-gray-500 hover:text-pink-700">
+                  {/* <a href="#" className="text-gray-500 hover:text-pink-700">
                     <FaInstagram size={20} />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-blue-700">
+                  </a> */}
+                  {/* <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaFacebookF size={20} />
-                  </a>
+                  </a> */}
                   <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaLinkedin size={20} />
-                  </a>                 
-                  <a href="#" className="text-gray-500 hover:text-black">
-                    <FaXTwitter size={20} />
                   </a>
+                  {/* <a href="#" className="text-gray-500 hover:text-black">
+                    <FaXTwitter size={20} />
+                  </a> */}
                 </div>
               </div>
               {/* <div className="block group md:col-span-2 lg:col-span-1">
@@ -407,6 +406,397 @@ const About = () => {
           </div>
         </section>
         {/* new team end */}
+
+
+
+        {/* mentors&Advisors Comiti  */}
+        <section className="py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-12">
+              <h2 className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
+                Mentors & Advisors 
+                {/* <div className="flex justify-center opacity-30">
+                  <img width={300} src="/underline.png" alt="underline" />
+                </div> */}
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-lg sm:max-w-xl md:max-w-3xl lg:max-w-full mx-auto">
+              {/* Mentor Card */}
+              <div className="block group">
+                <div className="relative mb-6">
+                  <img
+                    src=""
+                    alt="Dr. Renu Wadhwa"
+                    className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
+                  />
+                </div>
+                <span className="text-gray-500 text-center block text-sm sm:text-base transition-all duration-500 group-hover:text-gray-900">
+                  Mentor
+                </span>
+                <h4 className="font-semibold text-gray-900 mb-2 capitalize text-center text-sm sm:text-base md:text-lg transition-all duration-500 group-hover:text-red-600">
+                  Dr. Renu Wadhwa
+                  <br />
+                  Prime Senior Researcher & Head AIST-INDIA DAILAB, AIST, Japan
+                </h4>
+                
+                <div className="flex justify-center space-x-4 mt-4">
+                  <a href="#" className="text-gray-500 hover:text-blue-700">
+                    <FaLinkedin size={20} />
+                  </a>
+                </div>
+              </div>
+
+              {/* Repeat similar blocks for other mentors */}
+              <div className="block group">
+                <div className="relative mb-6">
+                  <img
+                    src=""
+                    alt="Dr. Shanuja Beri"
+                    className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
+                  />
+                </div>
+                <span className="text-gray-500 text-center block text-sm sm:text-base transition-all duration-500 group-hover:text-gray-900">
+                  Mentor
+                </span>
+                <h4 className="font-semibold text-gray-900 mb-2 capitalize text-center text-sm sm:text-base md:text-lg transition-all duration-500 group-hover:text-red-600">
+                  Dr. Shanuja Beri, PhD
+                  <br />
+                  Associate Professor, Department of Zoology, India
+                </h4>
+                
+                <div className="flex justify-center space-x-4 mt-4">
+                  <a href="#" className="text-gray-500 hover:text-blue-700">
+                    <FaLinkedin size={20} />
+                  </a>
+                </div>
+              </div>
+
+              <div className="block group">
+                <div className="relative mb-6">
+                  <img
+                    src=" "
+                    alt="Dr. Sunil Kaul"
+                    className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
+                  />
+                </div>
+                <span className="text-gray-500 text-center block text-sm sm:text-base transition-all duration-500 group-hover:text-gray-900">
+                  Mentor
+                </span>
+                <h4 className="font-semibold text-gray-900 mb-2 capitalize text-center text-sm sm:text-base md:text-lg transition-all duration-500 group-hover:text-red-600">
+                  Dr. Sunil Kaul
+                  <br />
+                  Senior Research Scientist, AIST, Japan
+                </h4>
+                
+                <div className="flex justify-center space-x-4 mt-4">
+                  <a href="#" className="text-gray-500 hover:text-blue-700">
+                    <FaLinkedin size={20} />
+                  </a>
+                </div>
+              </div>
+
+              <div className="block group">
+                <div className="relative mb-6">
+                  <img
+                    src=" "
+                    alt="Dr. Yoshihiro Ohmiya"
+                    className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-full mx-auto transition-all duration-500 object-cover border border-solid border-transparent group-hover:border-red-600"
+                  />
+                </div>
+                <span className="text-gray-500 text-center block text-sm sm:text-base transition-all duration-500 group-hover:text-gray-900">
+                  Mentor
+                </span>
+                <h4 className="font-semibold text-gray-900 mb-2 capitalize text-center text-sm sm:text-base md:text-lg transition-all duration-500 group-hover:text-red-600">
+                  Dr. Yoshihiro Ohmiya, PhD
+                  <br />
+                  Principal Researcher, AIST Biomedical Research Institute, Japan
+                </h4>
+                
+                <div className="flex justify-center space-x-4 mt-4">
+                  <a href="#" className="text-gray-500 hover:text-blue-700">
+                    <FaLinkedin size={20} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* mentors&Advisors Comiti end */}
+
+
+        {/* new team section  */}
+        {/* <div className="font-[sans-serif]">
+          <div className="max-w-5xl max-lg:max-w-2xl max-sm:max-w-sm mx-auto">
+            <h2 className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
+            Mentors & Advisors 
+            </h2>
+            <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8 max-sm:justify-center text-center mt-12">
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-[1.02] transition-all">
+                <div className="bg-[#ff3d8c] h-32" />
+                <img
+                  src="https://readymadeui.com/team-1.webp"
+                  className="w-36 h-36 border-4 border-white rounded-full -mt-[72px] shadow-xl inline-block"
+                />
+                <div className="p-6">
+                  <h4 className="text-gray-800 text-base font-extrabold">John Doe</h4>
+                  <p className="text-gray-600 text-xs mt-1">Software Engineer</p>
+                  <p className="text-gray-600 mt-4 text-sm">
+                    Eiusmod commodo aliquip laboris qui anim non voluptate consectetur.
+                  </p>
+                  <div className="space-x-4 mt-6">
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 155.139 155.139"
+                      >
+                        <path
+                          d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                          data-original="#010002"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                          data-original="#03a9f4"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14px"
+                        fill="#333"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                          data-original="#0077b5"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-[1.02] transition-all">
+                <div className="bg-[#c730cb] h-32" />
+                <img
+                  src="https://readymadeui.com/team-2.webp"
+                  className="w-36 h-36 border-4 border-white rounded-full -mt-[72px] shadow-xl inline-block"
+                />
+                <div className="p-6">
+                  <h4 className="text-gray-800 text-base font-extrabold">Mark Adair</h4>
+                  <p className="text-gray-600 text-xs mt-1">Software Engineer</p>
+                  <p className="text-gray-600 mt-4 text-sm">
+                    Eiusmod commodo aliquip laboris qui anim non voluptate consectetur.
+                  </p>
+                  <div className="space-x-4 mt-6">
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 155.139 155.139"
+                      >
+                        <path
+                          d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                          data-original="#010002"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                          data-original="#03a9f4"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14px"
+                        fill="#333"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                          data-original="#0077b5"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-[1.02] transition-all">
+                <div className="bg-[#00a8ff] h-32" />
+                <img
+                  src="https://readymadeui.com/team-3.webp"
+                  className="w-36 h-36 border-4 border-white rounded-full -mt-[72px] shadow-xl inline-block"
+                />
+                <div className="p-6">
+                  <h4 className="text-gray-800 text-base font-extrabold">
+                    Simon Konecki
+                  </h4>
+                  <p className="text-gray-600 text-xs mt-1">Web Designer</p>
+                  <p className="text-gray-600 mt-4 text-sm">
+                    Eiusmod commodo aliquip laboris qui anim non voluptate consectetur.
+                  </p>
+                  <div className="space-x-4 mt-6">
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 155.139 155.139"
+                      >
+                        <path
+                          d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                          data-original="#010002"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                          data-original="#03a9f4"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14px"
+                        fill="#333"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                          data-original="#0077b5"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-[1.02] transition-all">
+                <div className="bg-[#00a8ff] h-32" />
+                <img
+                  src="https://readymadeui.com/team-3.webp"
+                  className="w-36 h-36 border-4 border-white rounded-full -mt-[72px] shadow-xl inline-block"
+                />
+                <div className="p-6">
+                  <h4 className="text-gray-800 text-base font-extrabold">
+                    Simon Konecki
+                  </h4>
+                  <p className="text-gray-600 text-xs mt-1">Web Designer</p>
+                  <p className="text-gray-600 mt-4 text-sm">
+                    Eiusmod commodo aliquip laboris qui anim non voluptate consectetur.
+                  </p>
+                  <div className="space-x-4 mt-6">
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 155.139 155.139"
+                      >
+                        <path
+                          d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                          data-original="#010002"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                          data-original="#03a9f4"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14px"
+                        fill="#333"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                          data-original="#0077b5"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
+
+        {/* new team section end */}
       </div>
       <Footer />
     </div>

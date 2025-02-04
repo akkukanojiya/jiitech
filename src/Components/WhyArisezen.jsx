@@ -27,11 +27,11 @@ function WhyArisezen() {
       <div className="text-black flex flex-col justify-center items-center md:px-48 mx-3 ">
         <p className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group">
           Itinerary Highlights
-          <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div>
+          {/* <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div> */}
         </p>
 
         <p className="text-center text-xl font-light">
-          Our exchange program features an itinerary designed to maximize learning and cultural exchange. Here is a sample itinerary highlighting the experiences included
+        Our exchange program offers an itinerary crafted to maximize learning and cultural exchange. Here is a sample itinerary showcasing the exciting experiences included.
 
         </p>
       </div>
@@ -97,7 +97,7 @@ function WhyArisezen() {
             </div>
             <h1 className="text-darken mb-3 uppercase text-xl font-medium lg:px-14">Day 1-3: Arrival and Introduction</h1>
             <p className="px-4 text-gray-800 text-justify">
-              Arrival and warm welcome session. Introduction to the host culture through an orientation workshop. City tour to visit iconic landmarks and cultural hotspots.
+            Arrival and a warm welcome session, followed by an orientation workshop to introduce you to the host culture. Enjoy a city tour visiting iconic landmarks and cultural hotspots.
             </p>
           </div>
 
@@ -108,7 +108,7 @@ function WhyArisezen() {
             </div>
             <h1 className="text-darken uppercase mb-3 text-xl font-medium lg:px-14">Day 4-7: Academic & Technological Exploration</h1>
             <p className="px-4 text-gray-700 text-justify">
-              Participation in workshops and lectures at partnering institutions. Hands-on experience with local innovations in technology. Interaction sessions with local students and educators.
+            Participate in workshops and lectures at partnering institutions, gaining hands-on experience with local technological innovations. Engage in interactive sessions with local students and educators.
             </p>
           </div>
 
@@ -121,7 +121,7 @@ function WhyArisezen() {
               Day 8-10: Cultural Activities & Industry Visits
             </h1>
             <p className="px-4 text-gray-700 text-justify">
-              Attend a traditional festival or ceremony. Industry visits to leading companies in technology, manufacturing, or other relevant sectors. Explore local cuisine and learn about traditional food preparations.
+            Attend a traditional festival or ceremony, visit leading companies in technology, manufacturing, and other relevant sectors, and explore local cuisine while learning about traditional food preparations
             </p>
           </div>
 
@@ -134,7 +134,7 @@ function WhyArisezen() {
               Day 11-14: Adventure and Cultural Integration
             </h1>
             <p className="px-4 text-gray-700 text-justify">
-              Day trips to nearby scenic or historic locations. Experience adventure activities like hiking or local cultural performances. Final group discussions and reflections on the experience.
+            Day trips to nearby scenic or historic locations, enjoy adventure activities like hiking or local cultural performances, and conclude with group discussions and reflections on the experience.
             </p>
           </div>
         </div>

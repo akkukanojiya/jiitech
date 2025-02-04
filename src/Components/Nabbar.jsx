@@ -264,10 +264,10 @@ const Nabbar = () => {
 
 
         </div>
-        <div className="language-switcher-container">
+        {/* <div className="language-switcher-container">
 
           <div id="google_translate_element"></div>
-        </div>
+        </div> */}
       </div>
 
     </div>

@@ -18,6 +18,7 @@ import Qa from "./NavPages/Qa.jsx";
 import HowToApply from "./Components/HowToApply.jsx"
 import Gallery from "./Components/Gallery.jsx";
 import Weoffer from "./Components/WeOffer.jsx";
+import OurProduct from "./Components/OurProduct.jsx";
 
 const router = createBrowserRouter([
   {
@@ -72,8 +73,8 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/qa",
-        element: <Qa />,
+        path: "/ourproducts",
+        element: <OurProduct />,
       },
       
       {
