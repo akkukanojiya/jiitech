@@ -29,11 +29,16 @@ const ContactUs = () => {
           src="/contact us.jpg"
           className=" w-full object-cover opacity-20"
         />
-        <div className="absolute  text-2xl sm:text-5xl font-bold flex flex-col h-full justify-center text-center items-center w-full  bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text">
+        <div className="absolute  text-2xl sm:text-5xl font-train flex flex-col h-full justify-center text-center items-center w-full  bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text">
           <p>Contact us</p>
-          <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div>
+           
         </div>
       </div>
+
+
+
+
+
 
       {/* <div className="bg-gradient-to-b from-customBlue to-white px-4 sm:px-6 md:px-12">
   <div className="py-8 text-center text-white text-lg sm:text-xl">

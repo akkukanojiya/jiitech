@@ -66,7 +66,7 @@ const Nabbar = () => {
               <Link to={"/about"}> ABOUT US </Link>
             </p>
             <p>
-              <Link to={"/weoffer"}>  WE OFFER </Link>
+              <Link to={"/weoffer"}> WHAT WE OFFER </Link>
             </p>
 
             {/* <span onClick={HandleHamTrue} className="px-2 ">
@@ -190,7 +190,7 @@ const Nabbar = () => {
             <Link to={"/about"}>ABOUT US</Link>
           </p>
           <p className="hover:text-red-700">
-            <Link to={"/weoffer"}>WE OFFER</Link>
+            <Link to={"/weoffer"}>WHAT WE OFFER</Link>
           </p>
 
 
