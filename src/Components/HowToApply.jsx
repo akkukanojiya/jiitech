@@ -81,12 +81,13 @@ function HowToApply() {
           src="./how-to-apply.jpg"
           className=" w-full object-cover opacity-40"
         />
-        <div className="absolute text-customBlue text-2xl sm:text-5xl font-semibold flex flex-col h-full justify-center text-center items-center w-full opacity-100">
+        <div className="absolute text-customBlue text-2xl sm:text-5xl font-train flex flex-col h-full justify-center text-center items-center w-full opacity-100">
           <p>How To Apply</p>
         </div>
       </div>
  
 
+ 
       {/* new steps  */}
       <div className="bg-white">
   <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">

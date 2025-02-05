@@ -54,10 +54,10 @@ function Footer() {
             <ul className="space-y-3 text-black text-sm">
               {[
                 { name: "Home", link: "/" },
-                { name: "About Us", link: "/about" },
-                { name: "We Offer", link: "/weoffer" },
-                { name: "How to Apply", link: "/howtoapply" },
-                { name: "Gallery", link: "/gallery" },
+                { name: "About Us", link: "https://jiitech.netlify.app/about" },
+                { name: "We Offer", link: "https://jiitech.netlify.app/weoffer" },
+                { name: "How to Apply", link: "https://jiitech.netlify.app/howtoapply" },
+                 
                 { name: "Contact Us", link: "/contactus" },
                 {/* { name: "Privacy Policy", link: "/privacy" }, */ }
               ].map((item, index) => (

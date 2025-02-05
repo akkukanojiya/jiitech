@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         monoton: ["Monoton", "cursive"],
+        train: ['"Train One"', 'serif'],
         // zenTokyoZoo: ["Zen Tokyo Zoo", "cursive"]
       },
 
