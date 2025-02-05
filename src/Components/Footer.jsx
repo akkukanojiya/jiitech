@@ -121,9 +121,9 @@ function Footer() {
               <strong className="text-black"> India :</strong>
             </p>
             <p className="text-sm leading-relaxed text-black-700 ">
-              IITECH Headquarters
+              JIITECH Headquarters
               Cherish Eduskills
-              615 - 617 Sanskrit Galleria
+               A 615 - 617 Sanskrit Galleria
               Ahmedabad - 380015
 
             </p>

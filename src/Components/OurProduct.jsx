@@ -32,8 +32,8 @@ function OurProduct() {
           Our set of Student Immersion Programs are designed to provide students a life-changing opportunity to learn, grow, and experience another culture. Participants will immerse themselves in an environment known for its exceptional infrastructure, cleanliness, discipline, and safety. Our academic and cultural activity programs are thoughtfully designed not only to foster educational growth but also to create lasting friendships and memories.
           </p>
 
-          <div className="mt-12 ">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 ">
+          <div className="mt-12 text-justify">
+            <div className=" text-justify grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 ">
               {[
                 {
                   icon: "🌍",
@@ -74,7 +74,7 @@ function OurProduct() {
               ].map((highlight, index) => (
                 <div
                   key={index}
-                  className={`relative bg-white bg-opacity-70 rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 backdrop-blur`}
+                  className={`relative bg-white bg-opacity-70 rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 backdrop-blur text-justify`}
                 >
                   <div className="text-3xl sm:text-4xl text-center mb-4 text-red-500 group-hover:scale-125 transition-transform duration-500">
                     {highlight.icon}
@@ -82,7 +82,7 @@ function OurProduct() {
                   <h5 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 text-center">
                     {highlight.title}
                   </h5>
-                  <p className="text-sm sm:text-base text-gray-700 text-center">
+                  <p className="text-sm sm:text-base text-gray-700 text-center text-justify">
                     {highlight.description}
                   </p>
                 </div>

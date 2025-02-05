@@ -32,7 +32,7 @@ function WhyArisezen() {
           {/* <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div> */}
         </p>
 
-        <p className="text-center text-xl font-light">
+        <p className="text-center text-xl font-light ">
         Our exchange programs offer an itinerary crafted to maximize learning and cultural exchange. Here is a sample itinerary showcasing the exciting experiences included.
 
         </p>

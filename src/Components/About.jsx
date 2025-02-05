@@ -75,13 +75,13 @@ const About = () => {
             <p className="text-3xl font-train text-customBlue sm:py-6 ">
               Who We Are
             </p>
-            <p className="text-sm font-semibold leading-relaxed text-customBlue tracking-wide pt-3 text-justify">
+            <p className="text-lg font-sm leading-relaxed text-customBlue tracking-wide pt-3 text-justify">
             JIITECH is a team of professionals specializing in education, science, technology, and culture from Japan and India. Our mission is to promote mutual understanding and foster new partnerships across these sectors, contributing to job creation, economic growth, and the development of a supportive environment for an aging society. We specialize in organizing student immersion programs, workshops, cultural experiences, and educational opportunities that empower the youth of both countries. By connecting students, educators, and innovators, we aim to shape a brighter future through collaboration and cultural exchange. Additionally, we assist industries in discovering new business opportunities, including R&D and marketing, on both sides.
             </p>
           </div>
 
           <div className="sm:w-1/2 mt-4 sm:mt-0">
-            <img src="./whoweare.jpg" alt="JIITECH" className="w-full h-auto rounded-lg shadow-lg" />
+            <img src="./whoweare.jpg" alt="JIITECH" className="w-full h-auto  shadow-lg" />
           </div>
         </div>
 
@@ -115,10 +115,10 @@ const About = () => {
 
               {/* Text Section */}
               <div className="w-full lg:w-1/2 space-y-8">
-                <p className="text-base sm:text-lg md:text-xl text-black-700 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-black-700 leading-relaxed text-justify">
                   At <span className="font-bold text-customBlue">JIITECH</span>, our passion lies in fostering global education to build bridges between cultures, nurture future-ready leaders, and unlock the limitless potential of young minds.
                 </p>
-                <ul className="space-y-4">
+                <ul className="space-y-4 text-justify">
                   {[
                     "Expand your worldview and global awareness",
                     "Develop essential problem-solving and innovation skills",
@@ -479,7 +479,7 @@ const About = () => {
 
 
   {/* new try  */}
-  <div key="1" className="mb-16">
+  {/* <div key="1" className="mb-16">
   <dh-component>
     <div className="container flex justify-center mx-auto pt-16">
       <div>
@@ -1044,7 +1044,7 @@ const About = () => {
       </div>
     </div>
   </dh-component>
-</div>
+</div> */}
 
   {/* new try end */}
 

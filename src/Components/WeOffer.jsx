@@ -28,7 +28,7 @@ const Weoffer = () => {
  
     
 
-      <div className="bg-gradient-to-b from-gray-100 to-gray-200 min-h-screen py-10 px-6 sm:px-10">
+      <div className="bg-gradient-to-b from-gray-100 to-gray-200 min-h-screen py-10 px-6 sm:px-10 text-justify">
         {/* JUKU Section */}
         <div className="bg-white shadow-xl rounded-lg p-8 mb-10 transition-transform hover:scale-105 hover:shadow-2xl">
           <h2 className="text-2xl font-bold text-customBlue mb-6">
@@ -37,13 +37,13 @@ const Weoffer = () => {
           <div className="flex flex-col md:flex-row items-start gap-6">
             <div className="md:w-1/3">
               <img
-                src="./familycraft.webp"
+                src="./familycraft.jpg"
                 alt="Students doing origami"
                 className="rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
               />
             </div>
             <div className="md:w-2/3">
-              <ul className="space-y-4 text-gray-800">
+              <ul className="space-y-4 text-gray-800 text-justify">
                 <li>
                   <strong>Eye-Opening Encounters:</strong> Immerse yourself in culturally rich sessions where Indian and Japanese values come together.
                 </li>
