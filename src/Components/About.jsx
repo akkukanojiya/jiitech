@@ -62,9 +62,9 @@ const About = () => {
           className="w-full object-cover opacity-20"
           alt="About Us"
         />
-        <div className="absolute text-customBlue text-2xl sm:text-5xl font-train flex flex-col h-full justify-center text-center items-center w-full">
+        <div className="absolute text-customBlue text-2xl sm:text-5xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
           <p>About Us</p>
-           
+          {/* <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div> */}
         </div>
       </div>
 
@@ -72,16 +72,16 @@ const About = () => {
       <div className="py-12 sm:px-24 ">
         <div className="px-4 py-8 flex flex-col sm:flex-row sm:gap-6">
           <div className="sm:w-1/2">
-            <p className="text-3xl font-train text-customBlue sm:py-6 ">
+            <p className="text-3xl font-normal sm:py-6 border-b-2 border-orange-400">
               Who We Are
             </p>
-            <p className="text-lg font-sm leading-relaxed text-customBlue tracking-wide pt-3 text-justify">
-            JIITECH is a team of professionals specializing in education, science, technology, and culture from Japan and India. Our mission is to promote mutual understanding and foster new partnerships across these sectors, contributing to job creation, economic growth, and the development of a supportive environment for an aging society. We specialize in organizing student immersion programs, workshops, cultural experiences, and educational opportunities that empower the youth of both countries. By connecting students, educators, and innovators, we aim to shape a brighter future through collaboration and cultural exchange. Additionally, we assist industries in discovering new business opportunities, including R&D and marketing, on both sides.
+            <p className="text-sm font-semibold leading-relaxed text-gray-800 tracking-wide pt-3 text-justify">
+              JIITECH is a team of professionals specializing in education, science, technology, and culture from Japan and India. Our mission is to promote mutual understanding and foster new partnerships across these sectors, contributing to job creation, economic growth, and the development of a supportive environment for an aging society. We specialize in organizing student immersion programs, workshops, cultural experiences, and educational opportunities that empower the youth of both countries. By connecting students, educators, and innovators, we aim to shape a brighter future through collaboration and cultural exchange. Additionally, we assist industries in discovering new business opportunities, including R&D and marketing, on both sides.
             </p>
           </div>
 
-          <div className="sm:w-1/2 mt-4 sm:mt-0">
-            <img src="./whoweare.jpg" alt="JIITECH" className="w-full h-auto  shadow-lg" />
+          <div className="sm:w-1/2 mt-6 sm:mt-0">
+            <img src="https://www.razarefrigeration.in/assets/img/about-us.jpg" alt="JIITECH" className="w-full h-auto rounded-lg shadow-lg" />
           </div>
         </div>
 
@@ -90,7 +90,88 @@ const About = () => {
 
 
 
- 
+
+        {/* <div className="py-8">
+          <h2 className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
+            Our Advisor
+            <div className="flex justify-center opacity-30 mb-6">
+              <img width={300} src="/underline.png" alt="underline" />
+            </div>
+          </h2>
+          <div className="sm:px-8 flex sm:flex-row flex-col justify-evenly">
+            <div className="sm:w-1/3 mx-1 flex items-center">
+              <div className="p-1 border-1 border-gray-300 rounded-md">
+                <img
+                  src="public/sky.JPG"
+                  alt=""
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            <div className="sm:w-1/3 px-2 flex flex-col justify-evenly gap-2 sm:gap-0">
+              <span className="text-2xl text-red-700 font-semibold">
+                Akash kanojiya
+              </span>
+              <p className="text-gray-500">
+                In today's fast-paced business environment, companies must adopt
+                new technologies and transform their operational frameworks to
+                maintain competitiveness. This scenario might resonate with your
+                current challenges.
+              </p>
+            </div>
+          </div>
+
+          <div className="sm:px-8 py-8 flex sm:flex-row flex-col-reverse justify-evenly">
+            <div className="sm:w-1/3 px-2 flex flex-col justify-evenly gap-2 sm:gap-0">
+              <span className="text-2xl text-red-700 font-semibold">
+                Jaimin Katva
+              </span>
+              <p className="text-gray-500">
+                We offer a comprehensive range of consultancy services:
+                Establishing QA Process, QA Process Assessment, QA Process
+                Improvement, Introducing Test Automation, Providing Consultation
+                for Testing Specialized Software & Custom QA Training.
+              </p>
+            </div>
+
+            <div className="sm:w-1/3 mx-1 flex items-center">
+              <div className="p-1 border-1 border-gray-300 rounded-md">
+                <img
+                  src="public/QA_Pics/download-242.jpg"
+                  alt=""
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="sm:px-8 py-8 flex sm:flex-row flex-col justify-evenly">
+            <div className="sm:w-1/3 mx-1 flex items-center">
+              <div className="p-1 border-1 border-gray-300 rounded-md">
+                <img
+                  src="public/QA_Pics/download-35.jpg"
+                  alt=""
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            <div className="sm:w-1/3 px-2 flex flex-col justify-evenly gap-2 sm:gap-0">
+              <span className="text-2xl text-red-700 font-semibold">
+                Harshil Mehta
+              </span>
+              <p className="text-gray-500 ">
+                Forming the right management and technical teams is a solid
+                foundation, yet achieving outstanding results and superior quality
+                demands more. Creating a seamless and efficient workflow between
+                these teams is pivotal. This is where Quality House's QA
+                consultancy services excel.
+              </p>
+            </div>
+          </div>
+        </div> */}
+
         <section className="relative bg-gradient-to-r from-gray-50 to-gray-100 py-20 px-6 lg:px-10 xl:px-20 overflow-hidden">
           {/* Decorative Background */}
           <div className="absolute inset-0 overflow-hidden">
@@ -115,10 +196,10 @@ const About = () => {
 
               {/* Text Section */}
               <div className="w-full lg:w-1/2 space-y-8">
-                <p className="text-base sm:text-lg md:text-xl text-black-700 leading-relaxed text-justify">
+                <p className="text-base sm:text-lg md:text-xl text-black-700 leading-relaxed">
                   At <span className="font-bold text-customBlue">JIITECH</span>, our passion lies in fostering global education to build bridges between cultures, nurture future-ready leaders, and unlock the limitless potential of young minds.
                 </p>
-                <ul className="space-y-4 text-justify">
+                <ul className="space-y-4">
                   {[
                     "Expand your worldview and global awareness",
                     "Develop essential problem-solving and innovation skills",
@@ -136,7 +217,7 @@ const About = () => {
                   ))}
                 </ul>
                 <p className="text-base sm:text-lg md:text-xl text-black-700 leading-relaxed">
-                We don’t just teach about the world; we bring the world into the classroom—empowering every student to explore their interests, gain fresh insights, and dream beyond borders.
+                  We don’t just teach about the world; we bring the world into the classroom—empowering every student to explore their interests, gain fresh insights, and dream beyond borders.
                 </p>
                 {/* Call-to-Action */}
                 {/* <div className="pt-4">
@@ -151,7 +232,7 @@ const About = () => {
 
 
 
-        {/* <div className="bg-white min-h-screen flex items-center justify-center p-6">
+        <div className="bg-white min-h-screen flex items-center justify-center p-6">
           <div className="bg-customBlue text-white shadow-xl rounded-lg max-w-4xl mx-auto p-8 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
             <div className="text-center">
 
@@ -178,177 +259,27 @@ const About = () => {
                 Embark on your next chapter of learning, innovation, and cultural
                 discovery today.
               </p>
-               
+              {/* <a
+                href="https://www.jiitech.jp"
+                className="bg-white text-red-500 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-red-100 transition duration-300 transform hover:scale-110"
+              >
+                Visit www.jiitech.jp
+              </a> */}
             </div>
           </div>
-        </div> */}
+        </div>
 
 
-        {/* new team section  */}
-        {/* <section
-          className="ezy__team12 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white overflow-hidden"
-        >
-          <div className="container px-4 mx-auto">
-            <div className="flex justify-center text-center">
-              <div className="sm:max-w-md">
-                <h3 className="text-4xl font-train pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">Our Crew</h3>
 
-              </div>
-            </div>
-            <div className="grid grid-cols-3 gap-6">
-              <div className="col-span-3 lg:col-span-1 my-12 lg:my-0 xl:p-12">
-                <div className="group relative">
-                  <img
-                    src="./jinalpatel.jpg"
-                    alt="jinalpatel"
-                    className="h-auto w-full mx-auto"
-                  />
-                  <div
-                    className="absolute -bottom-12 left-[10%] p-5 w-[80%] bg-white shadow-xl dark:bg-slate-800 text-center overflow-hidden z-[1] group-hover:bg-blue-600 group-hover:pt-7 group-hover:px-5 group-hover:pb-20 duration-300 group-hover:text-customBlue"
-                  >
-                    <h3 className="text-xl font-semibold leading-normal opacity-80 mb-1">Jinal Patel</h3>
-                    <p className="text-[17px] leading-normal opacity-80 mb-2">Founder</p>
-
-                    <div
-                      className="absolute w-full left-0 top-auto opacity-0 translate-y-7 group-hover:opacity-100 group-hover:translate-y-0 mt-1"
-                    >
-                      <ul className="flex justify-center items-center">
-                        <li>
-                          <a
-                            href="#"
-                            className="w-10 h-10 text-[26px] text-center hover:text-blue-600 mt-2 mr-2 opacity-90 p-0 relative z-[1] inline-flex justify-center items-center before:absolute before:w-full before:h-full before:opacity-0 before:translate-y-full before:bg-slate-800 before:-z-[1] hover:before:opacity-100 hover:before:translate-y-0 transition duration-300"
-                          ><i className="fab fa-twitter"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="w-10 h-10 text-[26px] text-center hover:text-blue-600 mt-2 mr-2 opacity-90 p-0 relative z-[1] inline-flex justify-center items-center before:absolute before:w-full before:h-full before:opacity-0 before:translate-y-full before:bg-slate-800 before:-z-[1] hover:before:opacity-100 hover:before:translate-y-0 transition duration-300"
-                          ><i className="fab fa-facebook"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="w-10 h-10 text-[26px] text-center hover:text-blue-600 mt-2 mr-2 opacity-90 p-0 relative z-[1] inline-flex justify-center items-center before:absolute before:w-full before:h-full before:opacity-0 before:translate-y-full before:bg-slate-800 before:-z-[1] hover:before:opacity-100 hover:before:translate-y-0 transition duration-300"
-                          ><i className="fab fa-vimeo"></i
-                          ></a>
-                        </li>
-                      </ul>
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-
-              <div className="col-span-3 lg:col-span-1 my-12 lg:my-0 xl:p-12">
-                <div className="group relative">
-                  <img
-                    src="./nitinjain.webp"
-                    alt=" nitinjain"
-                    className="h-auto w-full mx-auto"
-                  />
-                  <div
-                    className="absolute -bottom-12 left-[10%] p-5 w-[80%] bg-white shadow-xl dark:bg-slate-800 text-center overflow-hidden z-[1] group-hover:bg-red-200 group-hover:pt-7 group-hover:px-5 group-hover:pb-20 duration-300 group-hover:text-customBlue"
-                  >
-                    <h3 className="text-xl font-semibold leading-normal opacity-80 mb-1">Nitin Jain</h3>
-                    <p className="text-[17px] leading-normal opacity-80 mb-2">Founder</p>
-
-                    <div
-                      className="absolute w-full left-0 top-auto opacity-0 translate-y-7 group-hover:opacity-100 group-hover:translate-y-0 mt-1"
-                    >
-                      <ul className="flex justify-center items-center">
-                        <li>
-                          <a
-                            href="#"
-                            className="w-10 h-10 text-[26px] text-center hover:text-blue-600 mt-2 mr-2 opacity-90 p-0 relative z-[1] inline-flex justify-center items-center before:absolute before:w-full before:h-full before:opacity-0 before:translate-y-full before:bg-slate-800 before:-z-[1] hover:before:opacity-100 hover:before:translate-y-0 transition duration-300"
-                          ><i className="fab fa-twitter"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="w-10 h-10 text-[26px] text-center hover:text-blue-600 mt-2 mr-2 opacity-90 p-0 relative z-[1] inline-flex justify-center items-center before:absolute before:w-full before:h-full before:opacity-0 before:translate-y-full before:bg-slate-800 before:-z-[1] hover:before:opacity-100 hover:before:translate-y-0 transition duration-300"
-                          ><i className="fab fa-facebook"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="w-10 h-10 text-[26px] text-center hover:text-blue-600 mt-2 mr-2 opacity-90 p-0 relative z-[1] inline-flex justify-center items-center before:absolute before:w-full before:h-full before:opacity-0 before:translate-y-full before:bg-slate-800 before:-z-[1] hover:before:opacity-100 hover:before:translate-y-0 transition duration-300"
-                          ><i className="fab fa-vimeo"></i
-                          ></a>
-                        </li>
-                      </ul>
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-
-              <div className="col-span-3 lg:col-span-1 my-12 lg:my-0 xl:p-12">
-                <div className="group relative">
-                  <img
-                    src="https://cdn.easyfrontend.com/pictures/team/team_13_3.jpg"
-                    alt="Our Team Member Image"
-                    className="h-auto w-full mx-auto"
-                  />
-                  <div
-                    className="absolute -bottom-12 left-[10%] p-5 w-[80%] bg-white shadow-xl dark:bg-slate-800 text-center overflow-hidden z-[1] group-hover:bg-blue-600 group-hover:pt-7 group-hover:px-5 group-hover:pb-20 duration-300 group-hover:text-white"
-                  >
-                    <h3 className="text-xl font-semibold leading-normal opacity-80 mb-1">Sadab Bean</h3>
-                    <p className="text-[17px] leading-normal opacity-80 mb-2">HR, INCA</p>
-
-                    <div
-                      className="absolute w-full left-0 top-auto opacity-0 translate-y-7 group-hover:opacity-100 group-hover:translate-y-0 mt-1"
-                    >
-                      <ul className="flex justify-center items-center">
-                        <li>
-                          <a
-                            href="#"
-                            className="w-10 h-10 text-[26px] text-center hover:text-blue-600 mt-2 mr-2 opacity-90 p-0 relative z-[1] inline-flex justify-center items-center before:absolute before:w-full before:h-full before:opacity-0 before:translate-y-full before:bg-slate-800 before:-z-[1] hover:before:opacity-100 hover:before:translate-y-0 transition duration-300"
-                          ><i className="fab fa-twitter"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="w-10 h-10 text-[26px] text-center hover:text-blue-600 mt-2 mr-2 opacity-90 p-0 relative z-[1] inline-flex justify-center items-center before:absolute before:w-full before:h-full before:opacity-0 before:translate-y-full before:bg-slate-800 before:-z-[1] hover:before:opacity-100 hover:before:translate-y-0 transition duration-300"
-                          ><i className="fab fa-facebook"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="w-10 h-10 text-[26px] text-center hover:text-blue-600 mt-2 mr-2 opacity-90 p-0 relative z-[1] inline-flex justify-center items-center before:absolute before:w-full before:h-full before:opacity-0 before:translate-y-full before:bg-slate-800 before:-z-[1] hover:before:opacity-100 hover:before:translate-y-0 transition duration-300"
-                          ><i className="fab fa-vimeo"></i
-                          ></a>
-                        </li>
-                      </ul>
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-        </section> */}
-
-
-        {/* new team section end */}
         {/* new team  */}
         <section className="py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12">
-              <h2 className="text-4xl font-train pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
+              <h2 className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
                 Our Crew
-                
+                {/* <div className="flex justify-center opacity-30">
+                  <img width={300} src="/underline.png" alt="underline" />
+                </div> */}
               </h2>
             </div>
             <div className="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-6 lg:grid-cols-3 gap-8 max-w-xl mx-auto md:max-w-3xl lg:max-w-full">
@@ -475,585 +406,15 @@ const About = () => {
           </div>
         </section>
         {/* new team end */}
-  
 
 
-  {/* new try  */}
-  {/* <div key="1" className="mb-16">
-  <dh-component>
-    <div className="container flex justify-center mx-auto pt-16">
-      <div>
-        <p className="text-gray-500 text-lg text-center font-normal pb-3">
-          BUILDING TEAM
-        </p>
-        <h1 className="xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">
-          The Talented People Behind the Scenes of the Organization
-        </h1>
-      </div>
-    </div>
-    <div className="w-full bg-gray-100 px-10 pt-10">
-      <div className="container mx-auto">
-        <div
-          aria-label="Behind the scenes People "
-          className="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around"
-          role="list">
-          <div
-            className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
-            role="listitem">
-            <div className="rounded overflow-hidden shadow-md bg-white">
-              <div className="absolute -mt-20 w-full flex justify-center">
-                <div className="h-32 w-32">
-                  <img
-                    alt="Display Picture of Andres Berlin"
-                    className="rounded-full object-cover h-full w-full shadow-md"
-                    role="img"
-                    src="https://cdn.tuk.dev/assets/photo-1564061170517-d3907caa96ea.jfif"
-                  />
-                </div>
-              </div>
-              <div className="px-6 mt-16">
-                <h1 className="font-bold text-3xl text-center mb-1">
-                  Andres Berlin
-                </h1>
-                <p className="text-gray-800 text-sm text-center">
-                  Chief Executive Officer
-                </p>
-                <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                  The CEO's role in raising a company's corporate IQ is to
-                  establish an atmosphere that promotes knowledge sharing and
-                  collaboration.
-                </p>
-                <div className="w-full flex justify-center pt-5 pb-5">
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Github" role="img">
-                      <svg
-                        className="feather feather-github"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                      </svg>
-                    </div>
-                  </a>
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Twitter" role="img">
-                      <svg
-                        className="feather feather-twitter"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                      </svg>
-                    </div>
-                  </a>
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Instagram" role="img">
-                      <svg
-                        className="feather feather-instagram"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect
-                          height="20"
-                          rx="5"
-                          ry="5"
-                          width="20"
-                          x="2"
-                          y="2"
-                        />
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                      </svg>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="xl:w-1/3 lg:mx-3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
-            role="listitem">
-            <div className="rounded overflow-hidden shadow-md bg-white">
-              <div className="absolute -mt-20 w-full flex justify-center">
-                <div className="h-32 w-32">
-                  <img
-                    alt="Display Picture of Silene Tokyo"
-                    className="rounded-full object-cover h-full w-full shadow-md"
-                    role="img"
-                    src="https://cdn.tuk.dev/assets/photo-1530577197743-7adf14294584.jfif"
-                  />
-                </div>
-              </div>
-              <div className="px-6 mt-16">
-                <h1 className="font-bold text-3xl text-center mb-1">
-                  Silene Tokyo
-                </h1>
-                <p className="text-gray-800 text-sm text-center">
-                  Product Design Head
-                </p>
-                <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                  The emphasis on innovation and technology in our companies has
-                  resulted in a few of them establishing global benchmarks in
-                  product design and development.
-                </p>
-                <div className="w-full flex justify-center pt-5 pb-5">
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Github" role="img">
-                      <svg
-                        className="feather feather-github"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                      </svg>
-                    </div>
-                  </a>
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Twitter" role="img">
-                      <svg
-                        className="feather feather-twitter"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                      </svg>
-                    </div>
-                  </a>
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Instagram" role="img">
-                      <svg
-                        className="feather feather-instagram"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect
-                          height="20"
-                          rx="5"
-                          ry="5"
-                          width="20"
-                          x="2"
-                          y="2"
-                        />
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                      </svg>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
-            role="listitem">
-            <div className="rounded overflow-hidden shadow-md bg-white">
-              <div className="absolute -mt-20 w-full flex justify-center">
-                <div className="h-32 w-32">
-                  <img
-                    alt="Display Picture of Johnson Stone"
-                    className="rounded-full object-cover h-full w-full shadow-md"
-                    role="img"
-                    src="https://cdn.tuk.dev/assets/photo-1566753323558-f4e0952af115.jfif"
-                  />
-                </div>
-              </div>
-              <div className="px-6 mt-16">
-                <h1 className="font-bold text-3xl text-center mb-1">
-                  Johnson Stone
-                </h1>
-                <p className="text-gray-800 text-sm text-center">
-                  Manager Development
-                </p>
-                <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                  Our services encompass the assessment and repair of property
-                  damage caused by water, fire, smoke, or mold. We can also be a
-                  part of the restoration.
-                </p>
-                <div className="w-full flex justify-center pt-5 pb-5">
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Github" role="img">
-                      <svg
-                        className="feather feather-github"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                      </svg>
-                    </div>
-                  </a>
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Twitter" role="img">
-                      <svg
-                        className="feather feather-twitter"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                      </svg>
-                    </div>
-                  </a>
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Instagram" role="img">
-                      <svg
-                        className="feather feather-instagram"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect
-                          height="20"
-                          rx="5"
-                          ry="5"
-                          width="20"
-                          x="2"
-                          y="2"
-                        />
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                      </svg>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
-            role="listitem">
-            <div className="rounded overflow-hidden shadow-md bg-white">
-              <div className="absolute -mt-20 w-full flex justify-center">
-                <div className="h-32 w-32">
-                  <img
-                    alt="Display Picture of Dean Jones"
-                    className="rounded-full object-cover h-full w-full shadow-md"
-                    role="img"
-                    src="https://cdn.tuk.dev/assets/boy-smiling_23-2148155640.jpg"
-                  />
-                </div>
-              </div>
-              <div className="px-6 mt-16">
-                <h1 className="font-bold text-3xl text-center mb-1">
-                  Dean Jones
-                </h1>
-                <p className="text-gray-800 text-sm text-center">
-                  Principal Software Engineer
-                </p>
-                <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                  An avid open-source developer who loves to be creative and
-                  inventive. I have 20 years of experience in the field.
-                </p>
-                <div className="w-full flex justify-center pt-5 pb-5">
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Github" role="img">
-                      <svg
-                        className="feather feather-github"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                      </svg>
-                    </div>
-                  </a>
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Twitter" role="img">
-                      <svg
-                        className="feather feather-twitter"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                      </svg>
-                    </div>
-                  </a>
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Instagram" role="img">
-                      <svg
-                        className="feather feather-instagram"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect
-                          height="20"
-                          rx="5"
-                          ry="5"
-                          width="20"
-                          x="2"
-                          y="2"
-                        />
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                      </svg>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
-            role="listitem">
-            <div className="rounded overflow-hidden shadow-md bg-white">
-              <div className="absolute -mt-20 w-full flex justify-center">
-                <div className="h-32 w-32">
-                  <img
-                    alt="Display Picture of Rachel Adams"
-                    className="rounded-full object-cover h-full w-full shadow-md"
-                    role="img"
-                    src="https://cdn.tuk.dev/assets/blond-man-happy-expression_1194-2873.jpg"
-                  />
-                </div>
-              </div>
-              <div className="px-6 mt-16">
-                <h1 className="font-bold text-3xl text-center mb-1">
-                  Rachel Adams
-                </h1>
-                <p className="text-gray-800 text-sm text-center">
-                  Product Design Head
-                </p>
-                <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                  Product designer with interests in immersive computing and XR,
-                  political ventures, and emerging technologies. Able to take
-                  ideas and give them a life.
-                </p>
-                <div className="w-full flex justify-center pt-5 pb-5">
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Github" role="img">
-                      <svg
-                        className="feather feather-github"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                      </svg>
-                    </div>
-                  </a>
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Twitter" role="img">
-                      <svg
-                        className="feather feather-twitter"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                      </svg>
-                    </div>
-                  </a>
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Instagram" role="img">
-                      <svg
-                        className="feather feather-instagram"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect
-                          height="20"
-                          rx="5"
-                          ry="5"
-                          width="20"
-                          x="2"
-                          y="2"
-                        />
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                      </svg>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
-            role="listitem">
-            <div className="rounded overflow-hidden shadow-md bg-white">
-              <div className="absolute -mt-20 w-full flex justify-center">
-                <div className="h-32 w-32">
-                  <img
-                    alt="Display Picture of Charles Keith"
-                    className="rounded-full object-cover h-full w-full shadow-md"
-                    role="img"
-                    src="https://cdn.tuk.dev/assets/photo-1570211776045-af3a51026f4a.jfif"
-                  />
-                </div>
-              </div>
-              <div className="px-6 mt-16">
-                <h1 className="font-bold text-3xl text-center mb-1">
-                  Charles Keith
-                </h1>
-                <p className="text-gray-800 text-sm text-center">UX Designer</p>
-                <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                  A UX designer is the voice of the customer. Our job is to look
-                  beyond the business goals. We don't just experience user
-                  interface but also questions it.
-                </p>
-                <div className="w-full flex justify-center pt-5 pb-5">
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Github" role="img">
-                      <svg
-                        className="feather feather-github"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                      </svg>
-                    </div>
-                  </a>
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Twitter" role="img">
-                      <svg
-                        className="feather feather-twitter"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                      </svg>
-                    </div>
-                  </a>
-                  <a className="mx-5" href="javascript:void(0)">
-                    <div aria-label="Instagram" role="img">
-                      <svg
-                        className="feather feather-instagram"
-                        fill="none"
-                        height="24"
-                        stroke="#718096"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect
-                          height="20"
-                          rx="5"
-                          ry="5"
-                          width="20"
-                          x="2"
-                          y="2"
-                        />
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                      </svg>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </dh-component>
-</div> */}
-
-  {/* new try end */}
 
         {/* mentors&Advisors Comiti  */}
         <section className="py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12">
-              <h2 className="text-4xl font-train pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
-                Mentors
+              <h2 className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
+                Mentors & Advisors 
                 {/* <div className="flex justify-center opacity-30">
                   <img width={300} src="/underline.png" alt="underline" />
                 </div> */}
@@ -1077,7 +438,7 @@ const About = () => {
                   <br />
                   Prime Senior Researcher & Head AIST-INDIA DAILAB, AIST, Japan
                 </h4>
-
+                
                 <div className="flex justify-center space-x-4 mt-4">
                   <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaLinkedin size={20} />
@@ -1102,7 +463,7 @@ const About = () => {
                   <br />
                   Associate Professor, Department of Zoology, India
                 </h4>
-
+                
                 <div className="flex justify-center space-x-4 mt-4">
                   <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaLinkedin size={20} />
@@ -1126,7 +487,7 @@ const About = () => {
                   <br />
                   Senior Research Scientist, AIST, Japan
                 </h4>
-
+                
                 <div className="flex justify-center space-x-4 mt-4">
                   <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaLinkedin size={20} />
@@ -1150,7 +511,7 @@ const About = () => {
                   <br />
                   Principal Researcher, AIST Biomedical Research Institute, Japan
                 </h4>
-
+                
                 <div className="flex justify-center space-x-4 mt-4">
                   <a href="#" className="text-gray-500 hover:text-blue-700">
                     <FaLinkedin size={20} />
@@ -1160,6 +521,280 @@ const About = () => {
             </div>
           </div>
         </section>
+
+        {/* mentors&Advisors Comiti end */}
+
+
+        {/* new team section  */}
+        {/* <div className="font-[sans-serif]">
+          <div className="max-w-5xl max-lg:max-w-2xl max-sm:max-w-sm mx-auto">
+            <h2 className="text-4xl font-extrabold pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
+            Mentors & Advisors 
+            </h2>
+            <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8 max-sm:justify-center text-center mt-12">
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-[1.02] transition-all">
+                <div className="bg-[#ff3d8c] h-32" />
+                <img
+                  src="https://readymadeui.com/team-1.webp"
+                  className="w-36 h-36 border-4 border-white rounded-full -mt-[72px] shadow-xl inline-block"
+                />
+                <div className="p-6">
+                  <h4 className="text-gray-800 text-base font-extrabold">John Doe</h4>
+                  <p className="text-gray-600 text-xs mt-1">Software Engineer</p>
+                  <p className="text-gray-600 mt-4 text-sm">
+                    Eiusmod commodo aliquip laboris qui anim non voluptate consectetur.
+                  </p>
+                  <div className="space-x-4 mt-6">
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 155.139 155.139"
+                      >
+                        <path
+                          d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                          data-original="#010002"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                          data-original="#03a9f4"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14px"
+                        fill="#333"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                          data-original="#0077b5"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-[1.02] transition-all">
+                <div className="bg-[#c730cb] h-32" />
+                <img
+                  src="https://readymadeui.com/team-2.webp"
+                  className="w-36 h-36 border-4 border-white rounded-full -mt-[72px] shadow-xl inline-block"
+                />
+                <div className="p-6">
+                  <h4 className="text-gray-800 text-base font-extrabold">Mark Adair</h4>
+                  <p className="text-gray-600 text-xs mt-1">Software Engineer</p>
+                  <p className="text-gray-600 mt-4 text-sm">
+                    Eiusmod commodo aliquip laboris qui anim non voluptate consectetur.
+                  </p>
+                  <div className="space-x-4 mt-6">
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 155.139 155.139"
+                      >
+                        <path
+                          d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                          data-original="#010002"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                          data-original="#03a9f4"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14px"
+                        fill="#333"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                          data-original="#0077b5"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-[1.02] transition-all">
+                <div className="bg-[#00a8ff] h-32" />
+                <img
+                  src="https://readymadeui.com/team-3.webp"
+                  className="w-36 h-36 border-4 border-white rounded-full -mt-[72px] shadow-xl inline-block"
+                />
+                <div className="p-6">
+                  <h4 className="text-gray-800 text-base font-extrabold">
+                    Simon Konecki
+                  </h4>
+                  <p className="text-gray-600 text-xs mt-1">Web Designer</p>
+                  <p className="text-gray-600 mt-4 text-sm">
+                    Eiusmod commodo aliquip laboris qui anim non voluptate consectetur.
+                  </p>
+                  <div className="space-x-4 mt-6">
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 155.139 155.139"
+                      >
+                        <path
+                          d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                          data-original="#010002"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                          data-original="#03a9f4"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14px"
+                        fill="#333"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                          data-original="#0077b5"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-[1.02] transition-all">
+                <div className="bg-[#00a8ff] h-32" />
+                <img
+                  src="https://readymadeui.com/team-3.webp"
+                  className="w-36 h-36 border-4 border-white rounded-full -mt-[72px] shadow-xl inline-block"
+                />
+                <div className="p-6">
+                  <h4 className="text-gray-800 text-base font-extrabold">
+                    Simon Konecki
+                  </h4>
+                  <p className="text-gray-600 text-xs mt-1">Web Designer</p>
+                  <p className="text-gray-600 mt-4 text-sm">
+                    Eiusmod commodo aliquip laboris qui anim non voluptate consectetur.
+                  </p>
+                  <div className="space-x-4 mt-6">
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 155.139 155.139"
+                      >
+                        <path
+                          d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                          data-original="#010002"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12px"
+                        fill="#333"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"
+                          data-original="#03a9f4"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none  bg-gray-100 hover:bg-gray-200"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14px"
+                        fill="#333"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                          data-original="#0077b5"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
 
         {/* new team section end */}
       </div>

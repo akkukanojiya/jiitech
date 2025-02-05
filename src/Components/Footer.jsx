@@ -54,17 +54,17 @@ function Footer() {
             <ul className="space-y-3 text-black text-sm">
               {[
                 { name: "Home", link: "/" },
-                { name: "About Us", link: "https://jiitech.netlify.app/about" },
-                { name: "We Offer", link: "https://jiitech.netlify.app/weoffer" },
-                { name: "How to Apply", link: "https://jiitech.netlify.app/howtoapply" },
-
-                { name: "Contact Us", link: "https://jiitech.netlify.app/contactus" },
+                { name: "About Us", link: "/about" },
+                { name: "We Offer", link: "/weoffer" },
+                { name: "How to Apply", link: "/howtoapply" },
+                { name: "Gallery", link: "/gallery" },
+                { name: "Contact Us", link: "/contactus" },
                 {/* { name: "Privacy Policy", link: "/privacy" }, */ }
               ].map((item, index) => (
                 <li key={index}>
                   <a
                     href={item.link}
-                    className="text-black-700 hover:text-customBlue transition duration-300"
+                    className="text-black-700 hover:text-red-500 transition duration-300"
                   >
                     {item.name}
                   </a>
@@ -98,53 +98,55 @@ function Footer() {
             </h3>
             <p className="text-sm leading-relaxed text-black-700  flex items-center">
               <FaMapMarkerAlt className="text-black mr-1" />
-              <strong className="text-black">Japan :</strong>
+              <strong className="text-black">Address Japan :</strong>
             </p>
             <p className="text-sm leading-relaxed text-black-700 ">JIITECH Headquarters
               3-37-7-210 Yoyogi
               Shibuya, Tokyo
               Japan
             </p>
-
-            <p className="text-sm leading-relaxed text-black-700  flex items-center">
+            
+              <p className="text-sm leading-relaxed text-black-700  flex items-center">
               <IoCallSharp className="text-black mr-1" />
-              <strong className="text-black"></strong>+81-8064262379(Japan)
+              <strong className="text-black">Phone:</strong>
             </p>
-
+            <p className="mt-1 text-sm leading-relaxed text-black-700">+81-8064262379(Japan)</p>
             <p className="text-sm leading-relaxed text-black-700  flex items-center">
-              <IoMailOpenSharp className="text-black mr-1" />
+                <IoMailOpenSharp className="text-black mr-1" />
 
-              <strong className="text-black"></strong> info@jiitech.jp
-            </p>
+                <strong className="text-black">Email:</strong> info@jiitech.jp
+              </p>
             <p className="text-sm leading-relaxed text-black-700  flex items-center">
               <FaMapMarkerAlt className="text-black mr-1" />
-              <strong className="text-black"> India :</strong>
+              <strong className="text-black">Address India :</strong>
             </p>
             <p className="text-sm leading-relaxed text-black-700 ">
               JIITECH Headquarters
               Cherish Eduskills
-               A 615 - 617 Sanskrit Galleria
+              615 - 617 Sanskrit Galleria
+              Near subhas Chowk
+              Gurukul
               Ahmedabad - 380015
+              India
 
             </p>
-
+            
 
             <p className="text-sm leading-relaxed text-black-700  flex items-center">
               <IoCallSharp className="text-black mr-1" />
-              <strong className="text-black"></strong>
+              <strong className="text-black">Phone:</strong>
+            </p>
+            <p className="mt-1 text-sm leading-relaxed text-black-700 ">
               +91-9327123451(India) <br />+91-9033211100(India)
+
+               
+              <br />
+              <p className="text-sm leading-relaxed text-black-700  flex items-center">
+                <IoMailOpenSharp className="text-black mr-1" />
+
+                <strong className="text-black">Email:</strong> info@jiitech.jp
+              </p>
             </p>
-
-
-
-
-
-            <p className="text-sm leading-relaxed text-black-700  flex items-center">
-              <IoMailOpenSharp className="text-black mr-1" />
-
-              <strong className="text-black"></strong> info@jiitech.jp
-            </p>
-
           </div>
 
 

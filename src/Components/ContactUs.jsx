@@ -29,51 +29,11 @@ const ContactUs = () => {
           src="/contact us.jpg"
           className=" w-full object-cover opacity-20"
         />
-        <div className="absolute  text-2xl sm:text-5xl font-train flex flex-col h-full justify-center text-center items-center w-full  bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text">
+        <div className="absolute  text-2xl sm:text-5xl font-bold flex flex-col h-full justify-center text-center items-center w-full  bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text">
           <p>Contact us</p>
-           
+          <div className="opacity-30"><img width={300} src="/underline.png" alt="" /></div>
         </div>
       </div>
-
-
-
-
-{/* join the jiitech journy  */}
-
-<div className="bg-white min-h-screen flex items-center justify-center p-6">
-          <div className="bg-customBlue text-white shadow-xl rounded-lg max-w-4xl mx-auto p-8 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-            <div className="text-center">
-
-              <div className="flex justify-center mb-6">
-                <img
-                  src="./joinjurny.jpg"
-                  alt="India and Japan Flags"
-                  className="w-1/2 h-36 rounded-lg shadow-lg transform transition duration-300 hover:scale-110"
-                />
-              </div>
-
-              <h1 className="text-4xl font-bold uppercase tracking-wide mb-4">
-                Join the JIITECH Journey
-              </h1>
-
-              <p className="text-lg leading-relaxed mb-6 text-justify">
-                We invite you to be part of this transformative experience, where knowledge meets exploration and education meets adventure. Whether you’re a student looking to broaden your horizons, an educator seeking enriching exchange opportunities, or a school administrator ready to take your institution global—JIITECH has a place for you.
-
-                Embark on the next chapter of learning, innovation, and cultural discovery today.
-                .
-              </p>
-
-              <p className="text-white/90 italic mb-4">
-                Embark on your next chapter of learning, innovation, and cultural
-                discovery today.
-              </p>
-               
-            </div>
-          </div>
-        </div>
-
- {/* join the jiitech journy end  */}
-
 
       {/* <div className="bg-gradient-to-b from-customBlue to-white px-4 sm:px-6 md:px-12">
   <div className="py-8 text-center text-white text-lg sm:text-xl">

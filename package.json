@@ -20,7 +20,6 @@
     "@vitalets/google-translate-api": "^9.2.0",
     "audit": "^0.0.6",
     "fix": "^0.0.3",
-    "framer-motion": "^12.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
