@@ -94,14 +94,14 @@ function HowToApply() {
 {/* join the jiitech journy  */}
 
 <div className="bg-white min-h-screen flex items-center justify-center p-6">
-          <div className="bg-customBlue text-white shadow-xl rounded-lg max-w-4xl mx-auto p-8 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+          <div className="bg-customBlue text-white shadow-xl rounded-lg max-w-9xl mx-auto p-8 ">
             <div className="text-center">
 
               <div className="flex justify-center mb-6">
                 <img
                   src="./joinjurny.jpg"
                   alt="India and Japan Flags"
-                  className="w-1/2 h-36 rounded-lg shadow-lg transform transition duration-300 hover:scale-110"
+                  className="w-1/2 h-35 rounded-lg shadow-lg transform transition duration-300 hover:scale-110"
                 />
               </div>
 
@@ -213,7 +213,7 @@ function HowToApply() {
 
       <div className="flex items-center justify-center mt-3 mb-3 bg-white">
         <button
-          className="bg-customBlue text-white px-6 py-3 rounded-md font-semibold transition-all hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-blue-500 animate-glow-bounce"
+          className="bg-customBlue text-white px-6 py-3 rounded-md font-semibold transition-all hover:bg-red-700  animate-bounce"
           onClick={toggleModal}
         >
           Apply Now

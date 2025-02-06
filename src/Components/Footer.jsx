@@ -211,7 +211,7 @@ function Footer() {
         <div className="border-t border-black my-3"></div>
         <div className="text-center">
           <p className="text-black-700 text-sm">
-            © 2024 Tech Creature Solution
+            © 2025 Tech Creature Solution
             All Rights Reserved.
           </p>
         </div>

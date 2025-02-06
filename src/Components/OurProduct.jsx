@@ -6,7 +6,7 @@ function OurProduct() {
   const tab = [
     <div className="pt-16 p-4 flex items-center justify-center flex-row flex-wrap gap-2 relative  py-20 px-6 lg:px-10 xl:px-20 overflow-hidden">
 
-      <div className="relative group w-full bg-gradient-to-l from-orange-200 to-red-300  rounded-2xl p-2 sm:p-5 md:p-8 shadow-xl overflow-hidden">
+      <div className="relative group w-full bg-gradient-to-l from-orange-200 to-red-300  rounded-2xl p-4 sm:p-5 md:p-8 shadow-xl overflow-hidden">
       <div className="absolute inset-0">
           <div className="absolute -top-16 -left-16 w-40 h-40 sm:w-64 sm:h-64 bg-gradient-to-br from-[red-400] via-[red-500] to-green-400 opacity-20 rounded-full"></div>
           <div className="absolute -bottom-20 -right-20 w-72 h-72 sm:w-96 sm:h-96 bg-gradient-to-tl from-green-400 via-red-300 to-orange-400 opacity-25 rounded-full"></div>
@@ -31,7 +31,7 @@ function OurProduct() {
           </p>
 
           <div className="mt-12 text-justify">
-            <div className=" text-justify grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 ">
+            <div className=" text-justify grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 lg:gap-8 md:grid-cols-2 md:gap-5">
               {[
                 {
                   icon: "🌍",
@@ -72,7 +72,7 @@ function OurProduct() {
               ].map((highlight, index) => (
                 <div
                   key={index}
-                  className={`relative bg-white bg-opacity-70 rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 backdrop-blur text-justify`}
+                  className={`relative bg-white bg-opacity-70 rounded-xl p-3 sm:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 backdrop-blur text-justify`}
                 >
                   <div className="text-3xl sm:text-4xl text-center mb-4 text-red-500 group-hover:scale-125 transition-transform duration-500">
                     {highlight.icon}
