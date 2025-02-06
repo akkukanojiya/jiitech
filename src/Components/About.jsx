@@ -62,35 +62,66 @@ const About = () => {
           className="w-full object-cover opacity-20"
           alt="About Us"
         />
-        <div className="absolute text-customBlue text-2xl sm:text-5xl font-train flex flex-col h-full justify-center text-center items-center w-full">
+        <div className="absolute text-[#dc2626] text-2xl sm:text-5xl font-train flex flex-col h-full justify-center text-center items-center w-full">
           <p>About Us</p>
-           
+
         </div>
       </div>
 
 
       <div className="py-12 sm:px-24 ">
-        <div className="px-4 py-8 flex flex-col sm:flex-row sm:gap-6">
+        {/* <div className="px-4 py-8 flex flex-col sm:flex-row sm:gap-10 items-center sm:items-start">
+
           <div className="sm:w-1/2">
-            <p className="text-3xl font-train text-customBlue sm:py-6 ">
-              Who We Are
-            </p>
-            <p className="text-lg font-sm leading-relaxed text-customBlue tracking-wide pt-3 text-justify">
-            JIITECH is a team of professionals specializing in education, science, technology, and culture from Japan and India. Our mission is to promote mutual understanding and foster new partnerships across these sectors, contributing to job creation, economic growth, and the development of a supportive environment for an aging society. We specialize in organizing student immersion programs, workshops, cultural experiences, and educational opportunities that empower the youth of both countries. By connecting students, educators, and innovators, we aim to shape a brighter future through collaboration and cultural exchange. Additionally, we assist industries in discovering new business opportunities, including R&D and marketing, on both sides.
+            <p className="text-4xl font-train pb-4   text-[#dc2626] bg-clip-text relative group text-center">Who We Are</p>
+            <p className="text-lg sm:text-xl font-sm leading-relaxed mb-6 text-customBlue text-justify text-justify">
+              JIITECH is a team of professionals specializing in education, science, technology, and culture from Japan and India. Our mission is to promote mutual understanding and foster new partnerships across these sectors, contributing to job creation, economic growth, and the development of a supportive environment for an aging society. We specialize in organizing student immersion programs, workshops, cultural experiences, and educational opportunities that empower the youth of both countries. By connecting students, educators, and innovators, we aim to shape a brighter future through collaboration and cultural exchange. Additionally, we assist industries in discovering new business opportunities, including R&D and marketing, on both sides.
             </p>
           </div>
 
-          <div className="sm:w-1/2 mt-4 sm:mt-0">
-            <img src="./whoweare.jpg" alt="JIITECH" className="w-full h-auto  shadow-lg" />
+         
+          <div className="sm:w-1/2 flex justify-center">
+            <img src="./whoweare.jpg" alt="JIITECH" className="w-full max-w-md h-auto shadow-lg rounded-lg" />
+          </div>
+        </div> */}
+
+        {/* new box  */}
+        <div className="px-2  py-14">
+          <div className="flex flex-col sm:flex-row-reverse px-6 sm:px-12 items-center justify-center sm:justify-evenly rounded-xl py-16 mx-6 my-10 bg-white shadow-2xl">
+
+            <div className="lg:w-1/2 flex flex-col justify-center text-center lg:text-left">
+              <p className="text-4xl font-train pb-4   text-[#dc2626] bg-clip-text relative group">
+                Who We Are
+
+              </p>
+              <p className="text-sm sm:text-xl font-sm leading-relaxed mb-6 text-customBlue  text-justify">
+
+                JIITECH is a team of professionals specializing in education, science, technology, and culture from Japan and India. Our mission is to promote mutual understanding and foster new partnerships across these sectors, contributing to job creation, economic growth, and the development of a supportive environment for an aging society. We specialize in organizing student immersion programs, workshops, cultural experiences, and educational opportunities that empower the youth of both countries. By connecting students, educators, and innovators, we aim to shape a brighter future through collaboration and cultural exchange. Additionally, we assist industries in discovering new business opportunities, including R&D and marketing, on both sides.
+
+              </p>
+
+
+
+            </div>
+            <div className="sm:w-2/5 sm:mt-0 mt-8 flex justify-center relative">
+              <div className="absolute inset-0  opacity-20  blur-sm"></div>
+              <img className="   transform transition duration-500 hover:scale-110 hover:rotate-3" src="./whoweare.jpg" alt="Our Mission" />
+            </div>
           </div>
         </div>
+        {/* new box end */}
 
 
 
 
 
 
- 
+
+
+
+
+
+
         <section className="relative bg-gradient-to-r from-gray-50 to-gray-100 py-20 px-6 lg:px-10 xl:px-20 overflow-hidden">
           {/* Decorative Background */}
           <div className="absolute inset-0 overflow-hidden">
@@ -136,7 +167,7 @@ const About = () => {
                   ))}
                 </ul>
                 <p className="text-base sm:text-lg md:text-xl text-black-700 leading-relaxed">
-                We don’t just teach about the world; we bring the world into the classroom—empowering every student to explore their interests, gain fresh insights, and dream beyond borders.
+                  We don’t just teach about the world; we bring the world into the classroom—empowering every student to explore their interests, gain fresh insights, and dream beyond borders.
                 </p>
                 {/* Call-to-Action */}
                 {/* <div className="pt-4">
@@ -346,10 +377,10 @@ const About = () => {
         <section className="py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12">
-              <h2 className="text-4xl font-train pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
+              <p className="text-4xl font-train pb-4   text-[#dc2626] bg-clip-text relative group text-center">
                 Our Crew
-                
-              </h2>
+
+              </p>
             </div>
             <div className="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-6 lg:grid-cols-3 gap-8 max-w-xl mx-auto md:max-w-3xl lg:max-w-full">
 
@@ -475,11 +506,11 @@ const About = () => {
           </div>
         </section>
         {/* new team end */}
-  
 
 
-  {/* new try  */}
-  {/* <div key="1" className="mb-16">
+
+        {/* new try  */}
+        {/* <div key="1" className="mb-16">
   <dh-component>
     <div className="container flex justify-center mx-auto pt-16">
       <div>
@@ -1046,18 +1077,16 @@ const About = () => {
   </dh-component>
 </div> */}
 
-  {/* new try end */}
+        {/* new try end */}
 
         {/* mentors&Advisors Comiti  */}
         <section className="py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12">
-              <h2 className="text-4xl font-train pb-4 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative group text-center">
+              <p className="text-4xl font-train pb-4   text-[#dc2626] bg-clip-text relative group text-center">
                 Mentors
-                {/* <div className="flex justify-center opacity-30">
-                  <img width={300} src="/underline.png" alt="underline" />
-                </div> */}
-              </h2>
+
+              </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-lg sm:max-w-xl md:max-w-3xl lg:max-w-full mx-auto">
               {/* Mentor Card */}

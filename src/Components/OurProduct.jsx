@@ -6,15 +6,15 @@ function OurProduct() {
   const tab = [
     <div className="pt-16 p-4 flex items-center justify-center flex-row flex-wrap gap-2 relative  py-20 px-6 lg:px-10 xl:px-20 overflow-hidden">
 
-      <div className="relative group w-full bg-gradient-to-l from-orange-200 to-red-300  rounded-2xl p-4 sm:p-5 md:p-8 shadow-xl overflow-hidden">
+      <div className="relative group w-full bg-gradient-to-br from-red-100 via-red-200 to-green-300 rounded-3xl p-12 shadow-xl overflow-hidden">
       <div className="absolute inset-0">
-          <div className="absolute -top-16 -left-16 w-40 h-40 sm:w-64 sm:h-64 bg-gradient-to-br from-[red-400] via-[red-500] to-green-400 opacity-20 rounded-full"></div>
-          <div className="absolute -bottom-20 -right-20 w-72 h-72 sm:w-96 sm:h-96 bg-gradient-to-tl from-green-400 via-red-300 to-orange-400 opacity-25 rounded-full"></div>
-        </div>
+            <div className="absolute -top-16 -left-16 w-64 h-64 bg-gradient-to-br from-orange-400 via-red-300 to-green-400 opacity-20 rounded-full"></div>
+            <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-gradient-to-tl from-green-400 via-red-300 to-orange-400 opacity-25 rounded-full"></div>
+          </div>
 
          
         <div className="text-center mb-4">
-          <p className="text-4xl   pb-2   text-[#dc2626] font-train bg-clip-text relative">
+          <p className="text-4xl font-train pb-4   text-[#dc2626] bg-clip-text relative group">
             Program We Offer
 
           </p>

@@ -11,7 +11,7 @@ function HeroCarousel() {
 
 
         <motion.h1
-          className="text-xl  sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-4xl text-[#dc2626] font-train text-center leading-snug overflow-hidden whitespace-nowrap"
+          className="text-xl  sm:text-2xl md:text-3xl xl:text-5xl 2xl:text-5xl text-[#dc2626] font-train text-center leading-snug overflow-hidden whitespace-nowrap"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}

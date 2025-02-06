@@ -84,69 +84,69 @@ function HowToApply() {
           src="./how-to-apply.jpg"
           className=" w-full object-cover opacity-40"
         />
-        <div className="absolute text-customBlue text-2xl sm:text-5xl font-train flex flex-col h-full justify-center text-center items-center w-full opacity-100">
+        <div className="absolute text-[#dc2626] text-2xl sm:text-5xl font-train flex flex-col h-full justify-center text-center items-center w-full opacity-100">
           <p>How To Apply</p>
         </div>
       </div>
 
 
- 
-{/* join the jiitech journy  */}
 
-<div className="bg-white min-h-screen flex items-center justify-center p-6">
-          <div className="bg-customBlue text-white shadow-xl rounded-lg max-w-9xl mx-auto p-8 ">
-            <div className="text-center">
+      {/* join the jiitech journy  */}
 
-              <div className="flex justify-center mb-6">
-                <img
-                  src="./joinjurny.jpg"
-                  alt="India and Japan Flags"
-                  className="w-1/2 h-35 rounded-lg shadow-lg transform transition duration-300 hover:scale-110"
-                />
-              </div>
+      <div className="bg-white min-h-screen  flex items-center justify-center p-6">
+        <div className="bg-customBlue text-white shadow-xl rounded-lg max-w-9xl mx-auto p-8 ">
+          <div className="text-center">
 
-              <h1 className="text-4xl font-bold uppercase tracking-wide mb-4">
-                Join the JIITECH Journey
-              </h1>
-
-              <p className="text-lg leading-relaxed mb-6 text-justify">
-                We invite you to be part of this transformative experience, where knowledge meets exploration and education meets adventure. Whether you’re a student looking to broaden your horizons, an educator seeking enriching exchange opportunities, or a school administrator ready to take your institution global—JIITECH has a place for you.
-
-                Embark on the next chapter of learning, innovation, and cultural discovery today.
-                .
-              </p>
-
-              <p className="text-white/90 italic mb-4">
-                Embark on your next chapter of learning, innovation, and cultural
-                discovery today.
-              </p>
-               
+            <div className="flex justify-center mb-6">
+              <img
+                src="./joinjurny.jpg"
+                alt="India and Japan Flags"
+                className="w-1/2 h-35 rounded-lg shadow-lg transform transition duration-300 hover:scale-110"
+              />
             </div>
+
+            <h1 className="text-4xl font-bold uppercase tracking-wide mb-4">
+              Join the JIITECH Journey
+            </h1>
+
+            <p className="text-lg leading-relaxed mb-6  text-center ">
+              We invite you to be part of this transformative experience, where knowledge meets exploration and education meets adventure. Whether you’re a student looking to broaden your horizons, an educator seeking enriching exchange opportunities, or a school administrator ready to take your institution global—JIITECH has a place for you.
+
+              Embark on the next chapter of learning, innovation, and cultural discovery today.
+              .
+            </p>
+
+            <p className="text-white/90 italic mb-4">
+              Embark on your next chapter of learning, innovation, and cultural
+              discovery today.
+            </p>
+
           </div>
         </div>
+      </div>
 
- {/* join the jiitech journy end  */}
+      {/* join the jiitech journy end  */}
       {/* new steps  */}
       <div className="bg-white">
         <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
           <div className="text-center">
             {/* Optional header content */}
           </div>
-          <div className="mt-10 sm:mt-20">
+          <div className="mt-5 sm:mt-20">
             <ul className="space-y-10">
               <li className="text-left">
                 <div
                   className="flex flex-col sm:flex-row items-start animate-fade-in"
                 >
                   <div
-                    className="flex flex-col items-center justify-center sm:mr-5 mb-5 sm:mb-0 animate-scale-up"
+                    className="flex flex-col items-center justify-center sm:mr-5 mb-4 sm:mb-0 animate-scale-up"
                   >
                     <div className="flex items-center justify-center h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-customBlue text-white border-4 border-white text-xl font-semibold transform hover:scale-110 transition-transform duration-300">
                       <span className="text-blue-500 text-2xl sm:text-3xl">📋</span>
                     </div>
                     <span className="text-gray-500 mt-2">STEP 1</span>
                   </div>
-                  <div className="bg-gray-100 p-5 pb-10 rounded-lg shadow-md w-full transform hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gray-100 p-3 pb-10 rounded-lg shadow-md w-full transform hover:scale-105 transition-transform duration-300">
                     <h4 className="text-lg sm:text-xl leading-6 font-semibold text-gray-900 uppercase">
                       Fill Out the Interest Form
                     </h4>
@@ -174,7 +174,7 @@ function HowToApply() {
                     </div>
                     <span className="text-gray-500 mt-2">STEP 2</span>
                   </div>
-                  <div className="bg-gray-100 p-5 pb-10 rounded-lg shadow-md w-full transform hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gray-100 p-3 pb-10 rounded-lg shadow-md w-full transform hover:scale-105 transition-transform duration-300">
                     <h4 className="text-lg sm:text-xl leading-6 font-semibold text-gray-900 uppercase">
                       Orientation & Consultation
                     </h4>
@@ -194,7 +194,7 @@ function HowToApply() {
                     </div>
                     <span className="text-gray-500 mt-2">STEP 3</span>
                   </div>
-                  <div className="bg-gray-100 p-5 pb-10 rounded-lg shadow-md w-full transform hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gray-100 p-3 pb-10 rounded-lg shadow-md w-full transform hover:scale-105 transition-transform duration-300">
                     <h4 className="text-lg sm:text-xl leading-6 font-semibold text-gray-900 uppercase">
                       Confirm Your Enrolment
                     </h4>
@@ -211,40 +211,78 @@ function HowToApply() {
 
 
 
+
+
+
+
+
+      {/* new button  */}
       <div className="flex items-center justify-center mt-3 mb-3 bg-white">
         <button
-          className="bg-customBlue text-white px-6 py-3 rounded-md font-semibold transition-all hover:bg-red-700  animate-bounce"
+          className="bg-customBlue text-white px-6 py-3 rounded-md font-semibold transition-all hover:bg-red-700 animate-zoom"
           onClick={toggleModal}
         >
           Apply Now
         </button>
 
         <style jsx>{`
-    @keyframes glowBounce {
-      0%, 100% {
-        transform: translateY(0) scale(1);
-        box-shadow: 0 0 12px red; /* Initial glow */
-      }
-      25% {
-        transform: translateY(-5px) scale(1.05);
-        box-shadow: 0 0 16px red; /* Glow intensifies */
-      }
-      50% {
-        transform: translateY(0) scale(1.1);
-        box-shadow: 0 0 18px red; /* Maximum glow and scale */
-      }
-      75% {
-        transform: translateY(-3px) scale(1.05);
-        box-shadow: 0 0 14px red; /* Intermediate glow */
-      }
-    }
+        @keyframes zoom {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
 
-    .animate-glow-bounce {
-      animation: glowBounce 2s infinite ease-in-out;
-    }
-  `}</style>
+        @keyframes pulse-zoom {
+          0%, 100% {
+            transform: scale(1);
+            opacity: 1;
+          }
+          50% {
+            transform: scale(1.15);
+            opacity: 0.8;
+          }
+        }
+
+        @keyframes breathe-zoom {
+          0%, 100% {
+            transform: scale(1);
+          }
+          30% {
+            transform: scale(1.05);
+          }
+          60% {
+            transform: scale(0.95);
+          }
+        }
+
+        .animate-zoom {
+          animation: zoom 2s infinite ease-in-out;
+        }
+
+        /* Alternative animations you can use */
+        .animate-pulse-zoom {
+          animation: pulse-zoom 3s infinite ease-in-out;
+        }
+
+        .animate-breathe-zoom {
+          animation: breathe-zoom 4s infinite ease-in-out;
+        }
+
+        /* Hover effect enhancement */
+        button:hover {
+          animation: none;
+          transform: scale(1.1);
+          transition: all 0.3s ease;
+        }
+      `}</style>
       </div>
-
+      {/* new button end */}
       <div className="relative flex items-center justify-center bg-gray-100">
         {/* Modal */}
         {isOpen && (

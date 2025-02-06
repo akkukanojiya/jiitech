@@ -21,18 +21,18 @@ const Weoffer = () => {
           src="https://img.freepik.com/premium-photo/japanese-teacher-organizing-classroom-library_868783-55464.jpg"
           className=" w-full object-cover opacity-40"
         />
-        <div className="absolute text-customBlue text-2xl sm:text-5xl font-train flex flex-col h-full justify-center text-center items-center w-full opacity-100">
+        <div className="absolute text-[#dc2626] text-2xl sm:text-5xl font-train flex flex-col h-full justify-center text-center items-center w-full opacity-100">
           <p> What We Offer</p>
         </div>
       </div>
- 
-    
+
+
 
       <div className="bg-gradient-to-b from-gray-100 to-gray-200 min-h-screen py-10 px-6 sm:px-10 text-justify">
         {/* JUKU Section */}
         <div className="bg-white shadow-xl rounded-lg p-8 mb-10 transition-transform hover:scale-105 hover:shadow-2xl">
           <h2 className="text-2xl font-bold text-customBlue mb-6">
-            JUKU - : A Unique Immersion Experience Tailored for Young Learners
+            JUKU: A Unique Immersion Experience Tailored for Young Learners
           </h2>
           <div className="flex flex-col md:flex-row items-start gap-6">
             <div className="md:w-1/3">
@@ -51,7 +51,7 @@ const Weoffer = () => {
                   <strong>Skills That Matter:</strong> Dive into the principles of Kaizen (continuous improvement), sustainability, and real-world problem-solving during an intensive 1-2 week program.
                 </li>
                 <li>
-                  <strong>Pathway to Higher Education:</strong>Connect with mentors from Japan and explore international universities, scholarships, and career opportunities.
+                  <strong>Pathway to Higher Education:</strong> Connect with mentors from Japan and explore international universities, scholarships, and career opportunities.
                 </li>
               </ul>
             </div>
@@ -61,7 +61,7 @@ const Weoffer = () => {
         {/* JOIIN Section */}
         <div className="bg-white shadow-xl rounded-lg p-8 mb-10 transition-transform hover:scale-105 hover:shadow-2xl">
           <h2 className="text-2xl font-bold text-customBlue mb-6">
-            JOIIN - – JIITECH’s Open Innovation & Internation Networking
+            JOIIN: JIITECH’s Open Innovation & Internation Networking
           </h2>
           <div className="flex flex-col md:flex-row items-start gap-6">
             <div className="md:w-1/3">
@@ -77,10 +77,10 @@ const Weoffer = () => {
                   <strong>Global R&D Exposure:</strong> Explore Japan’s cutting-edge infrastructure, advanced research centers, and high-tech industries.
                 </li>
                 <li>
-                  <strong>Innovation-Focused Learning:</strong>Broaden your horizons in  science, technology, engineering, and more, unlocking global internship and career opportunities.
+                  <strong>Innovation-Focused Learning:</strong> Broaden your horizons in  science, technology, engineering, and more, unlocking global internship and career opportunities.
                 </li>
                 <li>
-                  <strong>Holistic Development:</strong>: Foster curiosity, critical thinking, and teamwork—skills essential for shaping tomorrow’s leaders.
+                  <strong>Holistic Development:</strong> Foster curiosity, critical thinking, and teamwork—skills essential for shaping tomorrow’s leaders.
                 </li>
               </ul>
             </div>
@@ -90,7 +90,7 @@ const Weoffer = () => {
         {/* Cultural & Industrial Visits Section */}
         <div className="bg-white shadow-xl rounded-lg p-8 mb-10 transition-transform hover:scale-105 hover:shadow-2xl">
           <h2 className="text-2xl font-bold text-customBlue mb-6">
-          Cultural & Industrial Visits
+            Cultural & Industrial Visits
           </h2>
           <div className="flex flex-col md:flex-row items-start gap-6">
             <div className="md:w-1/3">
@@ -109,7 +109,7 @@ const Weoffer = () => {
                   <strong>Industry Explorations:</strong> Witness state-of-the-art manufacturing, robotics, and technology hubs that are shaping the future
                 </li>
                 <li>
-                  <strong>Hands-On Workshops:</strong>Participate in sessions with martial arts champions, learn essential survival skills, and observe the renowned workplace ethics of Japan.
+                  <strong>Hands-On Workshops:</strong> Participate in sessions with martial arts champions, learn essential survival skills, and observe the renowned workplace ethics of Japan.
                 </li>
               </ul>
             </div>
@@ -119,7 +119,7 @@ const Weoffer = () => {
         {/* Customized Training & Internships Section */}
         <div className="bg-white shadow-xl rounded-lg p-8 transition-transform hover:scale-105 hover:shadow-2xl">
           <h2 className="text-2xl font-bold text-customBlue mb-6">
-          Customized Trainings & Workshops
+            Customized Trainings & Workshops
           </h2>
           <div className="flex flex-col md:flex-row items-start gap-6">
             <div className="md:w-1/3">
