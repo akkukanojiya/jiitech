@@ -61,21 +61,19 @@ const Footer = () => {
           ))}
         </ul>
       </div>
-
+          
       {/* Contact Section (Takes double width on larger screens) */}
       <div className="w-full md:col-span-2">
-        <h3 className="text-xl font-semibold mb-4 bg-customBlue text-white py-2 px-4 rounded-lg">
+        <h3 className="text-xl w-56 font-semibold mb-4 bg-customBlue text-white py-2 px-4 rounded-lg">
           Contact
         </h3>
-        <div className="text-sm text-black flex flex-col space-y-6 sm:flex-row sm:space-y-0 sm:space-x-12">
+        <div className="text-sm text-black flex flex-col space-y-6 sm:flex-row sm:space-y-0 sm:space-x-1">
           {/* Japan Office */}
           <div className="w-full sm:w-1/2">
             <p className="flex items-center">
               <FaMapMarkerAlt className="mr-2" /> <strong>Japan:</strong>
             </p>
-            <p>
-              JIITECH Headquarters, 3-37-7-210 Yoyogi, Shibuya, Tokyo, Japan
-            </p>
+            
             <p className="flex items-center">
               <IoCallSharp className="mr-2" /> +81-8064262379
             </p>
@@ -89,10 +87,7 @@ const Footer = () => {
             <p className="flex items-center">
               <FaMapMarkerAlt className="mr-2" /> <strong>India:</strong>
             </p>
-            <p>
-              JIITECH Headquarters, A 615 - 617 Sanskrit Galleria, Ahmedabad -
-              380015
-            </p>
+          
             <p className="flex items-center">
               <IoCallSharp className="mr-2" /> +91-9327123451
             </p>
