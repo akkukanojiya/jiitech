@@ -25,7 +25,7 @@ const About = () => {
     {
       name: "Nitin Jain",
       role: "Founder",
-      image: " ./nitinjain.JPG",
+      image: " ./nitinjain.jpeg",
       description: "The emphasis on innovation and technology in our companies has resulted in a few of them establishing global benchmarks in product design and development."
     },
     {
@@ -42,26 +42,30 @@ const About = () => {
   //  our mentors 
   const team = [
     {
-      name: "Dr. Renu Wadhwa ",
-      role: " Prime Senior Researcher & Head AIST-INDIA DAILAB, AIST, Japan",
+      name: "Dr. Renu Wadhwa",
+      role: "Prime Senior Researcher & Head AIST-INDIA DAILAB",
+      role2: "National Institute of Advanced Industrial Science and Technology (AIST), Japan",
       image: "./renuwadhwa.png",
 
     },
     {
-      name: "Dr. Shanuja Beri, PhD",
-      role: "Associate  Professor Department Of Zoology, India",
+      name: "Dr. Shanuja Beri",
+      role: "Associate Professor",
+      role2: "University of Delhi, India",
       image: " ./shanuja.png",
 
     },
     {
       name: "Dr. Sunil Kaul",
-      role: "Senior Research  Scientist,National Institute of  Advanced Industrial Science and  Technology (AIST),Japan",
+      role: "Senior Research Scientist",
+      role2: "National Institute of Advanced Industrial Science and Technology (AIST), Japan",
       image: "./Sunil.png",
 
     },
     {
-      name: "Dr. Yoshihiro Ohmiya, PhD",
-      role: "Principal Researcher National Institute of Advanced Industrial Science & Technology (AIST) Biomedical Research Institute, Japan",
+      name: "Dr. Yoshihiro Ohmiya",
+      role: "Principal Researcher",
+      role2: "National Institute of Advanced Industrial Science & Technology (AIST) Biomedical Research Institute, Japan",
       image: "./Yoshihiro.png",
 
     }
@@ -392,7 +396,8 @@ const About = () => {
               className="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-white -mt-20 mb-4 object-cover"
             />
             <h3 className="text-lg font-semibold">{member.name}</h3>
-            <p className="text-sm text-center opacity-80">{member.role}</p>
+            <p className="text-sm text-center opacity-80 text-justify">{member.role}</p>
+            <p className="text-sm text-center opacity-80 text-justify">{member.role2}</p>
             <div className="flex space-x-3 mt-4">
               <a href="#" className="text-white text-xl hover:text-gray-300">
                 <i className="fab fa-facebook"></i>
