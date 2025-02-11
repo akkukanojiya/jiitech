@@ -10,7 +10,10 @@ const Footer = () => {
     { name: "Contact Us", link: "/contactus" },
   ];
 
-  const services = ["Student Immersion Program"];
+  const services = [ 
+
+    { name: "Student Immersion Program", link: "/ourproducts" },
+  ];
 
   const handleClick = (service) => {
     console.log(`Service selected: ${service}`);
@@ -51,12 +54,12 @@ const Footer = () => {
           <ul className="space-y-3 text-sm px-3">
             {services.map((service, index) => (
               <li key={index}>
-                <button
-                  onClick={() => handleClick(service)}
-                  className="hover:text-red-500 transition duration-300"
+              <a
+                  href={service.link}
+                  className="hover:text-customBlue transition duration-300"
                 >
-                  {service}
-                </button>
+                  {service.name}
+                </a>
               </li>
             ))}
           </ul>
@@ -107,8 +110,8 @@ const Footer = () => {
           </h3>
 
           <div className="text-sm text-black flex flex-col gap-4 sm:flex-col px-3">
- {/* Japan Office */}
- <div className="w-full flex flex-col items-start gap-2">
+            {/* Japan Office */}
+            <div className="w-full flex flex-col items-start gap-2">
               <p className="flex items-center gap-x-2">
                 <FaMapMarkerAlt /> <strong>Japan:</strong>
               </p>
@@ -135,7 +138,7 @@ const Footer = () => {
               </p>
             </div>
 
-           
+
 
           </div>
         </div>

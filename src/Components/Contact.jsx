@@ -3,26 +3,13 @@ import { GrNotes } from "react-icons/gr";
 import { RxCross2 } from "react-icons/rx";
 
 function Contact() {
-  const [form, setForm] = useState(false);
+  
+
 
   return (
     <div className="absolute z-20">
-      {/* <div onClick={() => setForm((perv) => !perv)} className="cursor-pointer">
-        <div className="fixed bottom-1/4 right-14  ">
-          <div className="  sm:text-2xl font-semibold">
-            <div>
-              <GrNotes className="sm:h-11 h-5 w-full text-black" />
-            </div>
-            <div className="text-yellow-600 font-bold">
-              Get In
-              <br /> Touch
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       <div
-        className={`${form ? "block" : "hidden"} fixed inset-0 bg-black/70   `}
+        className={`${form ? "block" : "hidden"} fixed inset-0 bg-black/70 `}
       >
         <div className="sm:m-32 m-10  flex justify-center items-center rounded-md py-8 ">
           <div className="gap-1 bg-white sm:py-10 py-3 rounded-lg flex flex-col px-3">
