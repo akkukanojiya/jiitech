@@ -22,7 +22,7 @@ function Contact() {
       </div> */}
 
       <div
-        className={`${form ? "block" : "hidden"} fixed inset-0 bg-black/70   `}
+        className={`${form ? "block" : "hidden"} fixed inset-0 bg-black/70`}
       >
         <div className="sm:m-32 m-10  flex justify-center items-center rounded-md py-8 ">
           <div className="gap-1 bg-white sm:py-10 py-3 rounded-lg flex flex-col px-3">

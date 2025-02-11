@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Nabbar from "./Nabbar"; // Adjust path if required
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 // import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 function HowToApply() {
   const [formData, setFormData] = useState({
@@ -241,6 +242,7 @@ function HowToApply() {
 
       {/* new button  */}
       <div className="flex items-center justify-center mt-3 mb-3 bg-white">
+      
         <button
           className="bg-customBlue text-white px-6 py-3 rounded-md font-semibold transition-all hover:bg-red-700 animate-zoom"
           onClick={toggleModal}
@@ -307,6 +309,7 @@ function HowToApply() {
       </div>
       {/* new button end */}
       <div className="relative flex items-center justify-center bg-gray-100">
+      <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
         {/* Modal */}
         {isOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">

@@ -4,11 +4,13 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 import { MapPin, Phone, Mail } from 'lucide-react';
 import React, { useState, useEffect } from "react";
 // import { IoLocationSharp } from "react-icons/io5";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { IoMdPerson } from "react-icons/io";
 import Nabbar from "./Nabbar";
 
 import Footer from "./Footer";
+import { inputAdornmentClasses } from "@mui/material";
 
 const ContactUs = () => {
 
@@ -212,6 +214,8 @@ const ContactUs = () => {
 
           {/* new form  */}
           {/* Form */}
+           
+          <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
           <form onSubmit={handleSubmit} className="lg:w-2/3 flex flex-col gap-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="py-3 border rounded-xl flex items-center px-3">
@@ -279,15 +283,17 @@ const ContactUs = () => {
             {errors.description && <p className="text-red-500 text-sm">{errors.description}</p>}
 
             <div className="flex justify-center lg:justify-start">
+             
               <button
                 type="submit"
                 className="bg-customBlue px-6 sm:px-8 py-2 sm:py-3 hover:bg-customLiteBlue transition-all duration-300 rounded-xl text-white font-bold"
                 disabled={loading}
               >
-                {loading ? "Submitting..." : "Submit"}
+                  {loading ? "Submitting..." : "Submit"}
               </button>
             </div>
           </form>
+           
           {/* new form end */}
 
         </div>
