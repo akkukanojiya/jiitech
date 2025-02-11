@@ -1,8 +1,5 @@
 import { FaFacebookSquare, FaPhoneAlt } from "react-icons/fa";
-// import { FaInstagram } from "react-icons/fa";
-// import { FaYoutube } from "react-icons/fa";
-// import { IoLogoLinkedin } from "react-icons/io5";
-// import { MdCall } from "react-icons/md";
+ 
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { MapPin, Phone, Mail } from 'lucide-react';
 import React, { useState, useEffect } from "react";
