@@ -179,39 +179,6 @@ const ContactUs = () => {
               <p>info@jiitech.jp</p>
             </div>
           </div>
-
-
-          {/* old form  */}
-          {/* <div className="lg:w-2/3 flex flex-col gap-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="py-3 border rounded-xl flex items-center px-3">
-              <IoMdPerson className="text-gray-400 w-5" />
-              <input type="text" placeholder="First name" className="outline-none flex-1 px-2 text-sm" />
-            </div>
-            <div className="py-3 border rounded-xl flex items-center px-3">
-              <IoMdPerson className="text-gray-400 w-5" />
-              <input type="text" placeholder="Last name" className="outline-none flex-1 px-2 text-sm" />
-            </div>
-            <div className="py-3 border rounded-xl flex items-center px-3">
-              <HiOutlineMailOpen className="text-gray-400 w-5" />
-              <input type="text" placeholder="Email address" className="outline-none flex-1 px-2 text-sm" />
-            </div>
-            <div className="py-3 border rounded-xl flex items-center px-3">
-              <FaPhoneAlt className="text-gray-400 w-5" />
-              <input type="text" placeholder="Phone number" className="outline-none flex-1 px-2 text-sm" />
-            </div>
-          </div>
-          <div className="border rounded-xl overflow-hidden">
-            <textarea placeholder="Write description..." className="px-4 py-2 outline-none w-full h-32 resize-none text-sm"></textarea>
-          </div>
-          <div className="flex justify-center lg:justify-start">
-            <button className="bg-customBlue px-6 sm:px-8 py-2 sm:py-3 hover:bg-customLiteBlue transition-all duration-300 rounded-xl text-white font-bold">Submit</button>
-          </div>
-        </div> */}
-          {/* old form end */}
-
-
-
           {/* new form  */}
           {/* Form */}
            

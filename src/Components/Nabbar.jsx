@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-import { CiFacebook } from "react-icons/ci";
-import { RiGlobeFill, RiInstagramLine } from "react-icons/ri";
-import { CiTwitter } from "react-icons/ci";
+ 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { Link } from "react-router-dom";
-import { Global } from "@emotion/react";
+ 
 
 const Nabbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -69,89 +67,19 @@ const Nabbar = () => {
               <Link to={"/weoffer"}> WHAT WE OFFER </Link>
             </p>
 
-            {/* <span onClick={HandleHamTrue} className="px-2 ">
-                WE OFFER
-              </span> */}
+            
             <p>
               <Link to={"/howtoapply"}> HOW TO APPLY </Link>
             </p>
 
-            {/* <p>
-              <Link to={"#"}> GALLERY </Link>
-            </p> */}
+            
             <p>
               <Link to={"/contactus"}> CONTACT US </Link>
             </p>
-            <div className="">
-
-              <div
-                className={`transition-all duration-500 bg-white text-xs px-2 text-black gap-2.5 flex flex-col w-full overflow-hidden   ${isService ? "max-h-60 py-3 " : "max-h-0 py-0"
-                  }`}
-              >
-                <span className="">
-                  <Link to={"/softwaredevelopment"}>SoftwareDevelopment</Link>
-                </span>
-                <span className="">Consultansy</span>
-                <span className="">Testing</span>
-                <span className="">Emerging</span>
-                <span className="">Cloud</span>
-                <span className="">Data Analytics</span>
-                <span className="">Staff Augmentation</span>
-                <span className="">Projct Management Services</span>
-              </div>
-            </div>
+             
 
 
-
-            {/* <div className="">
-              <span onClick={HandleisTECHNOLOGIES}>TECHNOLOGIES</span>
-              <div
-                className={`transition-all duration-500 bg-white text-xs px-2 text-black gap-2.5 flex flex-col w-full overflow-hidden   ${isTECHNOLOGIES ? "max-h-96 py-3" : "max-h-0 py-0"
-                  }`}
-              >
-                <span className="hover:cursor-pointer">
-                  <Link to={"/InternshipAndTraining"}>
-                    {" "}
-                    Internship & Training{" "}
-                  </Link>
-                </span>
-                <span className="hover:cursor-pointer">
-                  <Link to={"/frontenddev"}> Front End Development </Link>
-                </span>
-                <span className="hover:cursor-pointer">Backend Devlopment</span>
-                <span className="hover:cursor-pointer">
-                  Fullstack Development
-                </span>
-                <span className="hover:cursor-pointer">
-                  <Link to={"/database"}> Database Management Services </Link>
-                </span>
-                <span className="hover:cursor-pointer">
-                  <Link to={"/mobileappdev"}> Mobile App Development </Link>
-                </span>
-                <span className="hover:cursor-pointer">Cloud and Infra</span>
-                <span className="hover:cursor-pointer">
-                  Data Analytics and Reporting
-                </span>
-                <span className="hover:cursor-pointer">Ecommerce</span>
-                <span className="hover:cursor-pointer">QA</span>
-              </div>
-            </div> */}
-
-            {/* <div>
-              <span onClick={HandleisPRODUCTS}>PRODUCTS</span>
-              <div
-                className={`transition-all duration-500 bg-white text-xs px-2 text-black gap-2.5 flex flex-col w-full overflow-hidden  ${
-                  isPRODUCTS ? "max-h-60 py-3 " : "max-h-0 py-0"
-                }`}
-              >
-                <span className="">Clients</span>
-                <span className="">Success Stories</span>
-                <span className="">Testimonials</span>
-                <span className="">More Case Studies</span>
-              </div>
-            </div> */}
-
-
+ 
 
           </div>
         </div>
@@ -194,81 +122,21 @@ const Nabbar = () => {
           </p>
 
 
-          {/* <p className="hover:text-red-700  group-hover:text-red-700 transition-all duration-200 px-2">
-          <Link to={"/weoffer"}></Link>
-              WE OFFER
-            </p> */}
+       
 
           <p className="hover:text-red-700">
             <Link to={"/howtoapply"}>HOW TO APPLY</Link>
           </p>
 
-          {/* <p className="hover:text-red-700">
-            <Link to={"#"}>GALLERY</Link>
-          </p> */}
-
+          
 
           <p className="hover:text-red-700">
             <Link to={"/contactus"}>CONTACT US</Link>
           </p>
 
-
-
-
-
-
-
-          {/* <div className="relative group">
-           
-            <div className="absolute hidden group-hover:block bg-white text-black text-xs w-44 py-2 mt-1 rounded shadow-lg">
-              <span className="block px-2 py-1 hover:text-red-700">
-                <Link to={"/softwaredevelopment"}>Software Development</Link>
-              </span>
-              <span className="block px-2 py-1 hover:text-red-700">Consultancy</span>
-              <span className="block px-2 py-1 hover:text-red-700">Testing</span>
-              <span className="block px-2 py-1 hover:text-red-700">Emerging</span>
-              <span className="block px-2 py-1 hover:text-red-700">Cloud</span>
-              <span className="block px-2 py-1 hover:text-red-700">Data Analytics</span>
-              <span className="block px-2 py-1 hover:text-red-700">Staff Augmentation</span>
-              <span className="block px-2 py-1 hover:text-red-700">Project Management Services</span>
-            </div>
-          </div> */}
-
-          {/* <div className="relative group">
-            <p className="hover:text-red-700 cursor-pointer group-hover:text-red-700 transition-all duration-200 px-2">
-              TECHNOLOGIES
-            </p>
-            <div className="absolute hidden group-hover:block bg-white text-black text-xs w-44 py-2 mt-1 rounded shadow-lg">
-              <span className="block px-2 py-1 hover:text-red-700">
-                <Link to={"/InternshipAndTraining"}>Internship & Training</Link>
-              </span>
-              <span className="block px-2 py-1 hover:text-red-700">
-                <Link to={"/frontenddev"}>Front End Development</Link>
-              </span>
-              <span className="block px-2 py-1 hover:text-red-700">
-                <Link to={"/backendDevlopment"}>Back End Development</Link>
-              </span>
-              <span className="block px-2 py-1 hover:text-red-700">
-                <Link to={"/database"}>Database Management Services</Link>
-              </span>
-              <span className="block px-2 py-1 hover:text-red-700">
-                <Link to={"/mobileappdev"}>Mobile App Development</Link>
-              </span>
-              <span className="block px-2 py-1 hover:text-red-700">
-                <Link to={"/qa"}>QA</Link>
-              </span>
-            </div>
-          </div> */}
-
-
-
-
+ 
         </div>
-        {/* <div className="language-switcher-container">
-
-          <div id="google_translate_element"></div>
-        </div> */}
-      </div>
+       </div>
 
     </div>
   );

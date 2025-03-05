@@ -7,8 +7,8 @@ import Contact from "./Contact";
 import BusinessCentric from "./BusinessCentric";
 import Footer from "./Footer";
 import ContactUs from "./ContactUs";
-import Faq from "./Faq";
-import SoftwareDevelopment from "./SoftwareDevelopment";
+// import Faq from "./Faq";
+ 
 import FaqAccordion from "./FaqAccordion";
 import HowToApply from "./HowToApply";
 import Gallery from "./Gallery";
@@ -30,7 +30,7 @@ const Home = () => {
       <Contact />
       {/* <Services /> */}
       <WhyArisezen />
-      <Faq />
+      {/* <Faq /> */}
       <Footer />
     </>
   );

@@ -1,12 +1,8 @@
 import React from "react";
-import { MdHomeWork } from "react-icons/md";
-import { FaIndustry, FaPlaneArrival, FaUserFriends } from "react-icons/fa";
-import { FaHandHoldingHeart } from "react-icons/fa";
-import { BiSolidLike } from "react-icons/bi";
-import { FaFolderOpen } from "react-icons/fa";
-import { HiLightBulb } from "react-icons/hi";
-import { BsStars } from "react-icons/bs";
-import { FaPersonHiking, FaUsers } from "react-icons/fa6";
+ 
+import {   FaPlaneArrival, } from "react-icons/fa";
+ 
+import { FaPersonHiking, } from "react-icons/fa6";
 import { GrTechnology } from "react-icons/gr";
 import { LiaIndustrySolid } from "react-icons/lia";
 

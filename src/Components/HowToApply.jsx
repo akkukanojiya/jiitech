@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
-// import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+ 
 function HowToApply() {
   const [formData, setFormData] = useState({
     fullName: "",

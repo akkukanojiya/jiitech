@@ -110,19 +110,7 @@ function OurProduct() {
   return (
     <>
       <div className="mx-6">
-        <div className="flex text-center bg- flex-col px-8 py-2">
-          <div className="text-center mb-2">
-            {/* <p className="text-4xl font-extrabold pb-2 bg-gradient-to-r from-customBlue to-red-500 text-transparent bg-clip-text relative">
-              Program We Offer
-              
-            </p> */}
-          </div>
-
-
-          {/* <p className="text-xl font-light pb-2">
-            Our goal is to cultivate a global perspective in students by providing opportunities to immerse themselves in the richness of both Japanese and Indian cultures.
-          </p> */}
-        </div>
+        
 
         <div> {objects}</div>
 
@@ -137,6 +125,4 @@ export default OurProduct;
 
 
 
-
-
-// Our goal is to To foster creativity, innovation, and intercultural understanding through immersive exchange programs, educational initiatives, and technological collaboration. Our goal is We aim to nurture a global perspective in students and professionals by creating opportunities to experience the best of Japanese and Indian cultures.
+ 
